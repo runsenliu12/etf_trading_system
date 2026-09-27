@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF AI 自动交易系统 — 小白完整运行教程</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #f8f9fa;
+            padding: 0;
+        }
+        .container { max-width: 920px; margin: 0 auto; padding: 40px 24px; }
+
+        /* 顶部标题 */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 50px 24px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+        }
+        .hero h1 { font-size: 28px; margin-bottom: 8px; }
+        .hero p { font-size: 15px; opacity: 0.9; }
+
+        /* 通用卡片 */
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        /* 标题样式 */
+        h2 {
+            font-size: 22px;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        h2 .step-badge {
+            display: inline-block;
+            width: 36px; height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background: #667eea;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 18px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 17px;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p { margin-bottom: 12px; font-size: 15px; }
+
+        /* 代码块 */
+        pre {
+            background: #1e1e2e;
+            color: #e0e0e0;
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+            overflow-x: auto;
+            margin: 12px 0;
+            line-height: 1.6;
+        }
+        code {
+            background: #eef0f4;
+            color: #c7254e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: "Cascadia Code", Consolas, monospace;
+        }
+        pre code { background: none; color: inherit; padding: 0; }
+
+        /* 提示框 */
+        .alert {
+            border-radius: 8px;
+            padding: 14px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .alert-warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            color: #856404;
+        }
+        .alert-danger {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            color: #721c24;
+        }
+        .alert-info {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            color: #0c5460;
+        }
+        .alert-success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            color: #155724;
+        }
+
+        /* 表格 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        th {
+            background: #667eea;
+            color: #fff;
+            padding: 10px 14px;
+            text-align: left;
+        }
+        td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        tr:nth-child(even) td { background: #f8f9fa; }
+
+        /* 流程图 */
+        .flow-diagram {
+            background: #f0f2ff;
+            border-radius: 10px;
+            padding: 24px;
+            margin: 16px 0;
+            text-align: center;
+        }
+        .flow-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .flow-box {
+            background: #fff;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            min-width: 100px;
+        }
+        .flow-arrow { font-size: 20px; color: #667eea; font-weight: bold; }
+
+        /* 目录 */
+        .toc {
+            background: #f0f2ff;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        .toc h3 { margin-top: 0; color: #667eea; }
+        .toc ol { padding-left: 20px; }
+        .toc li { margin: 6px 0; }
+        .toc a { color: #667eea; text-decoration: none; font-size: 14px; }
+        .toc a:hover { text-decoration: underline; }
+
+        /* 时间轴 */
+        .timeline { position: relative; padding-left: 40px; margin: 20px 0; }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 0; bottom: 0;
+            width: 2px;
+            background: #667eea;
+        }
+        .timeline-item { position: relative; margin-bottom: 20px; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 4px;
+            width: 12px; height: 12px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 2px solid #fff;
+        }
+        .timeline-time { font-size: 13px; color: #667eea; font-weight: 700; }
+        .timeline-title { font-size: 15px; font-weight: 600; margin: 2px 0; }
+        .timeline-desc { font-size: 13px; color: #666; }
+
+        /* 名词卡：小白专属 */
+        .glossary {
+            background: #fffaf0;
+            border: 1px dashed #e0a800;
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin: 16px 0;
+        }
+        .glossary h4 { font-size: 15px; color: #b8860b; margin-bottom: 8px; }
+        .glossary dl { margin: 0; }
+        .glossary dt { font-weight: 700; color: #333; margin-top: 8px; }
+        .glossary dd { color: #555; font-size: 14px; margin-left: 0; }
+
+        /* FAQ */
+        .faq-item { margin-bottom: 16px; }
+        .faq-q { font-weight: 700; color: #333; font-size: 15px; margin-bottom: 6px; }
+        .faq-a { color: #555; font-size: 14px; padding-left: 16px; border-left: 3px solid #ddd; }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* 文件树 */
+        .file-tree {
+            background: #1e1e2e;
+            color: #a9b1d6;
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-family: "Cascadia Code", Consolas, monospace;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        .file-tree .dir { color: #89b4fa; font-weight: bold; }
+        .file-tree .file { color: #a9b1d6; }
+        .file-tree .comment { color: #6c7086; }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: #fff !important;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>ETF AI 自动交易系统</h1>
+    <p>小白完整运行教程 — 假设你看不懂代码、没开过户，也能一步步跑起来（2026-07-27 重写）</p>
+</div>
+
+<div class="container">
+
+<!-- 写给谁看 -->
+<div class="card">
+    <h2>📌 这个教程写给谁看</h2>
+    <p>如果你符合下面任意一点，这篇教程就是为你写的：</p>
+    <ul style="padding-left: 20px; margin: 12px 0;">
+        <li>没写过代码，不知道「Python」「API」「命令行」是什么；</li>
+        <li>没开过股票账户，没听过「QMT」「ETF」「集合竞价」；</li>
+        <li>想用 AI 帮自己买卖基金，但怕搞坏、怕踩坑。</li>
+    </ul>
+    <p>下面所有操作，我都会<strong>一步一步截图式地写清楚</strong>。遇到听不懂的词，先跳到下一节「先搞懂几个名词」，里面有白话解释。</p>
+    <div class="alert alert-info">
+        ⏱️ 全部准备好大约需要 <strong>1~2 小时</strong>（主要是开户和等审核）。真正「点几下鼠标」的部分其实很少，大部分时间在等待和配置。
+    </div>
+</div>
+
+<!-- 名词解释 -->
+<div class="card">
+    <h2>先搞懂几个名词（大白话版）</h2>
+
+    <div class="glossary">
+        <h4>💡 看不懂下面任何一个词，先读这里</h4>
+        <dl>
+            <dt>ETF（交易型开放式指数基金）</dt>
+            <dd>简单说就是「一篮子股票打包成的一只基金」，在股票软件里像买卖股票一样买卖。比如「半导体ETF」就是一篮子半导体公司的集合。本系统买卖的就是这类基金，不直接买单只股票。</dd>
+
+            <dt>量化交易</dt>
+            <dd>用程序按固定规则自动下单，不靠人盯盘。本系统就是「程序在固定时间点自动决定买卖」。</dd>
+
+            <dt>AI 决策</dt>
+            <dd>系统把「当前行情 + 研报 + 你的持仓」整理成一段文字发给 AI（DeepSeek），AI 回一段「买哪只、买多少、卖哪只」的文字，程序再照着下单。</dd>
+
+            <dt>QMT（国金证券的量化终端）</dt>
+            <dd>一个安装在你电脑上的软件，是程序和券商「下单通道」之间的桥。程序不能直接连券商，必须先开 QMT 并登录。</dd>
+
+            <dt>miniQMT（极简版 QMT）</dt>
+            <dd>QMT 有两种打开方式：完整版（有图表界面）和极简版（XtMiniQmt.exe）。<strong>本系统只能用极简版</strong>，因为只有通过它，外部程序才能发指令。</dd>
+
+            <dt>API Key（钥匙）</dt>
+            <dd>调用 AI 时需要的一串密码，格式像 <code>sk-xxxxxx</code>。没有它，AI 不让你用。</dd>
+
+            <dt>Python</dt>
+            <dd>一种编程语言。本系统是一堆 Python 代码，需要电脑上装好 Python 3.11 才能运行。</dd>
+
+            <dt>模拟交易 vs 实盘</dt>
+            <dd>模拟 = 用假钱演练，亏了不心疼；实盘 = 真金白银。系统默认<strong>模拟交易</strong>，确认稳妥后再切实盘。</dd>
+
+            <dt>集合竞价</dt>
+            <dd>每天 09:15–09:25，大家把买卖意向挂上去，09:25 统一撮合成开盘价。这个时段下单有特别规则（只能用「限价单」），本系统已经处理好。</dd>
+
+            <dt>研报</dt>
+            <dd>券商/机构出的行业分析报告，告诉哪些板块最近有资金关注。系统会把研报喂给 AI 当参考。</dd>
+        </dl>
+    </div>
+</div>
+
+<!-- 系统长什么样 -->
+<div class="card">
+    <h2>系统整体长什么样</h2>
+    <p>一句话：<strong>每天固定的 4 个时间点，程序自动读行情+读研报，问 AI 该怎么操作，然后自动下单。</strong></p>
+
+    <div class="flow-diagram">
+        <div class="flow-row">
+            <div class="flow-box">研报<br><small>开盘前自动生成</small></div>
+            <span class="flow-arrow">+</span>
+            <div class="flow-box">QMT 行情<br><small>拉实时价格</small></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-box">AI 分析决策</div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-box">QMT 自动下单</div>
+        </div>
+    </div>
+
+    <p>用生活化的比喻：</p>
+    <ul style="padding-left: 20px; margin: 12px 0;">
+        <li><strong>研报 = 晨报/情报</strong>（告诉你今天哪些行业有消息）</li>
+        <li><strong>QMT 行情 = 眼睛</strong>（实时看到价格涨跌）</li>
+        <li><strong>AI = 大脑</strong>（综合情报+价格，决定买什么卖什么）</li>
+        <li><strong>QMT 下单 = 手</strong>（真正把单子提交到券商）</li>
+    </ul>
+
+    <div class="alert alert-info">
+        <strong>关键事实：</strong>本系统默认是<strong>模拟交易</strong>（假钱，初始 100 万），不会动你的真实资金。你确认 AI 决策靠谱后，再改成实盘。
+    </div>
+</div>
+
+<!-- 准备清单 -->
+<div class="card">
+    <h2>运行前你需要准备什么（清单）</h2>
+
+    <table>
+        <thead>
+            <tr><th>东西</th><th>是什么 / 为什么需要</th><th>去哪弄</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python 3.11</td>
+                <td>运行程序的「发动机」。注意<strong>必须 3.11</strong>，新版会报错。</td>
+                <td>装 Anaconda（自带 3.11）或去 python.org 下 3.11</td>
+            </tr>
+            <tr>
+                <td>DeepSeek API Key</td>
+                <td>调用 AI 的「钥匙」。系统默认用 DeepSeek 官方接口（R1 推理模型）。</td>
+                <td>platform.deepseek.com 注册充值，拿到 <code>sk-xxx</code></td>
+            </tr>
+            <tr>
+                <td>国金证券 QMT</td>
+                <td>程序和券商之间的「桥」，负责拉行情+下单。</td>
+                <td>国金证券开户后开通 QMT / miniQMT 权限</td>
+            </tr>
+            <tr>
+                <td>QMT 资金账号</td>
+                <td>登录 QMT 用的账号，需要 miniQMT 权限。</td>
+                <td>开户后券商给，当前测试用模拟账号 888888</td>
+            </tr>
+            <tr>
+                <td>本项目的代码</td>
+                <td>就是这套 ETF 自动交易系统。</td>
+                <td>已经在 <code>D:\策略\etf_trading_system\</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="alert alert-danger">
+        <strong>最容易踩的坑：Python 版本。</strong>QMT 的配件只支持 Python 3.6~3.11。<strong>用 3.12 或更高版本，程序直接报错跑不起来。</strong>本机已装好 Anaconda 的 Python 3.11.4，路径 <code>D:\software\anaconda3\python.exe</code>，直接用就行。
+    </div>
+</div>
+
+<!-- 第一步：装 Python -->
+<div class="card">
+    <h2><span class="step-badge">1</span>安装 Python 和依赖</h2>
+
+    <h3>1.1 确认 Python 版本</h3>
+    <p>按 <code>Win + R</code>，输入 <code>cmd</code> 回车，打开黑色命令行窗口，输入：</p>
+    <pre><code>python --version</code></pre>
+    <p>如果显示 <code>Python 3.11.x</code> 就没问题。如果没装或版本不对：</p>
+    <ul style="padding-left: 20px; margin: 12px 0;">
+        <li>推荐装 <a href="https://www.anaconda.com/download" target="_blank">Anaconda</a>（自带 3.11，安装时一路下一步即可）</li>
+        <li>或去 <a href="https://www.python.org/downloads/" target="_blank">python.org</a> 下载 3.11 版本（安装时务必勾选「Add Python to PATH」）</li>
+    </ul>
+    <div class="alert alert-info">
+        本机已有 Anaconda 的 Python 3.11.4，路径是 <code>D:\software\anaconda3\python.exe</code>。后面所有命令都用这个完整路径，避免和别处的 Python 弄混。
+    </div>
+
+    <h3>1.2 安装项目依赖</h3>
+    <p>在命令行里，先进入项目目录，再装依赖：</p>
+    <pre><code>cd D:\策略\etf_trading_system
+D:\software\anaconda3\python.exe -m pip install -r requirements.txt</code></pre>
+
+    <p>这会安装这些包（不用记，知道大概用途即可）：</p>
+    <table>
+        <thead><tr><th>包</th><th>干嘛用</th></tr></thead>
+        <tbody>
+            <tr><td><code>openai</code></td><td>调用 DeepSeek AI 的接口</td></tr>
+            <tr><td><code>xtquant</code></td><td>QMT 行情/交易配件（<strong>不用 pip 装，QMT 自带</strong>）</td></tr>
+            <tr><td><code>schedule</code></td><td>定时任务（控制 4 个交易时刻）</td></tr>
+            <tr><td><code>pandas / numpy</code></td><td>数据处理（算净值、画图表）</td></tr>
+            <tr><td><code>requests / beautifulsoup4</code></td><td>抓取研报网页用</td></tr>
+            <tr><td><code>python-dotenv</code></td><td>读取 .env 配置</td></tr>
+            <tr><td><code>loguru</code></td><td>写日志</td></tr>
+        </tbody>
+    </table>
+
+    <div class="alert alert-warning">
+        <strong>注意：</strong><code>xtquant</code> 这个包<strong>不能用 pip 安装</strong>，它是 QMT 自带、随 QMT 安装的。程序会自动去找它（见第 3 步）。如果 pip 报「找不到 xtquant」，先别管，装完 QMT 就好了。
+    </div>
+
+    <h3>1.3 验证依赖装好没</h3>
+    <pre><code>D:\software\anaconda3\python.exe -c "import openai, schedule, pandas, loguru, dotenv; print('依赖OK')"</code></pre>
+    <p>屏幕打印 <code>依赖OK</code> 就说明这一步成了。</p>
+</div>
+
+<!-- 第二步：API Key -->
+<div class="card">
+    <h2><span class="step-badge">2</span>申请 AI 的「钥匙」——DeepSeek API Key</h2>
+
+    <div class="alert alert-info">
+        本系统支持<strong>三种 AI 后端</strong>（通过 <code>config/settings.py</code> 的 <code>LLM_PROVIDER</code> 切换，也可设环境变量）：
+        <ul style="margin:8px 0 0 18px;">
+            <li><code>deepseek</code>（<strong>默认</strong>）= DeepSeek 官方接口，模型 <code>deepseek-reasoner</code>（R1 推理模型），环境变量 <code>DEEPSEEK_API_KEY</code></li>
+            <li><code>aliyun</code> = 阿里云百炼（<code>DASHSCOPE_API_KEY</code>，保留，支持联网搜索）</li>
+            <li><code>tencent</code> = 腾讯云（<code>TENCENT_DEEPSEEK_API_KEY</code>，保留）</li>
+        </ul>
+        三种后端的代码<strong>全部保留，不删</strong>，只通过开关切换。对新手，<strong>用默认的 DeepSeek 官方接口就行</strong>，下面只讲这一种怎么申请。
+    </div>
+
+    <h3>2.1 注册并拿到 Key</h3>
+    <ol style="padding-left: 20px; margin: 12px 0;">
+        <li>打开 <a href="https://platform.deepseek.com/" target="_blank">platform.deepseek.com</a>，用手机号注册登录</li>
+        <li>左侧「API keys」→ 点「Create API Key」</li>
+        <li>复制生成的 Key（格式 <code>sk-xxxxxxxx</code>），<strong>马上存到记事本</strong>，因为它只显示一次</li>
+        <li>点「Top up」充值，<strong>充 10 元就够测试很久</strong>（每次调用几分钱）</li>
+    </ol>
+
+    <div class="alert alert-danger">
+        <strong>务必先充值！</strong>余额是 0 时，AI 会返回 <code>402 Insufficient Balance</code>，系统就无法决策。
+    </div>
+
+    <h3>2.2 把 Key 填进配置</h3>
+    <p>用记事本打开 <code>D:\策略\etf_trading_system\.env</code>，把 <code>DEEPSEEK_API_KEY</code> 的值换成刚才复制的 <code>sk-xxx</code>。详见第 4 步的 .env 模板。</p>
+</div>
+
+<!-- 第三步：装 QMT -->
+<div class="card">
+    <h2><span class="step-badge">3</span>安装并登录国金证券 QMT</h2>
+
+    <h3>3.1 下载安装</h3>
+    <ol style="padding-left: 20px; margin: 12px 0;">
+        <li>在国金证券开户，并申请开通 <strong>QMT / miniQMT 量化权限</strong>（联系你的客户经理或客服）</li>
+        <li>下载 QMT 量化交易终端，装到默认目录（常见如 <code>D:\国金证券QMT交易端\</code> 或 <code>D:\国金QMT交易端模拟\</code>）</li>
+        <li>安装完，目录里会有 <code>bin.x64\Lib\site-packages\xtquant</code>，这就是程序要用的配件</li>
+    </ol>
+
+    <h3>3.2 两种模式，记住只用一个</h3>
+    <table>
+        <thead><tr><th>模式</th><th>启动程序</th><th>外部程序能连吗</th></tr></thead>
+        <tbody>
+            <tr><td>完整版</td><td><code>XtItClient.exe</code></td><td><strong>❌ 不开放</strong></td></tr>
+            <tr><td>极简版（miniQMT）</td><td><code>XtMiniQmt.exe</code></td><td><strong>✅ 开放接口</strong></td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-danger">
+        <strong>必须用极简版（XtMiniQmt.exe）！</strong>程序是通过 xtquant 连 QMT 的，完整版不开放这个接口，开着完整版会报「QMT连接失败」。
+    </div>
+
+    <h3>3.3 启动并登录极简版</h3>
+    <ol style="padding-left: 20px; margin: 12px 0;">
+        <li>先<strong>关闭</strong>任何已打开的完整版 QMT</li>
+        <li>找到并双击 <code>你的QMT目录\bin.x64\XtMiniQmt.exe</code>（例如 <code>D:\国金QMT交易端模拟\bin.x64\XtMiniQmt.exe</code>）</li>
+        <li>输入资金账号和密码登录</li>
+        <li>登录成功后，QMT 会自动创建 <code>userdata_mini</code> 文件夹——这就是程序要连的目录</li>
+    </ol>
+
+    <div class="alert alert-info">
+        <strong>原理：</strong>miniQMT 像「中间人」。你的 Python 程序 → 发指令给 miniQMT → miniQMT 转发给券商。所以 <strong>miniQMT 必须先开着并登录，程序才能工作</strong>。关掉它，程序就断线。
+    </div>
+</div>
+
+<!-- 第四步：.env -->
+<div class="card">
+    <h2><span class="step-badge">4</span>填写配置文件 .env</h2>
+    <p>用记事本打开 <code>D:\策略\etf_trading_system\.env</code>，按下面模板填（<strong>只改有「填这里」字样的值</strong>，其余保持原样）：</p>
+    <pre><code># ===== AI 后端开关：deepseek(官方,默认) / aliyun(百炼) / tencent(腾讯云) =====
+LLM_PROVIDER=deepseek
+
+# DeepSeek 官方 Key（默认后端，必填）—— 填这里
+DEEPSEEK_API_KEY=sk-你刚复制的DeepSeek钥匙
+
+# 下面两个一般不用动（aliyun / tencent 后端才用）
+DASHSCOPE_API_KEY=你的阿里云Key
+TENCENT_DEEPSEEK_API_KEY=你的腾讯云Key
+
+# QMT 配置
+QMT_PATH=D:\国金QMT交易端模拟\userdata_mini   # ← 改成你实际的 userdata_mini 路径
+QMT_ACCOUNT=你的资金账号                      # ← 填你的 QMT 账号（测试用 888888）
+QMT_SESSION_ID=123456</code></pre>
+
+    <h3>各字段一句话说明</h3>
+    <table>
+        <thead><tr><th>字段</th><th>说明</th><th>示例</th></tr></thead>
+        <tbody>
+            <tr><td><code>LLM_PROVIDER</code></td><td>用哪个 AI，默认 deepseek</td><td><code>deepseek</code></td></tr>
+            <tr><td><code>DEEPSEEK_API_KEY</code></td><td>AI 钥匙（第 2 步拿的）</td><td><code>sk-xxx</code></td></tr>
+            <tr><td><code>QMT_PATH</code></td><td>miniQMT 的 userdata_mini 目录（<strong>不是</strong>安装目录本身）</td><td><code>D:\国金QMT交易端模拟\userdata_mini</code></td></tr>
+            <tr><td><code>QMT_ACCOUNT</code></td><td>你的 QMT 资金账号</td><td><code>888888</code>（测试）</td></tr>
+            <tr><td><code>QMT_SESSION_ID</code></td><td>随便填个数字</td><td><code>123456</code></td></tr>
+        </tbody>
+    </table>
+
+    <div class="alert alert-warning">
+        <strong>QMT_PATH 怎么确定？</strong>这个路径指向 miniQMT 登录后自动生成的 <code>userdata_mini</code> 目录。<strong>不是</strong> QMT 安装目录，<strong>也不是</strong> userdata 目录。登录成功后它才会出现。
+    </div>
+</div>
+
+<!-- 第五步：研报从哪来 -->
+<div class="card">
+    <h2><span class="step-badge">5</span>研报是怎么来的（你不用管，系统自己搞）</h2>
+
+    <p>AI 做决策需要「行业研报」当参考。这件事<strong>系统会自动完成，你不用手动搜</strong>：</p>
+    <ol style="padding-left: 20px; margin: 12px 0;">
+        <li><strong>主来源：开盘前自动预爬。</strong>程序在每天 <strong>08:30（盘前）</strong> 和 <strong>12:30（午后）</strong> 自动调用 <code>findtruman</code> 的结构化行业研报接口，生成当天研报文件存到 <code>logs/research/</code>。这样 09:25 一开盘就有研报可用，不依赖外部定时器是否成功。</li>
+        <li><strong>补充：若你配置了 WorkBuddy 研报定时器</strong>（09:00 / 12:45 生成），它的文件内容更丰富，会被<strong>优先采用</strong>；否则就用上面自动预爬的。</li>
+        <li><strong>兜底：都没拿到</strong>，AI 就在「无研报上下文」下决策，不会卡住交易。</li>
+    </ol>
+
+    <h3>研报 → ETF 自动映射（新功能）</h3>
+    <p>研报里写的是「半导体」「券商」「军工」这类<strong>行业词</strong>，但程序下单要的是具体 <strong>ETF 代码</strong>。系统会自动扫描研报，把行业词映射到 <code>ETF_POOL</code> 里的具体基金，并标注情绪（利好/利空），然后把这段「映射」追加进喂给 AI 的研报里，帮 AI 更精准地下单。</p>
+    <div class="alert alert-success">
+        ✅ 这套机制意味着：<strong>你完全不用碰研报</strong>。开盘前它会自动准备好，并自动翻译成 AI 能用的 ETF 列表。
+    </div>
+</div>
+
+<!-- 第六步：启动 -->
+<div class="card">
+    <h2><span class="step-badge">6</span>启动系统</h2>
+
+    <h3>6.1 启动前确认两件事</h3>
+    <ul style="padding-left: 20px; margin: 12px 0;">
+        <li>✅ <strong>miniQMT 已打开并登录</strong>（第 3 步）</li>
+        <li>✅ <code>.env</code> 里的 Key 和账号已填对（第 4 步）</li>
+    </ul>
+
+    <h3>6.2 运行命令</h3>
+    <pre><code>cd D:\策略\etf_trading_system
+D:\software\anaconda3\python.exe main.py</code></pre>
+
+    <h3>6.3 想先手动试一次（不等待定时）</h3>
+    <p>如果你不想等到 09:25，可以用 <code>--test</code> 立刻跑某个时刻：</p>
+    <pre><code># 测试单个时刻（默认 moment_1 集合竞价）
+D:\software\anaconda3\python.exe main.py --test moment_1
+
+# 测试全部 4 个时刻
+D:\software\anaconda3\python.exe main.py --test all</code></pre>
+    <div class="alert alert-warning">
+        <strong>测试数据已隔离。</strong><code>--test</code> 的结果写进 <code>logs/decisions_test/</code> 并打 <code>"test": true</code> 标记，<strong>不会</strong>污染真实日报、也不会被公众号自动化误发。日报和真实性校验会自动跳过它们。
+    </div>
+
+    <h3>6.4 启动后你会看到什么</h3>
+    <pre><code>============================================================
+ETF T+1 自动交易系统启动
+DeepSeek模型: deepseek-reasoner (R1)
+ETF池数量: 40
+============================================================
+QMT连接成功
+系统就绪，等待交易时刻...
+关键时刻: 09:25 | 10:30 | 12:50 | 14:30</code></pre>
+    <p>然后程序停在这里，每 60 秒检查一次是否到交易时刻。<strong>这是正常的，别关窗口。</strong></p>
+
+    <div class="alert alert-success">
+        程序<strong>只在周一到周五</strong>的 4 个时间点触发，其他时间只是「等待中」。
+    </div>
+</div>
+
+<!-- 一天怎么运转 -->
+<div class="card">
+    <h2>系统一天是怎么运转的</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-time">08:30 — 研报预爬（盘前）</div>
+            <div class="timeline-title">自动备好晨报</div>
+            <div class="timeline-desc">程序自动调用 findtruman 生成当日研报 + ETF 映射，写入 <code>research_morning_*.md</code></div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">09:25 — 集合竞价</div>
+            <div class="timeline-title">moment_1：开盘预判</div>
+            <div class="timeline-desc">读晨报，看开盘价和竞价量能，决定今天买什么。<br><strong>新功能：</strong>此时用<strong>限价单</strong>参与开盘竞价（详见下文）。</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">10:30 — 上午确认</div>
+            <div class="timeline-title">moment_2：验证判断</div>
+            <div class="timeline-desc">开盘 1 小时后验证早盘判断；符合预期加仓，高开低走减仓。AI 会收到一份<strong>「前序执行回顾」</strong>：09:25 到底买了什么、成交了没有、有没有废单（从磁盘读取，重启也不丢）。</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">12:30 — 研报预爬（午后）</div>
+            <div class="timeline-title">自动备好午报</div>
+            <div class="timeline-desc">程序自动生成 <code>research_afternoon_*.md</code>，供午后决策用。</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">12:50 — 午盘转折</div>
+            <div class="timeline-title">moment_3：下午策略</div>
+            <div class="timeline-desc">午休结束，决定下午怎么操作，防范午后跳水。AI 收到的前序回顾已累计 09:25 + 10:30 两次真实执行结果。</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">14:30 — 尾盘最终</div>
+            <div class="timeline-title">moment_4：收尾决策</div>
+            <div class="timeline-desc">收盘前 30 分钟做最后决定，锁定利润、决定过夜仓位。AI 看到 09:25 + 10:30 + 12:50 三次全部执行回顾，不会"失忆"。</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">15:00 — 生成日报</div>
+            <div class="timeline-title">收盘汇总</div>
+            <div class="timeline-desc">生成 Excel 日报 <code>logs/reports/日报_YYYYMMDD.xlsx</code>（今日概览 / 交易指令 / 研报三 Sheet）。</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-time">盘中每 30 分钟</div>
+            <div class="timeline-title">持仓监控预警</div>
+            <div class="timeline-desc">系统每 30 分钟检查持仓，若触发止损/止盈回撤，会弹窗+写 <code>logs/alerts/</code> 提醒你。</div>
+        </div>
+    </div>
+</div>
+
+<!-- 四大新功能 -->
+<div class="card">
+    <h2>四个新功能，专门讲给小白听</h2>
+
+    <h3>① M1 集合竞价限价单（为什么重要）</h3>
+    <p>每天第一笔决策在 09:25，正好是<strong>集合竞价</strong>时段。这个时段柜台<strong>只收「限价单」</strong>（你指定一个价格），不收「市价单」（随行就市）。之前系统在第一笔用了市价单，是某天「废单」的次要原因之一。</p>
+    <p><strong>现在怎么处理：</strong>系统识别到是 09:25 或竞价时段，会<strong>自动把所有买卖转成限价单</strong>挂入开盘竞价。价格取 AI 给的目标价；AI 没给就用「当前价 ±0.2%」争取成交，并限制在 ±10% 内防止被拒。你不需要做任何设置。</p>
+
+    <h3>② 策略净值 / 收益评估（看自己赚没赚）</h3>
+    <p>想知道这段时间 AI 到底帮你赚了多少？有个专门模块，从真实成交记录重建你的资产曲线，并和「沪深300ETF」基准对比。</p>
+    <pre><code># 评估全部历史（自动判断能否连 QMT / 用缓存 / 用演示数据）
+D:\software\anaconda3\python.exe strategy/evaluator.py
+
+# 只看最近 30 天
+D:\software\anaconda3\python.exe strategy/evaluator.py --days 30
+
+# 强制用演示数据（离线验证，结果无实盘意义）
+D:\software\anaconda3\python.exe strategy/evaluator.py --mode demo</code></pre>
+    <p>跑完生成：</p>
+    <table>
+        <thead><tr><th>文件</th><th>内容</th></tr></thead>
+        <tbody>
+            <tr><td><code>logs/eval/index.html</code></td><td>可视化仪表盘（净值曲线、收益、回撤、夏普、胜率、对比基准）</td></tr>
+            <tr><td><code>logs/eval/equity.csv</code></td><td>每日净值（现金+持仓市值）、收益率、回撤</td></tr>
+            <tr><td><code>logs/eval/trades.csv</code></td><td>每笔真实成交 + 已实现盈亏（FIFO）</td></tr>
+            <tr><td><code>logs/eval/summary.json</code></td><td>累计收益 / 年化 / 最大回撤 / 夏普 / 胜率 等指标</td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-info">
+        <strong>当前说明：</strong>因为目前真实日志里都是演练/废单，还没有真实成交，所以净值图会是一条直线（演示模式）。等交易通道恢复正常、跑出真实成交后，用 <code>--mode qmt</code> 就能看到真实收益曲线。
+    </div>
+
+    <h3>③ findtruman 开盘前预爬（前面第 5 步已讲）</h3>
+    <p>就是「08:30 / 12:30 自动把研报备好」，属于「你不用管」的自动化，这里不再重复。</p>
+
+    <h3>④ 研报 → ETF 映射（前面第 5 步已讲）</h3>
+    <p>就是「把研报里的行业词自动翻译成具体 ETF 代码喂给 AI」，也属于自动化，不再重复。</p>
+
+    <h3>⑤ 多轮 prompt 传递（让 AI 记得自己前面干了啥）</h3>
+    <p>这是很多新手最容易忽略、但<strong>最影响真实收益</strong>的一点。</p>
+    <p>AI 每次被调用都是「失忆」的——它<strong>不知道</strong>自己 09:25 下了什么单、10:30 成交了没有、有没有废单。如果 10:30 / 12:50 / 14:30 的 prompt 里不带前面的结果，AI 就等于每次从零开始瞎猜，可能重复下单、或对一个已经废单的指令反复纠结。</p>
+    <p><strong>现在怎么处理：</strong>系统会自动从磁盘读取<strong>今天所有更早时刻</strong>的 <code>logs/decisions/*.json</code>（里面同时存了 AI 的决策和真实执行结果），拼成一份<strong>「前序执行回顾」</strong>文本块，注入到每一个后续时刻的 prompt 里：</p>
+    <ul style="padding-left: 20px; margin: 10px 0;">
+        <li>10:30 的 prompt → 带上 <strong>09:25</strong> 的真实执行（买了啥 / 成交✅ / 挂单🔵 / 未成交❌ / 跳过⏭️）</li>
+        <li>12:50 的 prompt → 带上 <strong>09:25 + 10:30</strong> 两次</li>
+        <li>14:30 的 prompt → 带上 <strong>09:25 + 10:30 + 12:50</strong> 三次</li>
+    </ul>
+    <div class="alert alert-success">
+        <strong>为什么读磁盘而不是读内存？</strong>因为程序可能被你手动分段跑（比如 <code>--test all</code> 一个一个来），或中途重启过。读磁盘能保证<strong>不管怎么跑、重启几次，前面时刻的上下文都不丢</strong>。而且只取<strong>当天</strong>的记录，不会把上周的尘封日志翻出来。
+    </div>
+</div>
+
+<!-- AI 决策 JSON -->
+<div class="card">
+    <h2>AI 决策长什么样（不用懂，看着玩）</h2>
+    <p>AI 返回的是一段「结构化文字」（JSON），程序直接解析它来下单。你看个大概意思就行：</p>
+    <pre><code>{
+    "buy_orders": [
+        {
+            "etf_code": "512480.SH",   // 买哪只（半导体ETF）
+            "action": "开盘买入",
+            "position_ratio": 0.35,    // 占总资金 35%
+            "stop_loss": -0.08,        // 跌 8% 止损
+            "reason": "半导体板块资金流入明显"
+        }
+    ],
+    "sell_orders": [ ... ],             // 卖哪只、减多少
+    "overnight_position_plan": { "target_ratio": 0.5 }  // 过夜留 50% 仓位
+}</code></pre>
+    <div class="alert alert-info">
+        <strong>仓位规则（AI 的「性格」）：</strong>主力第 1 名 35–40%、第 2 名 25–30%、第 3 名 15–20%，低于 15% 不买；单只硬上限 50%。
+    </div>
+</div>
+
+<!-- 看日志 -->
+<div class="card">
+    <h2>怎么看结果和日志</h2>
+
+    <h3>10.1 实时日志</h3>
+    <p>程序运行时所有信息都打印在命令行窗口，同时写进：</p>
+    <pre><code>D:\策略\etf_trading_system\logs\trading.log</code></pre>
+
+    <h3>10.2 决策记录</h3>
+    <p>每次 AI 决策后保存一份 JSON 到：</p>
+    <pre><code>D:\策略\etf_trading_system\logs\decisions\</code></pre>
+    <p>文件名格式：<code>moment_1_20260727_092500.json</code>（时刻_日期_时间），里面是 AI 的决策 + 执行结果。记事本可打开。</p>
+
+    <h3>10.3 研报文件</h3>
+    <pre><code>D:\策略\etf_trading_system\logs\research\
+├── research_morning_2026-07-27.md    # 08:30 自动预爬（或 WorkBuddy 09:00 生成）
+└── research_afternoon_2026-07-27.md  # 12:30 自动预爬（或 WorkBuddy 12:45 生成）</code></pre>
+
+    <h3>10.4 Prompt 存档（每次发给 AI 的完整内容）</h3>
+    <p>每次问 AI，程序都把完整内容存下来，方便你复查 AI 到底看到了什么：</p>
+    <pre><code>D:\策略\etf_trading_system\logs\prompts\</code></pre>
+    <ul>
+        <li><code>.txt</code> — 人能读的格式（时间、模型、System/User 全文、AI 回复、token）</li>
+        <li><code>.json</code> — 同样内容的结构化格式（含错误信息）</li>
+    </ul>
+
+    <h3>10.5 净值评估与预警</h3>
+    <pre><code>D:\策略\etf_trading_system\logs\eval\     # ② 净值评估产物（index.html 等）
+D:\策略\etf_trading_system\logs\alerts\   # 盘中触发止损/止盈时写的预警</code></pre>
+
+    <h3>10.6 日报（Excel）</h3>
+    <pre><code>D:\策略\etf_trading_system\logs\reports\日报_YYYYMMDD.xlsx</code></pre>
+    <p>三个 Sheet：今日概览 / 交易指令汇总 / 研报搜索结果。</p>
+
+    <h3>10.7 关键日志速查</h3>
+    <table>
+        <thead><tr><th>日志里看到</th><th>意思</th></tr></thead>
+        <tbody>
+            <tr><td><code>QMT连接成功</code></td><td>连上 miniQMT，正常</td></tr>
+            <tr><td><code>QMT连接失败</code></td><td>miniQMT 没开/没登录，查第 3 步</td></tr>
+            <tr><td><code>调用DeepSeek: model=deepseek-reasoner</code></td><td>正在用默认 AI 决策</td></tr>
+            <tr><td><code>API调用失败: 402</code></td><td>DeepSeek 余额不足，去充值</td></tr>
+            <tr><td><code>买入: 512480.SH 1500股</code></td><td>已下单买入</td></tr>
+            <tr><td><code>[研报预爬] ... 已预爬写入</code></td><td>开盘前自动备好了研报</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 排错 -->
+<div class="card">
+    <h2>出错了怎么办（排错指南）</h2>
+
+    <div class="alert alert-success">
+        <strong>首选排错工具：一键自检脚本。</strong>遇到「连不上 / 废单 / 不知道账号登没登录」，先跑它：
+        <pre><code>D:\software\anaconda3\python.exe diagnose_qmt.py</code></pre>
+        它会依次：① 连接 QMT → ② 查账户资金/持仓（任何时段都能验证账号是否登录）→ ③ 交易时段内下 1 笔极小测试单 → ④ 明确告诉你「通道正常 / 废单 / 账号没登录」。比瞎猜快得多。
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 启动后显示「QMT连接失败」？</div>
+        <div class="faq-a">1. 确认开的是 <strong>miniQMT</strong>（XtMiniQmt.exe）不是完整版；2. 确认已登录；3. 确认 .env 的 QMT_PATH 指向 <code>userdata_mini</code>；4. 确认账号填对。仍不行就跑 <code>diagnose_qmt.py</code>。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 显示「API调用失败: 402 Insufficient Balance」？</div>
+        <div class="faq-a">DeepSeek 余额不足，去 <a href="https://platform.deepseek.com/" target="_blank">platform.deepseek.com</a> 充值几块钱。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 显示「ModuleNotFoundError: No module named 'xtquant'」？</div>
+        <div class="faq-a">xtquant 找不到。检查 <code>trading/qmt_client.py</code> 顶部的路径列表是否指向你 QMT 实际的 <code>bin.x64\Lib\site-packages</code>。它在 QMT 安装目录里，pip 装不了。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 程序一直「等待交易时刻...」不动？</div>
+        <div class="faq-a">正常！只在周一到周五的 09:25/10:30/12:50/14:30 触发。想立刻验证用 <code>python main.py --test moment_1</code>。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 必须用 Anaconda 的 Python 吗？</div>
+        <div class="faq-a">不一定，但<strong>必须是 Python 3.11 或更低</strong>。因为 xtquant 只支持 3.6~3.11。3.12+ 会报错。Anaconda 自带 3.11，所以推荐。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 买入/卖出显示「废单」？</div>
+        <div class="faq-a">废单 = 本地拿到了序号、但券商柜台实际没记录。最常见根因：<strong>QMT 交易账号没在客户端登录</strong>（行情连接 ≠ 交易连接）。跑 <code>diagnose_qmt.py</code>，看它第 ② 步「账户资金」能否查到——查不到就是账号没登录；查到了还废单，多半是账号不属于当前 QMT 环境。解决：打开 XtMiniQmt.exe 在客户端里登录交易账号。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 模拟交易和实盘的区别？</div>
+        <div class="faq-a"><code>settings.py</code> 里 <code>QMT_SIMULATE = True</code> 表示模拟（假钱，100 万）。实际是否走真实通道，看你登录 QMT 用的是模拟还是真实账号。建议先用模拟账号测试，确认 AI 决策合理后再考虑实盘（改 <code>QMT_SIMULATE = False</code>）。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Q: 能在手机上运行吗？</div>
+        <div class="faq-a">不能。依赖 QMT 终端和 Python，只能在 Windows 电脑上跑。</div>
+    </div>
+</div>
+
+<!-- 文件结构 -->
+<div class="card">
+    <h2>项目文件结构（当前真实样子）</h2>
+    <div class="file-tree">
+<span class="dir">etf_trading_system/</span>
+├── <span class="file">main.py</span>                  <span class="comment"># 主程序入口，运行这个</span>
+├── <span class="file">diagnose_qmt.py</span>          <span class="comment"># QMT 通道一键自检（排错用）</span>
+├── <span class="file">.env</span>                     <span class="comment"># 配置（API Key、QMT账号等）</span>
+├── <span class="file">requirements.txt</span>          <span class="comment"># Python 依赖列表</span>
+│
+├── <span class="dir">config/</span>
+│   ├── <span class="file">settings.py</span>           <span class="comment"># 系统配置（ETF池、风控、交易时刻）</span>
+│   └── <span class="file">etf_mapping.py</span>        <span class="comment"># 【新】行业词→ETF 映射规则表</span>
+│
+├── <span class="dir">ai/</span>
+│   └── <span class="file">deepseek_client.py</span>    <span class="comment"># 调用 DeepSeek AI 的客户端（三种后端）</span>
+│
+├── <span class="dir">trading/</span>
+│   └── <span class="file">qmt_client.py</span>         <span class="comment"># 连 QMT、拉行情、下单（含竞价窗口判断）</span>
+│
+├── <span class="dir">strategy/</span>
+│   ├── <span class="file">executor.py</span>           <span class="comment"># 解析 AI 决策 JSON，执行买卖（含 M1 限价单）</span>
+│   └── <span class="file">evaluator.py</span>         <span class="comment"># 【新】净值/收益评估模块</span>
+│
+├── <span class="dir">search/</span>                    <span class="comment"># 研报获取与映射</span>
+│   ├── <span class="file">research_provider.py</span>  <span class="comment"># 【新】研报提供器（findtruman优先 + 预爬 + 映射）</span>
+│   ├── <span class="file">iris_scraper.py</span>      <span class="comment"># 【新】findtruman 结构化研报爬虫</span>
+│   ├── <span class="file">research_mapping.py</span>  <span class="comment"># 【新】研报→ETF 映射扫描</span>
+│   ├── <span class="file">research_scraper.py</span>  <span class="comment"># 研报网页解析（备用）</span>
+│   └── <span class="file">market_data.py</span>       <span class="comment"># 行情数据工具</span>
+│
+├── <span class="dir">prompts/</span>
+│   ├── <span class="file">base.py</span>               <span class="comment"># Prompt 公共部分（AI 人格/仓位规则）</span>
+│   ├── <span class="file">moment_1_opening.py/.txt</span>   <span class="comment"># 09:25 集合竞价 Prompt（含限价单说明）</span>
+│   ├── <span class="file">moment_2_morning.py/.txt</span>   <span class="comment"># 10:30 上午确认</span>
+│   ├── <span class="file">moment_3_noon.py/.txt</span>      <span class="comment"># 12:50 午盘转折</span>
+│   └── <span class="file">moment_4_closing.py/.txt</span>  <span class="comment"># 14:30 尾盘最终</span>
+│
+├── <span class="dir">utils/</span>
+│   ├── <span class="file">logger.py</span>             <span class="comment"># 日志配置</span>
+│   ├── <span class="file">report_generator.py</span>   <span class="comment"># 生成 Excel 日报</span>
+│   └── <span class="file">decision_status.py</span>   <span class="comment"># 判断今日是否有真实决策（公众号真实性校验）</span>
+│
+└── <span class="dir">logs/</span>                      <span class="comment"># 运行后自动生成</span>
+    ├── <span class="file">trading.log</span>           <span class="comment"># 实时日志</span>
+    ├── <span class="dir">decisions/</span>             <span class="comment"># 真实决策 JSON（定时模式产生）</span>
+    ├── <span class="dir">decisions_test/</span>        <span class="comment"># --test 预演数据（带 test:true）</span>
+    ├── <span class="dir">research/</span>              <span class="comment"># 研报（08:30/12:30 预爬 或 WorkBuddy 生成）</span>
+    ├── <span class="dir">prompts/</span>               <span class="comment"># 每次发给 AI 的 Prompt 存档</span>
+    ├── <span class="dir">reports/</span>               <span class="comment"># Excel 日报</span>
+    ├── <span class="file">eval/</span>                 <span class="comment"># 【新】净值评估产物（index.html 等）</span>
+    ├── <span class="dir">alerts/</span>                <span class="comment"># 【新】盘中预警</span>
+    ├── <span class="dir">wechat/</span>                <span class="comment"># 公众号草稿（自动化 15:30 产出）</span>
+    └── <span class="file">daily_trades_*.json</span>   <span class="comment"># 【新】当日已用交易笔数（跨进程持久化）</span>
+    </div>
+</div>
+
+<!-- 公众号 -->
+<div class="card">
+    <h2>公众号自动发文（草稿箱模式）</h2>
+    <p>交易日 <strong>15:30</strong>，WorkBuddy 自动化会基于当日日报+研报，自动生成一篇「ETF 每日复盘」文章，上传到你的公众号<strong>草稿箱</strong>。</p>
+    <div class="alert alert-warning">
+        <strong>为什么是「草稿箱」不是「直接群发」？</strong>个人/未认证订阅号没有群发接口权限（会返回 <code>48001</code>）。草稿箱接口对所有号开放，所以自动化只负责「写稿+上传草稿」，群发需你登录 <code>mp.weixin.qq.com</code> 后台手动点「发表」。要彻底自动群发需认证公众号。
+    </div>
+    <div class="alert alert-info">
+        <strong>真实性校验：</strong>自动化第 0 步会检查今日是否有<strong>真实决策</strong>。若当天只跑过 <code>--test</code> 预演、无真实决策，会<strong>自动暂停发文</strong>，避免把演练当真实复盘发出去。
+    </div>
+</div>
+
+<!-- 快速清单 -->
+<div class="card">
+    <h2>快速启动清单（收藏用）</h2>
+    <div class="alert alert-success">
+        <strong>每次运行：</strong>
+        <ol style="margin: 8px 0 0 20px;">
+            <li>打开 <code>XtMiniQmt.exe</code>，登录账号</li>
+            <li>打开命令行，执行：<br>
+                <code>cd D:\策略\etf_trading_system</code><br>
+                <code>D:\software\anaconda3\python.exe main.py</code></li>
+            <li>等着，程序在 09:25 / 10:30 / 12:50 / 14:30 自动触发（研报 08:30 / 12:30 已自动备好）</li>
+        </ol>
+    </div>
+    <div class="alert alert-danger">
+        <strong>绝对不要做：</strong>
+        <ul style="margin: 8px 0 0 20px;">
+            <li>没测试过就上实盘</li>
+            <li>关掉 miniQMT 窗口（程序断线）</li>
+            <li>关掉命令行窗口（程序停止）</li>
+            <li>用 Python 3.12+ 运行（xtquant 不支持）</li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <p>ETF AI 自动交易系统 — 小白完整运行教程（2026-07-27 重写）</p>
+    <p style="margin-top: 8px;">⚠️ 以上内容由 AI 基于公开信息整理生成，仅供参考，不构成任何投资建议或个股推荐。投资有风险，决策需谨慎。</p>
+</div>
+
+</div>
+
+</body>
+</html>

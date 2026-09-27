@@ -1,0 +1,22 @@
+# 密钥与本地配置（绝不提交）
+.env
+.env.local
+*.key
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# WorkBuddy 工具内部状态
+.workbuddy/
+
+# 运行日志与临时产物
+logs/
+*.log

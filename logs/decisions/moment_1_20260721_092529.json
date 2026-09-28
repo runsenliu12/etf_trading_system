@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-07-21T09:25:29.839618",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "decision": {
+    "market_overview": {
+      "today_judgment": "高开低走预期，市场情绪中性偏弱，量能不足，警惕诱多",
+      "tradable_score": 35,
+      "main_force_intention": "出货为主，高开板块量能不足，主力借高开派发，低开板块无承接，整体观望"
+    },
+    "sell_orders": [],
+    "buy_orders": [],
+    "empty_position_decision": {
+      "should_empty": true,
+      "reason": "当前空仓，市场高开但量能不足，板块分化，无明确主线，主力意图不明，风险大于机会，空仓等待更确定信号",
+      "what_to_wait": "等待大盘放量突破或恐慌性杀跌后企稳，出现板块联动且量能真实放大的机会再进场"
+    },
+    "opening_30min_plan": {
+      "if_rally": "不追，高开低走概率大，观察量能是否持续放大，若放量突破则轻仓参与最强板块",
+      "if_drop": "不抄底，等待止跌信号如放量V反或双底确认，关注抗跌板块",
+      "if_sideways": "观望，等待方向选择，不参与横盘震荡",
+      "key_watch": [
+        "上证50ETF量能是否持续放大",
+        "半导体ETF能否维持强势",
+        "北向资金开盘后流向"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "半导体、有色金属、上证50，但量能不足，持续性存疑",
+      "weakest_today": "消费、医药、新能源，低开且无承接，弱势明显",
+      "most_watch": "半导体ETF，高开量能相对真实，若开盘后放量上攻可轻仓参与",
+      "to_avoid": "消费、医药、新能源，弱势板块，资金流出，回避"
+    },
+    "risk_warnings": [
+      "高开诱多陷阱，尤其是量能不足的高开板块",
+      "若追高被套，最大亏损可能达3%",
+      "今天绝对不能追高开超过1%且量能不足的ETF"
+    ],
+    "key_reminder": "量能不足不追高，空仓等待最安全，宁可错过不做错。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "errors": [],
+    "executed": false
+  }
+}

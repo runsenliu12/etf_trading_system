@@ -1,0 +1,222 @@
+{
+  "timestamp": "2026-07-29T14:30:51.840764",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "test": false,
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "放量温和上涨",
+      "my_performance": "全天无成交，持仓未动。未及时抓住游戏、中概互联等强势品种，持仓中半导体设备大跌浮亏严重未止损，属于被动等待，不够果断。",
+      "today_pnl_summary": "持仓市值261万，整体浮亏约-1.5%（主要来自半导体设备-8.31%和黄金-2.58%），但其他持仓微利对冲，今日总盈亏约-3.8万。",
+      "lessons_learned": "弱势股必须及时止损，不能因为浮亏大而犹豫；强势品种尾盘应果断上车跟主力，宁可追高不可踏空。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "真翘尾（温和放量回升）",
+      "tail_volume": "尾盘放量",
+      "main_force_intention": "主力尾盘抢筹布局明天，尤其跨境互联网和游戏传媒方向资金持续流入。",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "",
+      "tomorrow_open_impact": "尾盘放量翘尾，明天大概率高开，尤其强势板块可能延续。"
+    },
+    "today_bought_locked": [],
+    "main_force_tracking": {
+      "top_etf": "159792.SZ",
+      "top_etf_name": "港股通互联网ETF",
+      "main_force_evidence": "全天成交4149万手，涨幅4.21%，量价齐升，尾盘继续放量，主力资金持续净流入，板块内联动性强，是今日最核心的进攻方向。",
+      "ranked_etfs": [
+        {
+          "rank": "1",
+          "etf_code": "159792.SZ",
+          "main_force_score": 95,
+          "reason": "量能最大（4149万手），涨幅4.21%，尾盘继续放量，主力资金全天持续流入，板块联动（中概互联、港股汽车跟涨）。"
+        },
+        {
+          "rank": "2",
+          "etf_code": "513050.SH",
+          "main_force_score": 90,
+          "reason": "成交2602万手，涨幅3.01%，尾盘同步放量，与159792共振，中概互联龙头效应明显。"
+        },
+        {
+          "rank": "3",
+          "etf_code": "159869.SZ",
+          "main_force_score": 85,
+          "reason": "涨幅5.78%领涨全场，量能818万手属于放量，尾盘维持高位，主力资金集中做多游戏赛道。"
+        }
+      ],
+      "overnight_advice": "过夜仓位优先配给主力排名前3的ETF，即159792、513050、159869，主力在买入的过夜才安心。"
+    },
+    "sellable_positions": [
+      {
+        "etf_code": "159516.SZ",
+        "can_sell": true,
+        "current_pnl_pct": -8.31,
+        "today_trend": "全天放量暴跌-3.06%，尾盘弱势横盘，无反弹迹象，主力出货明显。",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0.697,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:50",
+        "reason": "跌幅超8%且今日放量破位，主力资金持续流出，半导体设备板块弱势，不应持有过夜。必须止损。"
+      },
+      {
+        "etf_code": "518880.SH",
+        "can_sell": true,
+        "current_pnl_pct": -2.58,
+        "today_trend": "全天缩量微跌-0.11%，走势平淡，无资金关注。",
+        "action": "尾盘减仓一半",
+        "order_type": "market",
+        "sell_price": 8.392,
+        "sell_ratio": 0.5,
+        "sell_deadline": "14:50",
+        "reason": "黄金作为防御品种在强势市场中表现不佳，尾盘无资金流入，减仓释放资金用于加仓强势品种。"
+      }
+    ],
+    "overnight_position_plan": {
+      "target_ratio": 50,
+      "current_ratio": 26,
+      "need_reduce": false,
+      "reduce_amount": 0,
+      "hold_etfs": [
+        {
+          "etf_code": "159792.SZ",
+          "main_force_rank": 1,
+          "hold_ratio": 20,
+          "reason": "全天主力资金最集中，尾盘抢筹明显，港股互联网方向明天预期高开。",
+          "overnight_risk": "中",
+          "tomorrow_expectation": "高开1-2%",
+          "tomorrow_action_plan": "高开超2%减仓一半，低开1%以内加仓"
+        },
+        {
+          "etf_code": "513050.SH",
+          "main_force_rank": 2,
+          "hold_ratio": 15,
+          "reason": "中概互联龙头，与159792共振，尾盘放量，明天溢价概率高。",
+          "overnight_risk": "中",
+          "tomorrow_expectation": "高开1-2%",
+          "tomorrow_action_plan": "高开超2%减仓1/3，低开1%持有"
+        },
+        {
+          "etf_code": "159869.SZ",
+          "main_force_rank": 3,
+          "hold_ratio": 10,
+          "reason": "游戏ETF今日领涨，尾盘强势，板块有AI游戏催化，明天延续概率大。",
+          "overnight_risk": "高",
+          "tomorrow_expectation": "高开2%以上",
+          "tomorrow_action_plan": "高开超3%减仓一半，低开则止损"
+        },
+        {
+          "etf_code": "512170.SH",
+          "main_force_rank": 0,
+          "hold_ratio": 1,
+          "reason": "医疗ETF走势健康，小幅盈利，持有不动。",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "平开",
+          "tomorrow_action_plan": "跌破0.322止损"
+        },
+        {
+          "etf_code": "512400.SH",
+          "main_force_rank": 0,
+          "hold_ratio": 10,
+          "reason": "有色金属ETF今天涨幅1.73%，资源品有支撑，持有为主。",
+          "overnight_risk": "中",
+          "tomorrow_expectation": "平开或小幅高开",
+          "tomorrow_action_plan": "如放量跌破1.75减仓"
+        }
+      ],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "",
+        "tomorrow_watch": ""
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "159792.SZ",
+      "main_force_rank": 1,
+      "entry_price": 0.619,
+      "order_type": "market",
+      "position_ratio": 0.2,
+      "entry_deadline": "14:50",
+      "reason": "主力排名第1，全天放量上涨4.21%，尾盘继续放量，抢筹布局明天，跟随主力加仓。",
+      "overnight_risk": "中"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "高开",
+      "confidence": 70,
+      "key_factors": [
+        "今日尾盘放量翘尾",
+        "外盘中概股隔夜大概率续涨",
+        "市场情绪偏热"
+      ],
+      "if_gap_up": "高开1%以内持有，高开2%以上减仓强势品种1/3锁定利润",
+      "if_gap_down": "低开1%以内可加仓159792；低开超2%则止损减仓",
+      "watch_list": [
+        "159792.SZ（港股互联网风向标）",
+        "513050.SH（中概互联）",
+        "159869.SZ（游戏板块延续性）"
+      ],
+      "black_swan_risk": "今夜美股中概股突然大跌，或中美关系突发利空，将导致明天低开。"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": false,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大的风险是明天低开，尤其是游戏ETF高位获利盘涌出。",
+      "如果明天跳空低开2%以上，最大亏损约5万（约0.5%总资产）。",
+      "尾盘绝不能做的一件事是买入弱势半导体设备ETF抄底。"
+    ],
+    "key_reminder": "尾盘真翘尾，跟上主力过夜；弱势破位果断砍，不犹豫不侥幸。",
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0.697,
+        "reason": "跌幅超8%且今日放量破位，主力资金持续流出，半导体设备板块弱势，不应持有过夜。必须止损。"
+      },
+      {
+        "etf_code": "518880.SH",
+        "action": "尾盘减仓一半",
+        "order_type": "market",
+        "sell_ratio": 0.5,
+        "sell_price": 8.392,
+        "reason": "黄金作为防御品种在强势市场中表现不佳，尾盘无资金流入，减仓释放资金用于加仓强势品种。"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159792.SZ",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 0.619,
+        "position_ratio": 0.2,
+        "stop_loss": 0,
+        "reason": "主力排名第1，全天放量上涨4.21%，尾盘继续放量，抢筹布局明天，跟随主力加仓。"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [
+      {
+        "etf_code": "159516.SZ",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "518880.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "159792.SZ",
+        "reason": "当日有效交易笔数已达上限(3)"
+      }
+    ],
+    "errors": []
+  }
+}

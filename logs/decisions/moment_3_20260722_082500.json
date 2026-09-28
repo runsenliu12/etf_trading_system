@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-07-22T08:25:00.895749",
+  "moment": "moment_3",
+  "moment_name": "午盘转折决策",
+  "decision": {
+    "morning_verdict": {
+      "market_type": "单边上涨",
+      "volume_quality": "放量健康",
+      "main_force_action": "主力上午持续吸筹，以科技板块为核心放量拉升，成交量较昨日明显放大，量价配合良好，说明主力资金真金白银进场做多。",
+      "retail_behavior": "散户上午追涨意愿较强，体现在创业板、科创50等活跃品种成交量放大，但尚未出现极端狂热。",
+      "trap_type": "无陷阱，上午走势真实性强，主攻方向明确。"
+    },
+    "noon_news_impact": {
+      "has_major_news": "false",
+      "news_summary": "无重大消息。",
+      "impact_direction": "无消息",
+      "afternoon_impact": "下午大概率延续上午趋势。",
+      "hk_market_reference": "港股午盘平稳，恒指微涨，对A股无额外影响。"
+    },
+    "afternoon_prediction": {
+      "direction": "延续上午趋势",
+      "confidence": 80,
+      "key_reasons": [
+        "上午放量单边上涨，主力资金持续流入",
+        "科技板块领涨效应强，赚钱效应扩散",
+        "午间无利空消息"
+      ],
+      "volume_expectation": "下午放量",
+      "danger_time": "14:00-14:30",
+      "v_reversal_probability": "低（15%），上午量价健康，反转概率小。"
+    },
+    "holdings_decision": [],
+    "new_positions_afternoon": {
+      "allow_new": "true",
+      "max_ratio": 20,
+      "opportunities": [
+        {
+          "etf_code": "159995.SZ",
+          "buy_condition": "下午13:00开盘后15分钟内，价格不低于1.317且成交量继续放大",
+          "buy_timing": "13:00-13:15",
+          "order_type": "market",
+          "buy_price": 1.317,
+          "position_ratio": 10,
+          "stop_loss": 1.26,
+          "overnight_risk": "低，板块强势，但尾盘可能有获利回吐",
+          "reason": "芯片ETF上午涨停，量能充足，下午若继续放量，则确立强势，可轻仓参与。"
+        },
+        {
+          "etf_code": "588000.SH",
+          "buy_condition": "下午13:00开盘后继续放量上涨，价格站稳2.016以上",
+          "buy_timing": "13:00-13:15",
+          "order_type": "market",
+          "buy_price": 2.016,
+          "position_ratio": 10,
+          "stop_loss": 1.9,
+          "overnight_risk": "低，科创板资金活跃",
+          "reason": "科创50ETF上午涨超11%，领涨宽基，下午大概率强者恒强。"
+        }
+      ],
+      "if_no_opportunity": "如果下午开盘后缩量或冲高回落，则放弃开仓，等待明日。"
+    },
+    "reverse_repo_advice": {
+      "suggest": "false",
+      "reason": "建议下午如有确定性机会，可轻仓参与，无需锁定资金。"
+    },
+    "tail_market_preview": {
+      "prediction": "拉升后横盘",
+      "tail_risk": "尾盘获利回吐导致小幅回落",
+      "overnight_advice": "保持轻仓位（不超过20%），若尾盘回落可适当减仓",
+      "preparation": "关注科技板块封板情况和成交量变化。"
+    },
+    "risk_alerts": [
+      "追高强弩之末的品种（如已经涨停的ETF）",
+      "如果下午14:30后突然跳水，立即止损",
+      "下午绝对不能做空（融券）或逆势加仓弱势品种"
+    ],
+    "key_reminder": "顺势而为，强者恒强，错过比做错更可惜，但仓位必须控制在20%以内。",
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "159995.SZ",
+        "action": "13:00-13:15",
+        "order_type": "market",
+        "buy_price": 1.317,
+        "position_ratio": 10,
+        "stop_loss": 1.26,
+        "reason": "芯片ETF上午涨停，量能充足，下午若继续放量，则确立强势，可轻仓参与。"
+      },
+      {
+        "etf_code": "588000.SH",
+        "action": "13:00-13:15",
+        "order_type": "market",
+        "buy_price": 2.016,
+        "position_ratio": 10,
+        "stop_loss": 1.9,
+        "reason": "科创50ETF上午涨超11%，领涨宽基，下午大概率强者恒强。"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

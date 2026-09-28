@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-07-22T08:24:21.799054",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "decision": {
+    "market_overview": {
+      "today_judgment": "真强势延续，科技主线明确，全天看涨",
+      "tradable_score": 91,
+      "main_force_intention": "主力在科技方向积极吸筹拉升，竞价放量高开，资金从防御板块转向成长科技，意图做多科技创新主线"
+    },
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "159819.SZ",
+        "etf_name": "人工智能ETF",
+        "sector": "科技",
+        "today_open": 1.881,
+        "open_change_pct": 7.68,
+        "open_volume_quality": "真实放量（持续堆积，匹配量6397403）",
+        "sector_3days": "科技板块近3日持续走强，今日竞价进一步放量高开，趋势强劲，延续性高",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 2.005,
+        "position_ratio": 0.3,
+        "stop_loss": 1.881,
+        "take_profit": 3.0,
+        "max_hold_days": 5,
+        "confidence": 90,
+        "reason": "信息面：Kimi K3发布、WAIC开幕、ASML上调指引，多重利好催化AI；技术面：竞价放量高开7.68%，板块联动强（芯片、科创50同步大涨），趋势确立；行业轮动：资金从防御转向科技，强者恒强"
+      }
+    ],
+    "empty_position_decision": {
+      "should_empty": false,
+      "reason": "市场强势，科技主线明确，放量高开，机会大于风险，空仓踏空等于亏损",
+      "what_to_wait": "不等待，直接入场"
+    },
+    "opening_30min_plan": {
+      "if_rally": "持有人工智能ETF，若放量突破今日高点可考虑加仓至40%",
+      "if_drop": "若回踩不破止损价1.881则持有，跌破则止损离场；急跌后企稳可轻仓补仓",
+      "if_sideways": "横盘整理则持有观察，等待方向选择，突破箱体上沿加仓，下沿减仓",
+      "key_watch": [
+        "人工智能ETF竞价量能是否持续",
+        "芯片ETF是否封死涨停维持板块热度",
+        "创业板指能否站稳3680点"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "科技（半导体、芯片、人工智能、5G、通信），受Kimi K3、WAIC、美日韩芯片股大涨多重催化",
+      "weakest_today": "银行、红利、消费，资金流出，防御属性遭弃",
+      "most_watch": "人工智能ETF（159819），逻辑最直接，涨幅合理，量能真实",
+      "to_avoid": "银行ETF、红利ETF、煤炭ETF，逆势下跌，主力出货"
+    },
+    "risk_warnings": [
+      "高开低走陷阱：若科技股冲高回落，需严格执行止损",
+      "最大亏损约5%",
+      "今天绝对不能逆势做空科技"
+    ],
+    "key_reminder": "科技当道，强者恒强，顺势而为，敢赚敢砍！"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

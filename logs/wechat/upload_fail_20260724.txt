@@ -1,0 +1,16 @@
+2026-07-24 15:30 自动化执行记录：草稿上传失败
+
+状态：
+- 文章已生成：logs/wechat/article_20260724.md（标题：韩股熔断、全球科技股大跌，主力却尾盘抢筹这只ETF？）
+- 封面已生成：D:\wechat_covers\cover_20260724.png（备份 logs/wechat/covers/cover_20260724.png）
+- 上传草稿箱失败
+
+失败原因：
+- 微信API返回 40164: invalid ip 113.102.237.235 not in whitelist
+- 本机公网IP已从 113.102.239.65 漂移为 113.102.237.235（动态IP），新IP未在公众号后台白名单。
+
+解决办法：
+1. 登录 mp.weixin.qq.com → 设置与开发 → 基本配置 → IP白名单，添加 113.102.237.235
+   （建议同时保留旧IP；家宽动态IP会经常变，最好把常见网段都加上）
+2. 加白后重跑上传命令：
+   node "C:/Users/admin/.workbuddy/skills/wechat-toolkit/scripts/publisher/publish.js" "D:\策略\etf_trading_system\logs\wechat\article_20260724.md" lapis

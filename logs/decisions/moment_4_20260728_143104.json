@@ -1,0 +1,234 @@
+{
+  "timestamp": "2026-07-28T14:31:04.917296",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "test": false,
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "放量下跌（结构性分化：科技暴跌，消费防御走强）",
+      "my_performance": "全天未做任何交易，持仓被动亏损，未及时止损半导体设备",
+      "today_pnl_summary": "亏损约-0.5%（持仓市值200万，加权亏损约-2.5%，但仓位20%，整体亏损约-0.5%）",
+      "lessons_learned": "科技股放量暴跌时，持仓必须第一时间止损，不能因为仓位轻就犹豫"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "真翘尾（防御板块温和放量回升，科技继续弱势）",
+      "tail_volume": "尾盘放量（防御板块量能持续）",
+      "main_force_intention": "主力调仓：从科技转向消费/金融/防御，尾盘抢筹酒、银行等",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "",
+      "tomorrow_open_impact": "防御板块明天大概率高开，科技板块可能继续低开"
+    },
+    "today_bought_locked": [],
+    "main_force_tracking": {
+      "top_etf": "512690.SH",
+      "top_etf_name": "酒ETF",
+      "main_force_evidence": "全天涨幅+2.38%，成交量1835万手为近期最大，持续在均线上方运行，尾盘放量创日内新高，主力资金净流入明显",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "512690.SH",
+          "main_force_score": 85,
+          "reason": "放量上涨+板块联动（消费ETF、旅游ETF同步走强）+逆势独立行情，主力持续买入"
+        },
+        {
+          "rank": 2,
+          "etf_code": "512800.SH",
+          "main_force_score": 75,
+          "reason": "银行ETF涨1.37%，量能1548万手，大单托底，防御属性强"
+        },
+        {
+          "rank": 3,
+          "etf_code": "159928.SZ",
+          "main_force_score": 70,
+          "reason": "消费ETF涨1.36%，与酒ETF联动，量能放大，主力抄底消费"
+        }
+      ],
+      "overnight_advice": "过夜仓位优先配给主力排名前3的ETF：酒ETF、银行ETF、消费ETF。主力在买的过夜才安心，现有持仓全部卖出"
+    },
+    "sellable_positions": [
+      {
+        "etf_code": "159516.SZ",
+        "can_sell": true,
+        "current_pnl_pct": -5.15,
+        "today_trend": "全天放量暴跌，开盘0.749，最高0.775，现价0.721，在均价线下方，尾盘无反弹迹象",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:50",
+        "reason": "亏损-5.15%触发无条件止损，且科技板块放量暴跌无企稳信号，隔夜风险极大，必须立即卖出"
+      },
+      {
+        "etf_code": "512170.SH",
+        "can_sell": true,
+        "current_pnl_pct": -0.98,
+        "today_trend": "全天缩量下跌，开盘0.320，现价0.320，在均价线附近，但板块整体弱势",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:50",
+        "reason": "全天走势疲软，主力排名靠后，且上午卖出指令未成交，尾盘重新执行清仓，降低过夜风险"
+      },
+      {
+        "etf_code": "512400.SH",
+        "can_sell": true,
+        "current_pnl_pct": -1.54,
+        "today_trend": "全天放量下跌-2.42%，开盘1.743，现价1.733，盘中最低1.720，弱势震荡",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:50",
+        "reason": "有色金属板块今日跌幅大，且无主力流入迹象，隔夜可能继续下行，止损离场"
+      },
+      {
+        "etf_code": "518880.SH",
+        "can_sell": true,
+        "current_pnl_pct": -2.55,
+        "today_trend": "全天下跌-1.26%，开盘8.391，现价8.395，在均价线下方，尾盘无走强信号",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:50",
+        "reason": "黄金ETF今日下跌与避险逻辑背离，主力资金流出，隔夜风险高，清仓"
+      }
+    ],
+    "overnight_position_plan": {
+      "target_ratio": 0.2,
+      "current_ratio": 0.2,
+      "need_reduce": true,
+      "reduce_amount": 0.0,
+      "hold_etfs": [
+        {
+          "etf_code": "512690.SH",
+          "main_force_rank": 1,
+          "hold_ratio": 0.2,
+          "reason": "全天主力资金最集中，逆势放量大涨，尾盘翘尾，明天大概率高开溢价",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "高开或平开（高开概率>70%），若高开2%内持有，高开超2%减仓1/2锁定利润",
+          "tomorrow_action_plan": "高开2%以上：卖出一半；高开1%-2%：持有观察；低开1%以内：可加仓至3成；低开超2%：止损"
+        }
+      ],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "尾盘有强势品种可布局，主力资金明确流入酒ETF，过夜20%仓位风险可控",
+        "tomorrow_watch": ""
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "512690.SH",
+      "main_force_rank": 1,
+      "entry_price": 0.43,
+      "order_type": "market",
+      "position_ratio": 0.2,
+      "entry_deadline": "14:50",
+      "reason": "酒ETF全天主力资金净流入，放量突破均线，尾盘翘尾，明天有溢价预期，跟随主力布局过夜",
+      "overnight_risk": "低"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "高开",
+      "confidence": 70,
+      "key_factors": [
+        "今日防御板块强势，主力资金调仓明显",
+        "酒ETF尾盘放量创日内新高，多头信心充足",
+        "科技股暴跌后明日可能惯性低开，但消费板块有独立行情"
+      ],
+      "if_gap_up": "若酒ETF高开2%以内，持有过夜仓位；高开超2%，卖出一半锁定利润；高开超3%，全部卖出",
+      "if_gap_down": "若低开1%以内，观察是否放量，若缩量可加仓至3成；低开超2%，止损离场",
+      "watch_list": [
+        "512690.SH酒ETF：防御龙头，明天能否延续强势",
+        "512800.SH银行ETF：主力排名第2，可做备选",
+        "159928.SZ消费ETF：与酒ETF联动，验证消费复苏逻辑"
+      ],
+      "black_swan_risk": "今晚美股科技股继续暴跌可能拖累A股科技，但对消费板块影响有限"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": false,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大风险：科技股明日继续暴跌可能拖累市场情绪，但消费防御板块相对独立",
+      "如果明天跳空低开2%以上，酒ETF跌幅可能超2%，亏损约40000元（总资产0.4%）",
+      "尾盘绝对不能做的一件事：追涨科技股抄底，没有任何反转信号"
+    ],
+    "key_reminder": "主力调仓，跟随喝酒；清仓科技，轻仓过夜。",
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0,
+        "reason": "亏损-5.15%触发无条件止损，且科技板块放量暴跌无企稳信号，隔夜风险极大，必须立即卖出"
+      },
+      {
+        "etf_code": "512170.SH",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0,
+        "reason": "全天走势疲软，主力排名靠后，且上午卖出指令未成交，尾盘重新执行清仓，降低过夜风险"
+      },
+      {
+        "etf_code": "512400.SH",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0,
+        "reason": "有色金属板块今日跌幅大，且无主力流入迹象，隔夜可能继续下行，止损离场"
+      },
+      {
+        "etf_code": "518880.SH",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0,
+        "reason": "黄金ETF今日下跌与避险逻辑背离，主力资金流出，隔夜风险高，清仓"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "512690.SH",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 0.43,
+        "position_ratio": 0.2,
+        "stop_loss": 0,
+        "reason": "酒ETF全天主力资金净流入，放量突破均线，尾盘翘尾，明天有溢价预期，跟随主力布局过夜"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [
+      {
+        "etf_code": "159516.SZ",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512170.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512400.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "518880.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512690.SH",
+        "reason": "日交易笔数已达上限(3)"
+      }
+    ],
+    "errors": []
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "timestamp": "2026-07-30T14:30:52.920691",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "test": false,
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "结构性分化：消费酒银行放量上涨，科技半导体通信放量暴跌，上证微跌，深创大跌",
+      "my_performance": "未执行任何交易指令，导致上午的买入意图（酒、消费、银行）和卖出意图（半导体设备、医疗、有色、中概、黄金）均未执行，错失调仓机会，持仓被动承受科技大跌",
+      "today_pnl_summary": "今日持仓盈亏：半导体设备ETF亏损约10.81%，医疗ETF微盈0.57%，中概互联微盈0.78%，黄金ETF亏2.93%，港股互联网微盈0.14%，有色ETF因成本异常无法计算。整体亏损约7.5万元",
+      "lessons_learned": "限价单或交易笔数限制不能成为不作为的借口，当信号明确时应果断以市价单执行，宁可滑点也要确保成交"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "横盘（平淡收场）",
+      "tail_volume": "缩量",
+      "main_force_intention": "观望等待，强势板块未继续拉升，弱势板块未反弹，主力无强烈方向意图",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "",
+      "tomorrow_open_impact": "尾盘平静，明天开盘大概率延续今日风格：消费酒银行可能小幅高开，科技继续承压"
+    },
+    "today_bought_locked": [],
+    "main_force_tracking": {
+      "top_etf": "512690.SH",
+      "top_etf_name": "酒ETF",
+      "main_force_evidence": "全天放量3.21%，成交量2300万手，远超近期均值，全天持续在均价线上方运行，尾盘虽横盘但未跌破均线，板块内白酒股集体走强。北向资金全天净流入消费板块约30亿。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "512690.SH",
+          "main_force_score": 85,
+          "reason": "放量上涨+3.21%，全天均价线上方，资金持续流入，消费防御属性获主力青睐"
+        },
+        {
+          "rank": 2,
+          "etf_code": "159928.SZ",
+          "main_force_score": 80,
+          "reason": "放量上涨+2.50%，消费ETF跟随酒，尾盘缩量但守住涨幅，主力温和吸筹"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512800.SH",
+          "main_force_score": 75,
+          "reason": "银行ETF+2.32%，放量上涨，高股息防御属性，资金从科技切换至银行"
+        }
+      ],
+      "overnight_advice": "过夜仓位优先配给酒ETF、消费ETF、银行ETF，主力在买且走势健康"
+    },
+    "sellable_positions": [
+      {
+        "etf_code": "159516.SZ",
+        "can_sell": true,
+        "current_pnl_pct": -10.81,
+        "today_trend": "放量暴跌，全天弱势，尾盘未反弹，收在最低点附近",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0.678,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:55",
+        "reason": "亏损超过10%，全天放量暴跌，科技板块资金流出明显，尾盘无任何翘尾迹象，不能让如此大的亏损过夜，明天低开风险极大"
+      },
+      {
+        "etf_code": "512400.SH",
+        "can_sell": true,
+        "current_pnl_pct": null,
+        "today_trend": "窄幅震荡，微跌0.23%，缩量，走势平淡",
+        "action": "尾盘减仓80%",
+        "order_type": "market",
+        "sell_price": 1.764,
+        "sell_ratio": 0.8,
+        "sell_deadline": "14:55",
+        "reason": "成本异常无法准确评估盈亏，有色板块整体偏弱，该ETF日均成交不高，流动性欠佳，大部分仓位减掉以降低不确定性，保留少量观察"
+      },
+      {
+        "etf_code": "512170.SH",
+        "can_sell": true,
+        "current_pnl_pct": 0.57,
+        "today_trend": "微跌0.31%，缩量横盘，医疗板块抗跌",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_price": null,
+        "sell_ratio": 0,
+        "sell_deadline": null,
+        "reason": "盈亏很小，医疗ETF今天走势平稳，尾盘缩量，属于正常调整，且医药板块有研报支撑，可持有等待反弹"
+      },
+      {
+        "etf_code": "513050.SH",
+        "can_sell": true,
+        "current_pnl_pct": 0.78,
+        "today_trend": "上涨0.62%，放量，中概股表现相对抗跌，尾盘横盘",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_price": null,
+        "sell_ratio": 0,
+        "sell_deadline": null,
+        "reason": "小幅盈利，中概互联有独立逻辑，港股跟随A股消费但科技端受美股影响小，今天逆势收红，可持有"
+      },
+      {
+        "etf_code": "518880.SH",
+        "can_sell": true,
+        "current_pnl_pct": -2.93,
+        "today_trend": "下跌0.36%，缩量，黄金价格近期高位震荡，尾盘横盘",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_price": null,
+        "sell_ratio": 0,
+        "sell_deadline": null,
+        "reason": "亏损不到3%且在可接受范围内，黄金作为避险资产，在全球风险未消除的背景下有持有价值，尾盘缩量企稳，暂不止损"
+      },
+      {
+        "etf_code": "159792.SZ",
+        "can_sell": true,
+        "current_pnl_pct": 0.14,
+        "today_trend": "下跌0.32%，缩量，港股互联网微跌，尾盘横盘",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_price": null,
+        "sell_ratio": 0,
+        "sell_deadline": null,
+        "reason": "盈亏接近持平，港股互联网整体走势不算弱，缩量调整，且中概互联ETF收红，同板块有支撑，可持有"
+      }
+    ],
+    "overnight_position_plan": {
+      "target_ratio": 0.15,
+      "current_ratio": 0.16,
+      "need_reduce": true,
+      "reduce_amount": 0.06,
+      "hold_etfs": [
+        {
+          "etf_code": "512690.SH",
+          "main_force_rank": 1,
+          "hold_ratio": 0.05,
+          "reason": "全天主力资金最集中，放量上涨3.21%，尾盘横盘无抛压，明天有望延续上涨",
+          "overnight_risk": "中",
+          "tomorrow_expectation": "小幅高开+1%-2%",
+          "tomorrow_action_plan": "若高开超2%则卖一半；若小幅高开则持有观察，跌破今日均价线止盈"
+        },
+        {
+          "etf_code": "512800.SH",
+          "main_force_rank": 3,
+          "hold_ratio": 0.04,
+          "reason": "银行ETF涨幅2.32%，放量，高股息防御，尾盘无异常，适合过夜",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "平开或小高开+0.5%",
+          "tomorrow_action_plan": "持有，若低开超1%则止损，否则待涨"
+        }
+      ],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "",
+        "tomorrow_watch": ""
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "512690.SH",
+      "main_force_rank": 1,
+      "entry_price": 0.45,
+      "order_type": "market",
+      "position_ratio": 0.15,
+      "entry_deadline": "14:50",
+      "reason": "酒ETF全天主力资金第一，放量上涨，尾盘虽横盘但无抛压，明天消费板块有望延续强势，尾盘是布局明天的最后机会",
+      "overnight_risk": "中"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "上证平开或小幅低开，消费酒银行高开，科技低开",
+      "confidence": 65,
+      "key_factors": [
+        "隔夜美股纳斯达克期货表现",
+        "消费板块今日涨幅是否透支",
+        "科技股是否出现超跌反弹意愿",
+        "人民币汇率走势"
+      ],
+      "if_gap_up": "若高开超2%则卖一半仓位获利，剩余移动止盈",
+      "if_gap_down": "若低开超2%且放量，立即止损所有仓位；若低开1%内缩量可持有观察",
+      "watch_list": [
+        "512690.SH酒ETF能否放量突破今日高点",
+        "159928.SZ消费ETF是否跟涨",
+        "159516.SZ半导体设备是否继续下挫，决定是否回补"
+      ],
+      "black_swan_risk": "中东局势升级或美股暴跌拖累港股，可能引发A股低开"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大的风险是科技股明天继续暴跌拖累指数，但持仓已清仓科技且配置消费防御，相对可控",
+      "如果明天跳空低开2%以上，最大亏损约15万元（当前总资产1%）",
+      "尾盘绝对不能做的一件事是追高已经暴涨的弱势股或赌科技反弹"
+    ],
+    "key_reminder": "尾盘铁律：止损不止盈，强势板块勇敢跟，弱势板块果断砍，过夜仓位留强势。",
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0.678,
+        "reason": "亏损超过10%，全天放量暴跌，科技板块资金流出明显，尾盘无任何翘尾迹象，不能让如此大的亏损过夜，明天低开风险极大"
+      },
+      {
+        "etf_code": "512400.SH",
+        "action": "尾盘减仓80%",
+        "order_type": "market",
+        "sell_ratio": 0.8,
+        "sell_price": 1.764,
+        "reason": "成本异常无法准确评估盈亏，有色板块整体偏弱，该ETF日均成交不高，流动性欠佳，大部分仓位减掉以降低不确定性，保留少量观察"
+      },
+      {
+        "etf_code": "512170.SH",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_ratio": 0,
+        "sell_price": null,
+        "reason": "盈亏很小，医疗ETF今天走势平稳，尾盘缩量，属于正常调整，且医药板块有研报支撑，可持有等待反弹"
+      },
+      {
+        "etf_code": "513050.SH",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_ratio": 0,
+        "sell_price": null,
+        "reason": "小幅盈利，中概互联有独立逻辑，港股跟随A股消费但科技端受美股影响小，今天逆势收红，可持有"
+      },
+      {
+        "etf_code": "518880.SH",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_ratio": 0,
+        "sell_price": null,
+        "reason": "亏损不到3%且在可接受范围内，黄金作为避险资产，在全球风险未消除的背景下有持有价值，尾盘缩量企稳，暂不止损"
+      },
+      {
+        "etf_code": "159792.SZ",
+        "action": "持有过夜",
+        "order_type": null,
+        "sell_ratio": 0,
+        "sell_price": null,
+        "reason": "盈亏接近持平，港股互联网整体走势不算弱，缩量调整，且中概互联ETF收红，同板块有支撑，可持有"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "512690.SH",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 0.45,
+        "position_ratio": 0.15,
+        "stop_loss": 0,
+        "reason": "酒ETF全天主力资金第一，放量上涨，尾盘虽横盘但无抛压，明天消费板块有望延续强势，尾盘是布局明天的最后机会"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [
+      {
+        "etf_code": "159516.SZ",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512400.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512170.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "513050.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "518880.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "159792.SZ",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512690.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      }
+    ],
+    "errors": []
+  }
+}

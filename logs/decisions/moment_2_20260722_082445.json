@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-07-22T08:24:45.126081",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": "true",
+      "market_real_type": "真强势",
+      "what_was_right": [
+        "科技主线明确，人工智能ETF竞价放量高开7.68%趋势强劲",
+        "资金从防御板块转向成长科技，银行红利消费逆势下跌",
+        "多利好催化（Kimi K3、WAIC、ASML上调指引）支撑科技行情"
+      ],
+      "what_was_wrong": [],
+      "why_wrong": "无错误。9:25判断准确，市场实际走势与预期一致，科技板块放量上攻，弱势板块回落，主力意图明确。"
+    },
+    "current_market_score": {
+      "score": 88,
+      "trend": "比开盘变好",
+      "volume_health": "放量健康",
+      "main_force_action": "持续买入。科技ETF成交活跃，人工智能ETF开盘后放量稳步上行，回踩均价线后再次拉升，板块联动强（芯片、5G、通信同步大涨），主力在科技方向积极做多。",
+      "north_bound_impact": "北向资金预计持续流入，推动科技股进一步走强，支持市场整体强势。"
+    },
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "159819.SZ",
+        "current_price": 2.005,
+        "change_pct": 7.68,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "科技板块整体强势，人工智能ETF领涨，板块效应明显",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 2.005,
+        "position_ratio": 0.3,
+        "stop_loss": 1.881,
+        "take_profit": 3.0,
+        "overnight_risk": "低",
+        "reason": "9:25判断科技主线正确，人工智能ETF走势验证真强势——回踩均价线后放量拉升，量价健康；Kimi K3发布、WAIC开幕等催化持续发酵；强者恒强原则下，趋势确认后果断上车，错过比做错更可惜。"
+      }
+    ],
+    "t1_locked_positions": [],
+    "afternoon_strategy": {
+      "prediction": "延续上午",
+      "suggested_position": 30,
+      "if_rally": "下午若继续放量拉升，持仓不动，让利润奔跑；设置移动止盈，若从最高点回落超3%则考虑减仓。",
+      "if_drop": "下午若出现跳水，关注2.00整数关口和均价线支撑，若放量跌破均价线且无法收回，则盘中考虑止损或减仓；但按趋势大概率延续强势。",
+      "key_time": "14:00-14:30，观察尾盘资金动向，若持续流入则持有，若大幅流出则调整仓位。"
+    },
+    "risk_alerts": [
+      "当前持仓最大风险是人工智能ETF高开后的获利回吐，止损设于1.881（开盘价），潜在亏损约6.2%。",
+      "若下午市场突然变盘，最大亏损为持有30%仓位的止损亏损，约总账户的1.86%。",
+      "上午暂无犯错，但需警惕追高后情绪过热导致的尾盘回落，严格执行止损纪律。"
+    ],
+    "key_reminder": "强者恒强，趋势未破不轻易离场，放量突破果断加仓，止损线就是生命线。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

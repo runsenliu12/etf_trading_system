@@ -1,0 +1,144 @@
+{
+  "timestamp": "2026-07-27T09:26:08.650691",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "test": false,
+  "decision": {
+    "market_overview": {
+      "today_judgment": "震荡偏多，结构性机会在资源品和消费",
+      "tradable_score": 70,
+      "main_force_intention": "主力资金试探性流入有色金属和消费板块，科技股遭弃，整体情绪中性偏谨慎"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "etf_name": "黄金ETF",
+        "holding_days": 3,
+        "can_sell_today": true,
+        "today_open": 8.503,
+        "open_change_pct": 1.41,
+        "current_pnl_pct": -0.63,
+        "action": "持有",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 0,
+        "urgency": "不卖",
+        "reason": "黄金ETF今日高开1.41%，接近成本，但黄金趋势未坏且避险需求仍在，暂持观望，等回本或止损。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "512400.SH",
+      "top_etf_name": "有色金属ETF",
+      "main_force_evidence": "竞价成交量46922手，涨幅1.50%居前，且有色板块受隔夜美股材料板块+1.44%及国内涨价预期支撑，资金流入迹象明显。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "512400.SH",
+          "main_force_score": 85,
+          "reason": "放量高开1.50%，板块联动强，资源品涨价逻辑清晰。"
+        },
+        {
+          "rank": 2,
+          "etf_code": "512690.SH",
+          "main_force_score": 75,
+          "reason": "酒ETF高开0.72%，量196157手，消费复苏预期，但持续性待观察。"
+        },
+        {
+          "rank": 3,
+          "etf_code": "159792.SZ",
+          "main_force_score": 70,
+          "reason": "港股通互联网ETF高开0.70%，量306435手，但外盘中概偏弱，需谨慎。"
+        }
+      ],
+      "priority_rule": "主力在哪里，钱就到哪里。买前3名，回避主力撤离的ETF"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "512400.SH",
+        "etf_name": "有色金属ETF",
+        "sector": "有色金属",
+        "main_force_rank": 1,
+        "today_open": 1.761,
+        "open_change_pct": 1.5,
+        "open_volume_quality": "真实放量（持续堆积）",
+        "sector_3days": "有色金属近3天震荡上行，今日竞价放量高开，趋势延续。",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 1.761,
+        "position_ratio": 0.25,
+        "stop_loss": 1.7,
+        "take_profit": 1.9,
+        "max_hold_days": 2,
+        "confidence": 75,
+        "reason": "主力资金排名第一，竞价放量高开1.50%，受隔夜美股材料板块上涨及国内资源品涨价预期驱动，趋势向好，盈亏比合理。"
+      }
+    ],
+    "empty_position_decision": {
+      "should_empty": false,
+      "reason": "大盘震荡，非全球风险日，有明确主力流入板块，可参与。",
+      "what_to_wait": "不适用"
+    },
+    "opening_30min_plan": {
+      "if_rally": "若大盘持续拉升，持有有色金属ETF，设移动止盈线1.800。",
+      "if_drop": "若大盘跳水，关注有色金属ETF能否守住1.740，跌破则止损。",
+      "if_sideways": "若横盘震荡，持有等待，不操作。",
+      "key_watch": [
+        "有色金属ETF成交量是否持续放大",
+        "大盘前30分钟量能是否配合",
+        "科技股是否企稳"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "有色金属：竞价涨幅+1.50%，量能放大，资源品逻辑支撑。",
+      "weakest_today": "半导体/通信：低开-1%以上，费城半导体暴跌拖累。",
+      "most_watch": "有色金属：关注后续涨价催化剂及资金持续性。",
+      "to_avoid": "半导体、芯片、通信等科技板块，外盘压力大。"
+    },
+    "risk_warnings": [
+      "高开低走陷阱：有色金属若冲高回落，必须止损。",
+      "最大可能亏损：若止损，亏损约3.5%（-0.061/1.761）。",
+      "今天绝对不能做的一件事：追涨半导体等科技股。"
+    ],
+    "key_reminder": "追涨有色要带止损，浮盈后移动止盈，别让利润变亏损。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "512400.SH",
+        "volume": 0,
+        "price": 1.761,
+        "order_id": "1082131153",
+        "action": "buy",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082131153",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": null,
+            "filled": false,
+            "traded_volume": 0,
+            "status": "提交失败"
+          },
+          {
+            "order_id": null,
+            "filled": false,
+            "traded_volume": 0,
+            "status": "提交失败"
+          }
+        ]
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-07-21T12:50:48.933862",
+  "moment": "moment_3",
+  "moment_name": "午盘转折决策",
+  "decision": {
+    "morning_verdict": {
+      "market_type": "单边上涨",
+      "volume_quality": "放量健康",
+      "main_force_action": "主力上午在持续吸筹，尤其是科技、半导体、创业板方向，放量推升，真金白银进场，板块联动明显，北向资金大概率流入。",
+      "retail_behavior": "散户上午追涨，尤其是涨幅前列的半导体、芯片、科创50等，成交量放大显示散户跟风积极。",
+      "trap_type": "无陷阱，上午走势真实，放量推升，主力意图明确做多。"
+    },
+    "noon_news_impact": {
+      "has_major_news": "false",
+      "news_summary": "午间无重大消息，搜索结果多为无关内容。",
+      "impact_direction": "中性",
+      "afternoon_impact": "无消息影响，下午大概率延续上午趋势。",
+      "hk_market_reference": "港股午盘表现未提供，但恒生科技ETF上午微跌，参考意义有限。"
+    },
+    "afternoon_prediction": {
+      "direction": "延续上午趋势",
+      "confidence": 80,
+      "key_reasons": [
+        "上午放量推升，主力持续买入，资金面支持。",
+        "科技、半导体等主线明确，板块联动强。",
+        "午间无利空消息，情绪延续。",
+        "市场温度偏热，上涨家数远多于下跌。"
+      ],
+      "volume_expectation": "下午放量",
+      "danger_time": "14:00-14:30",
+      "v_reversal_probability": "20%，上午强势且放量，V型反转概率低，但需警惕尾盘获利回吐。"
+    },
+    "holdings_decision": [],
+    "new_positions_afternoon": {
+      "allow_new": "true",
+      "max_ratio": 20,
+      "opportunities": [
+        {
+          "etf_code": "512480.SH",
+          "buy_condition": "下午开盘后30分钟内继续放量上涨，且价格在均价线上方，不破上午收盘价。",
+          "buy_timing": "13:00-13:30",
+          "position_ratio": 20,
+          "stop_loss": "1.100",
+          "overnight_risk": "中等，半导体涨幅已高，但趋势强劲，过夜风险可控。",
+          "reason": "半导体ETF上午放量领涨，主力资金介入深，下午有望延续强势，可轻仓跟随。"
+        }
+      ],
+      "if_no_opportunity": "如果下午开盘后缩量横盘或回落，则放弃开仓，因为缩量上涨不可持续。"
+    },
+    "reverse_repo_advice": {
+      "suggest": "false",
+      "reason": "当前市场强势，有明确机会，逆回购会错失收益。"
+    },
+    "tail_market_preview": {
+      "prediction": "横盘或小幅拉升",
+      "tail_risk": "尾盘获利盘涌出导致跳水，尤其是涨幅过大的品种。",
+      "overnight_advice": "可持有强势品种过夜，但需设好止盈。",
+      "preparation": "关注下午2:30后量能变化，若缩量则考虑减仓。"
+    },
+    "risk_alerts": [
+      "追高涨幅过大的ETF，如半导体已涨8%，追高风险大。",
+      "如果下午突然放量下跌，立即止损。",
+      "下午绝对不能做的一件事：在2:30后追高买入。"
+    ],
+    "key_reminder": "顺势而为，但勿追高；尾盘警惕获利回吐，控制仓位。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "errors": [],
+    "executed": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "mode": "demo",
+  "eval_start": "2026-06-29",
+  "eval_end": "2026-07-27",
+  "trading_days": 21,
+  "initial_capital": 1000000.0,
+  "final_asset": 1000000.0,
+  "cum_return": 0.0,
+  "annualized_return": 0.0,
+  "max_drawdown": 0.0,
+  "sharpe": 0.0,
+  "win_rate": 0.0,
+  "rounds": 0,
+  "wins": 0,
+  "realized_pnl": 0.0,
+  "n_buy_orders": 0,
+  "n_sell_orders": 0,
+  "benchmark_cum_return": 0.0313,
+  "excess_return": -0.0313,
+  "generated_at": "2026-07-27 22:58:23",
+  "note": "demo 模式下价格为合成随机游走，仅验证管线，不代表真实收益；真实评估请用 --mode qmt（需 QMT 已登录）。"
+}

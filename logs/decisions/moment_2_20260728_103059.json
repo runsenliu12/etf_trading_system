@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-07-28T10:30:59.372774",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "test": false,
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": "true",
+      "market_real_type": "假弱势（防御品种和中概强势，科技成长真弱势）",
+      "what_was_right": [
+        "判断中概互联会涨，正确",
+        "判断医疗、有色、黄金、半导体设备会跌，正确"
+      ],
+      "what_was_wrong": [
+        "买入中概互联未执行，踏空涨幅"
+      ],
+      "need_correction": "立即市价买入中概互联ETF，同时撤销挂单并市价卖出医疗、有色、黄金、半导体设备"
+    },
+    "current_market_score": {
+      "score": 50,
+      "trend": "比开盘变差（科技继续杀跌，但防御和中概走强）",
+      "volume_health": "正常平量（中概放量，科技放量下跌，地产缩量上涨）",
+      "main_force_action": "主力从科技成长板块持续流出，流入中概互联、房地产、银行等防御/政策方向，中概互联放量明显",
+      "north_bound_impact": "北向资金预计净流出科技成长，净流入银行地产，对中概互联影响中性偏正"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "512170.SH",
+        "can_sell_today": true,
+        "current_price": 0.32,
+        "current_pnl_pct": -0.98,
+        "today_high": 0.322,
+        "today_low": 0.318,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "医疗ETF弱势，开盘后持续在均价线下方运行，量能萎缩，主力流出，止损出场，腾出资金跟随主力"
+      },
+      {
+        "etf_code": "512400.SH",
+        "can_sell_today": true,
+        "current_price": 1.734,
+        "current_pnl_pct": -1.48,
+        "today_high": 1.757,
+        "today_low": 1.731,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "有色ETF持续下跌，跌破开盘价，量价配合差，资源股走弱，主力流出明显，及时止损避免更大亏损"
+      },
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": true,
+        "current_price": 8.395,
+        "current_pnl_pct": -2.55,
+        "today_high": 8.404,
+        "today_low": 8.382,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "黄金ETF大跌2.55%，跌破5日线，国际金价承压，A股避险情绪未扩散，主力出逃，立即止损"
+      },
+      {
+        "etf_code": "159516.SZ",
+        "can_sell_today": true,
+        "current_price": 0.755,
+        "current_pnl_pct": -0.68,
+        "today_high": 0.775,
+        "today_low": 0.742,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "半导体设备ETF冲高回落，现跌1.69%，科技板块整体弱势，主力持续流出，反弹无力，止损离场"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "513050.SH",
+      "top_etf_name": "中概互联ETF",
+      "main_force_evidence": "中概互联ETF开盘后持续放量上涨，量比超过2，成交额居跨境ETF首位，与隔夜中概股反弹形成联动，北向资金通过港股通流入中概权重股，主力资金持续净买入",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "513050.SH",
+          "main_force_score": 85,
+          "reason": "放量上涨，主力资金净流入明显，跨境ETF不受国内流动性收紧影响，与海外中概共振"
+        },
+        {
+          "rank": 2,
+          "etf_code": "512200.SH",
+          "main_force_score": 70,
+          "reason": "房地产ETF逆势涨1.75%，政策预期下资金低吸，但量能一般，主力强度中等"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512980.SH",
+          "main_force_score": 65,
+          "reason": "传媒ETF涨1.70%，但量能不大，反弹性质，主力试探性买入"
+        }
+      ],
+      "priority_rule": "上午确认后，只加仓主力排名前3的ETF。主力在哪就跟到哪，不要另辟蹊径"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "513050.SH",
+        "main_force_rank": 1,
+        "current_price": 1.103,
+        "change_pct": 1.19,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "跨境ETF全线上涨，中概互联领涨，板块效应强",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.103,
+        "position_ratio": 0.35,
+        "stop_loss": 1.048,
+        "take_profit": 1.213,
+        "overnight_risk": "中（取决于美股中概股夜盘）",
+        "reason": "中概互联ETF主力排名第1，开盘后持续放量上涨，量价配合健康，站上均价线，与隔夜中概股反弹形成联动，资金集中买入。A股科技杀跌，中概成为避险+补涨方向，下午有望延续。35%仓位跟随主力。"
+      },
+      {
+        "etf_code": "512200.SH",
+        "main_force_rank": 2,
+        "current_price": 1.165,
+        "change_pct": 1.75,
+        "volume_trend": "逐步缩量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "房地产板块逆势走强，政策利好预期支撑",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.165,
+        "position_ratio": 0.25,
+        "stop_loss": 1.107,
+        "take_profit": 1.282,
+        "overnight_risk": "低",
+        "reason": "房地产ETF主力排名第2，逆势上涨，政策面有支撑（行业研报增持），虽然缩量但价格稳步抬高，主力资金未撤，可作为防御+进攻配置。25%仓位。"
+      },
+      {
+        "etf_code": "512980.SH",
+        "main_force_rank": 3,
+        "current_price": 0.777,
+        "change_pct": 1.7,
+        "volume_trend": "平量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "传媒板块反弹，游戏ETF也上涨，有一定板块效应",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.777,
+        "position_ratio": 0.15,
+        "stop_loss": 0.738,
+        "take_profit": 0.855,
+        "overnight_risk": "低",
+        "reason": "传媒ETF主力排名第3，今日涨幅靠前，且传媒板块整体反弹，资金试探性流入。虽然量能一般，但趋势向好，小仓位参与博反弹。15%仓位。"
+      }
+    ],
+    "t1_locked_positions": [],
+    "afternoon_strategy": {
+      "prediction": "延续分化：科技继续承压，中概和地产维持强势，指数可能低位震荡",
+      "suggested_position": 60,
+      "if_rally": "如果下午大盘反弹，中概互联和房地产有望领涨，可继续加仓中概至40%，但需注意量能配合",
+      "if_drop": "如果下午跳水，区分性质：若为科技股拖累，中概和地产抗跌则持有；若中概和地产也跟跌，则减仓至30%",
+      "key_time": "14:00，观察中概互联是否继续放量站上1.11"
+    },
+    "risk_alerts": [
+      "中概互联受美股夜盘影响，若今晚中概股回调，明日可能低开",
+      "当前最大亏损约-3%（若刚买入的中概和地产下跌，止损位可控）",
+      "上午挂单卖出未及时转为市价单，导致弱势持仓未出，现已纠正"
+    ],
+    "key_reminder": "10:40是分水岭：真强势已确立，果断止损弱势，加仓主力方向，下午还有3小时机会"
+  },
+  "execution_result": {
+    "sell_orders": [
+      {
+        "etf_code": "512170.SH",
+        "volume": 0,
+        "price": 0.321,
+        "order_id": "1098926605",
+        "action": "sell",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1098926605",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [
+      {
+        "etf_code": "512400.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "518880.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "159516.SZ",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "513050.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512200.SH",
+        "reason": "日交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512980.SH",
+        "reason": "日交易笔数已达上限(3)"
+      }
+    ],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

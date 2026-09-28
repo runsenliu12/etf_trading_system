@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-07-27T12:50:39.127837",
+  "moment": "moment_3",
+  "moment_name": "午盘转折决策",
+  "test": false,
+  "decision": {
+    "morning_verdict": {
+      "market_type": "单边上涨",
+      "volume_quality": "放量健康",
+      "main_force_action": "主力上午持续吸筹，尤其是在新能源、医药、港股科技板块，放量推升，显示资金明确流入。半导体和煤炭板块主力出货，但整体市场主力做多意愿强。",
+      "retail_behavior": "散户追涨情绪较高，从涨幅靠前的ETF成交量放大可见，但部分资金可能仍持观望态度，因为煤炭等防御板块下跌显示风格切换。",
+      "trap_type": "无陷阱，上午走势真实反映了主力做多意图，未见异常拉高或量价背离。"
+    },
+    "noon_news_impact": {
+      "has_major_news": "true",
+      "news_summary": "1. 美伊停火，原油暴跌超5%，避险情绪缓和。2. 港股科网股大涨，小米涨超7%，恒生科技涨1.69%。3. 美股期货全线拉升，纳指期货涨1.2%。4. 黄金现货跳涨1.33%至4106美元。",
+      "impact_direction": "利好",
+      "afternoon_impact": "美伊停火改善风险偏好，叠加港股科网股走强、美股期货反弹，下午A股风险偏好有望进一步提升，科技和新能源板块可能继续受到资金追捧。",
+      "hk_market_reference": "港股科网股大涨对A股同板块形成正面映射，特别是港股通互联网ETF和中概互联ETF有望跟涨。"
+    },
+    "afternoon_prediction": {
+      "direction": "延续上午趋势",
+      "confidence": 85,
+      "key_reasons": [
+        "上午单边上涨放量健康，主力资金持续流入。",
+        "午间消息整体偏多，美伊停火提振风险偏好。",
+        "港股科网股大涨为A股相关板块提供支撑。",
+        "新能源、医药等主线明确，资金集中。"
+      ],
+      "volume_expectation": "放量",
+      "best_time_to_act": "13:00-13:30追趋势，或14:00回调加仓。",
+      "v_reversal_probability": 10,
+      "判断依据": "上午走势扎实，没有诱多迹象，午间利好支持下，V型反转概率低。"
+    },
+    "holdings_decision": [
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": "true",
+        "morning_pnl_pct": -1.6,
+        "morning_trend": "弱势",
+        "vs_avg_line": "下方",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_price": 0,
+        "action_timing": "无",
+        "sell_ratio": 0,
+        "reason": "黄金ETF上午下跌，但国际金价因美元走弱跳涨1.33%，预计下午有望反弹，当前亏损-1.6%未触及-5%止损线，继续持有观察，尾盘再决定。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "can_sell_today": "false",
+        "morning_pnl_pct": -0.63,
+        "morning_trend": "一般",
+        "vs_avg_line": "下方",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_price": 0,
+        "action_timing": "无",
+        "sell_ratio": 0,
+        "reason": "有色金属ETF今日不可卖出，上午微跌但美元走弱利好金属价格，且有色板块有修复预期，继续持有。"
+      },
+      {
+        "etf_code": "512170.SH",
+        "can_sell_today": "false",
+        "morning_pnl_pct": -0.36,
+        "morning_trend": "强势",
+        "vs_avg_line": "上方",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_price": 0,
+        "action_timing": "无",
+        "sell_ratio": 0,
+        "reason": "医疗ETF上午涨2.22%，量价配合好，虽成本略高但趋势强劲，符合加仓方向，但今日不可卖出，继续持有享受涨幅。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "159792.SZ",
+      "top_etf_name": "港股通互联网ETF",
+      "main_force_evidence": "上午涨幅3.31%排名第一，成交量24021280手，量能显著放大，午间港股科网股大涨进一步催化，主力资金持续流入迹象明显。",
+      "ranked_etfs": [
+        {
+          "rank": "1",
+          "etf_code": "159792.SZ",
+          "main_force_score": 95,
+          "reason": "上午领涨，量能充足，午间港股科网大涨强化趋势，主力资金集中买入。"
+        },
+        {
+          "rank": "2",
+          "etf_code": "515030.SH",
+          "main_force_score": 88,
+          "reason": "新能源汽车ETF涨2.43%，宁德时代等龙头股带动，板块资金流入明显，新能源作为主线持续性强。"
+        },
+        {
+          "rank": "3",
+          "etf_code": "512170.SH",
+          "main_force_score": 82,
+          "reason": "医疗ETF涨2.22%，量价齐升，医药板块受政策催化，主力吸筹积极。"
+        }
+      ],
+      "priority_rule": "下午开新仓，只认主力前3名。主力没进的ETF下午绝不开仓，宁可错过也不跟杂鱼。"
+    },
+    "new_positions_afternoon": {
+      "allow_new": "true",
+      "max_ratio": 0.2,
+      "opportunities": [
+        {
+          "etf_code": "159792.SZ",
+          "main_force_rank": 1,
+          "buy_condition": "下午开盘后确认不低开，或开盘后小幅回调不破均价线。",
+          "buy_timing": "13:00开盘追入",
+          "order_type": "market",
+          "buy_price": 0.593,
+          "position_ratio": 0.2,
+          "stop_loss": 0.563,
+          "overnight_risk": "港股波动较大，但美伊停火后风险偏好改善，过夜风险可控。",
+          "reason": "港股通互联网ETF上午领涨，午间港股科网股大涨，预计下午将进一步走强。主力资金排名第一，符合买入条件，仓位20%参与。"
+        }
+      ],
+      "if_no_opportunity": "上午市场健康，午间利多，存在明确机会，故不适用。"
+    },
+    "tail_market_preview": {
+      "prediction": "拉升",
+      "tail_risk": "尾盘冲高回落，若涨幅过大可能引发获利盘兑现。",
+      "overnight_advice": "总仓位控制在35%左右，过夜风险不高。",
+      "preparation": "关注14:30后是否出现放量滞涨，若出现则减仓部分盈利仓位。"
+    },
+    "risk_alerts": [
+      "下午追高早盘已大涨的ETF可能面临短线回调风险，应设好止损。",
+      "若下午突然跳水，及时止损港股通互联网ETF，避免深度亏损。",
+      "下午绝对不能做的一件事：无止损追涨半导体、煤炭等弱势板块。"
+    ],
+    "key_reminder": "趋势确认，下午果断上车，不要犹豫。收盘后悔比止损更难受。",
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_ratio": 0,
+        "sell_price": 0,
+        "reason": "黄金ETF上午下跌，但国际金价因美元走弱跳涨1.33%，预计下午有望反弹，当前亏损-1.6%未触及-5%止损线，继续持有观察，尾盘再决定。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_ratio": 0,
+        "sell_price": 0,
+        "reason": "有色金属ETF今日不可卖出，上午微跌但美元走弱利好金属价格，且有色板块有修复预期，继续持有。"
+      },
+      {
+        "etf_code": "512170.SH",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_ratio": 0,
+        "sell_price": 0,
+        "reason": "医疗ETF上午涨2.22%，量价配合好，虽成本略高但趋势强劲，符合加仓方向，但今日不可卖出，继续持有享受涨幅。"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159792.SZ",
+        "action": "13:00开盘追入",
+        "order_type": "market",
+        "buy_price": 0.593,
+        "position_ratio": 0.2,
+        "stop_loss": 0.563,
+        "reason": "港股通互联网ETF上午领涨，午间港股科网股大涨，预计下午将进一步走强。主力资金排名第一，符合买入条件，仓位20%参与。"
+      }
+    ]
+  },
+  "execution_result": {
+    "executed": false,
+    "reason": "非交易时段，所有指令已跳过",
+    "cancelled_pending": 0
+  }
+}

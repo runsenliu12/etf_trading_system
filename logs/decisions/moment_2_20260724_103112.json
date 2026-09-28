@@ -1,0 +1,190 @@
+{
+  "timestamp": "2026-07-24T10:31:12.873509",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "test": false,
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": false,
+      "market_real_type": "真弱势中的结构性反弹",
+      "what_was_right": [
+        "银行ETF防御属性得到验证，开盘至今逆势小幅上涨",
+        "黄金ETF应卖出判断正确"
+      ],
+      "what_was_wrong": [
+        "煤炭ETF预计平开放量走强，但实际上大幅下跌，判断错误",
+        "科技板块预期持续承压，但半导体设备ETF低开高走领涨，科技股出现超跌反弹"
+      ],
+      "need_correction": "煤炭ETF应止损回避，黄金ETF继续卖出；银行ETF维持持有或小幅加仓；半导体设备ETF出现主力资金流入迹象，可轻仓参与反弹"
+    },
+    "current_market_score": {
+      "score": 50,
+      "trend": "比开盘变差",
+      "volume_health": "缩量危险",
+      "main_force_action": "主力资金从周期防御板块（煤炭、有色）流出，部分流入半导体设备等超跌科技板块，但整体进攻意愿不强，属于短线博弈",
+      "north_bound_impact": "北向资金上午净流出约15亿元，对市场形成压力，但科技股反弹显示内资主导"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": true,
+        "current_price": 8.41,
+        "current_pnl_pct": -1.72,
+        "today_high": 8.42,
+        "today_low": 8.396,
+        "vs_avg_line": "下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "立即",
+        "reason": "黄金ETF开盘低开-1.87%后反弹无力，现价仍低于开盘价，量能持续萎缩，主力资金流出贵金属板块。隔夜COMEX黄金大跌2.40%，美元走强，短期趋势向下。持有成本8.557，现亏1.72%，应果断止损避免扩大亏损。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "159516.SZ",
+      "top_etf_name": "半导体设备ETF",
+      "main_force_evidence": "开盘低开1.67%（0.707）后快速拉升翻红，现涨1.53%至0.731，成交量2750万手，居科技类ETF首位。板块内半导体设备个股跟涨，大单资金净流入明显，显示主力资金逆势抄底。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "159516.SZ",
+          "main_force_score": 80,
+          "reason": "低开高走放量，涨1.53%领涨全场，量能是近期均值的2倍以上，主力资金介入迹象明显。"
+        },
+        {
+          "rank": 2,
+          "etf_code": "512800.SH",
+          "main_force_score": 70,
+          "reason": "银行ETF涨幅0.62%虽小，但量能温和放大，防御属性下主力维持配置，但进攻性不足。"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512480.SH",
+          "main_force_score": 65,
+          "reason": "半导体ETF涨0.72%，量能723万手，跟随半导体设备反弹，但整体弹性较弱，板块内部分化。"
+        }
+      ],
+      "priority_rule": "上午确认后，只加仓主力排名前3的ETF。主力在哪就跟到哪，不要另辟蹊径"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "main_force_rank": 1,
+        "current_price": 0.731,
+        "change_pct": 1.53,
+        "volume_trend": "突然放量",
+        "vs_avg_line": "上方",
+        "sector_trend": "半导体设备板块整体反弹，但受外盘科技股拖累，持续性存疑",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.731,
+        "position_ratio": 0.15,
+        "stop_loss": 0.7,
+        "take_profit": 0.8,
+        "overnight_risk": "中",
+        "reason": "主力资金排名第1，开盘低开高走放量突破均价线，显示有主力资金逆势抄底。虽然外盘科技股大跌，但A股半导体设备有独立逻辑（国内设备国产化），且超跌后技术性反弹动能较强。轻仓参与，严格止损。"
+      },
+      {
+        "etf_code": "512800.SH",
+        "main_force_rank": 2,
+        "current_price": 0.808,
+        "change_pct": 0.62,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "上方",
+        "sector_trend": "银行板块整体平稳，个股多数上涨",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.808,
+        "position_ratio": 0.2,
+        "stop_loss": 0.79,
+        "take_profit": 0.83,
+        "overnight_risk": "低",
+        "reason": "主力资金排名第2，银行ETF开盘放量高开后横盘震荡，始终在均价线上方，量能温和。银行板块有中期行业利好，防御属性强，在市场弱势中相对收益确定。今日买入后若明日破位止损可控。"
+      },
+      {
+        "etf_code": "512480.SH",
+        "main_force_rank": 3,
+        "current_price": 1.115,
+        "change_pct": 0.72,
+        "volume_trend": "逐步放量",
+        "vs_avg_line": "上方",
+        "sector_trend": "半导体板块跟随设备反弹，但分化明显",
+        "action": "不买",
+        "order_type": "market",
+        "buy_price": 0,
+        "position_ratio": 0,
+        "stop_loss": 0,
+        "take_profit": 0,
+        "overnight_risk": "高",
+        "reason": "排名第3但涨幅和量能均逊于半导体设备ETF，且板块内部分化，许多个股仍在下跌。买入性价比不高，不如集中仓位于前两名。"
+      }
+    ],
+    "t1_locked_positions": [
+      {
+        "etf_code": "518880.SH",
+        "bought_today": false,
+        "buy_price": 8.557,
+        "current_price": 8.41,
+        "pnl_pct": -1.72,
+        "assessment": "买错了",
+        "tomorrow_plan": "今日已卖出，不再持有",
+        "tomorrow_stop_loss": 0
+      }
+    ],
+    "afternoon_strategy": {
+      "prediction": "震荡",
+      "suggested_position": 35,
+      "if_rally": "如果下午大盘拉升，半导体设备ETF加仓至20%，银行ETF加仓至25%",
+      "if_drop": "如果下午跳水，半导体设备ETF跌破0.720应止损，银行ETF跌破0.800减半；若恐慌性放量下跌，可逆势加仓银行ETF至30%",
+      "key_time": "下午13:30-14:00，观察半导体设备ETF能否守住0.725"
+    },
+    "risk_alerts": [
+      "当前最大风险是半导体设备ETF的反弹能否持续，外盘科技股今晚若继续大跌，明天可能低开吞噬今日涨幅",
+      "如果下午市场继续走弱，银行ETF可能补跌，最大亏损约-2.2%（0.79止损），整体组合亏损可控",
+      "上午错误地相信煤炭ETF会走强，实际大幅下跌，应吸取教训，在弱势中不轻易追高周期资源"
+    ],
+    "key_reminder": "弱势反弹不追高，轻仓博弈半导体；银行防御作底仓，止损纪律不能丢。"
+  },
+  "execution_result": {
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "volume": 0,
+        "price": 8.41,
+        "order_id": "1082323905",
+        "action": "sell",
+        "order_type": "market",
+        "status": "全部成交",
+        "unfilled": true
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "volume": 0,
+        "price": 0.732,
+        "order_id": "1082323906",
+        "action": "buy",
+        "order_type": "market",
+        "status": "全部成交",
+        "unfilled": true
+      },
+      {
+        "etf_code": "512800.SH",
+        "volume": 0,
+        "price": 0.808,
+        "order_id": "1082323907",
+        "action": "buy",
+        "order_type": "market",
+        "status": "全部成交",
+        "unfilled": true
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

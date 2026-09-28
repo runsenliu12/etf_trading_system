@@ -1,0 +1,198 @@
+{
+  "timestamp": "2026-07-28T12:50:53.689010",
+  "moment": "moment_3",
+  "moment_name": "午盘转折决策",
+  "test": false,
+  "decision": {
+    "morning_verdict": {
+      "market_type": "单边下跌",
+      "volume_quality": "放量健康",
+      "main_force_action": "主力上午明显从科技板块（半导体、人工智能、通信）出货，同时流入消费（酒、消费、银行）和房地产等防御性板块。科技板块放量杀跌，通信ETF跌7.35%且量能巨大，半导体ETF跌4.72%，呈现主力集中抛售。而酒ETF涨2.14%放量，银行ETF涨1.12%放量，表明主力在调仓换股。",
+      "retail_behavior": "散户上午追高科技股后遭遇大跌，部分恐慌割肉，部分抄底（如半导体设备ETF上午有大量成交）。从通信ETF放量来看，散户接盘迹象明显。防御板块上涨中散户追涨意愿不强，量能相对温和。",
+      "trap_type": "无陷阱",
+      "reason": "科技股上午是真的放量杀跌，不是诱空；消费金融是真实的资金流入，不是诱多。市场结构清晰，方向明确。"
+    },
+    "noon_news_impact": {
+      "has_major_news": "false",
+      "news_summary": "午间无重大宏观或行业新闻。研报聚合显示游戏、传媒、AI等板块正面情绪较多，但未形成即时冲击。",
+      "impact_direction": "中性",
+      "afternoon_impact": "下午大概率延续上午的分化走势：科技股弱势震荡或继续下探，消费、银行、地产等防御板块维持强势。港股午盘中概互联微涨，对A股科技股情绪略有提振，但传导有限。",
+      "hk_market_reference": "港股恒生科技ETF涨1.04%，中概互联涨0.64%，但恒生ETF平盘，显示港股科技股反弹，但A股科技股上午已大跌，下午可能受此影响出现短暂反弹，但持续性存疑。"
+    },
+    "afternoon_prediction": {
+      "direction": "延续上午趋势",
+      "confidence": 85,
+      "key_reasons": [
+        "科技股上午放量杀跌，主力出货明确，下午难以快速反转",
+        "消费、银行等防御板块上午放量上涨，主力资金持续流入，趋势大概率延续",
+        "午间无重大利好或利空，市场将延续上午的存量博弈格局",
+        "指数（上证跌0.98%，创业板跌5.37%）表明市场整体弱势，资金避险情绪浓厚"
+      ],
+      "volume_expectation": "下午整体量能可能较上午缩量，但科技股可能仍有抛压，防御板块维持温和放量",
+      "best_time_to_act": "13:00-13:30：开盘后观察科技股是否反弹，若反弹可减仓；13:30-14:00：若防御板块回调至均线，可低吸",
+      "v_reversal_probability": 20,
+      "reason": "科技股短期超卖，但主力出货力度大，V型反转需要增量资金入场，概率较低。除非下午有强力政策消息，否则不具备条件。"
+    },
+    "holdings_decision": [
+      {
+        "etf_code": "159516.SZ",
+        "can_sell_today": true,
+        "morning_pnl_pct": -3.65,
+        "morning_trend": "弱势",
+        "vs_avg_line": "下方",
+        "action": "下午清仓",
+        "order_type": "market",
+        "sell_price": 0,
+        "action_timing": "13:00开盘",
+        "sell_ratio": 1.0,
+        "reason": "半导体设备ETF上午放量暴跌3.65%，科技板块整体弱势，主力出货明显。该品种持续承压，下午反弹力度有限，持仓亏损已达2.65%但若继续下跌风险更大，T+1下今日卖出可避免隔夜不确定性。清仓后资金可转向防御品种。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "can_sell_today": true,
+        "morning_pnl_pct": -0.92,
+        "morning_trend": "弱势",
+        "vs_avg_line": "下方",
+        "action": "下午减仓",
+        "order_type": "limit",
+        "sell_price": 1.755,
+        "action_timing": "13:00-14:00",
+        "sell_ratio": 0.5,
+        "reason": "有色金属ETF上午跌1.80%，走势偏弱，且板块资金流出。但亏损幅度尚可，减仓一半降低风险。挂限价单等待反弹至略高于均价线位置（1.755）卖出，避免在低点恐慌抛售。"
+      },
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": true,
+        "morning_pnl_pct": -1.2,
+        "morning_trend": "弱势",
+        "vs_avg_line": "下方",
+        "action": "下午减仓",
+        "order_type": "limit",
+        "sell_price": 8.42,
+        "action_timing": "13:00-14:00",
+        "sell_ratio": 0.5,
+        "reason": "黄金ETF上午跌1.20%，跟随市场下跌，避险属性减弱。叠加全球风险影响，黄金短期承压。减仓一半，挂限价单等反弹至8.420（略高于现价）卖出，保留部分仓位观察。"
+      },
+      {
+        "etf_code": "512170.SH",
+        "can_sell_today": true,
+        "morning_pnl_pct": -0.62,
+        "morning_trend": "一般",
+        "vs_avg_line": "刚好",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_price": 0,
+        "action_timing": "",
+        "sell_ratio": 0,
+        "reason": "医疗ETF上午微跌0.62%，走势相对抗跌，且医药板块有研报支撑（创新药等）。当前持仓成本0.323，现价0.321，亏损不大。下午可能随消费医药板块有回升机会，暂时持有，若下午放量跌破0.320则考虑止损。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "512690.SH",
+      "top_etf_name": "酒ETF",
+      "main_force_evidence": "酒ETF上午涨幅2.14%领涨，成交量1420万手放量，价格突破开盘价并稳定在均价线上方，主力资金持续买入。板块内白酒股普遍走强，显示主力集中做多消费龙头。下午开盘若继续放量上行，则趋势强化。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "512690.SH",
+          "main_force_score": 90,
+          "reason": "酒ETF涨幅最大，成交量放大至1420万手，资金主动买入明显，板块效应强。"
+        },
+        {
+          "rank": 2,
+          "etf_code": "512800.SH",
+          "main_force_score": 85,
+          "reason": "银行ETF涨1.12%，成交量646万手，持续稳定上行，主力护盘或配置行为，属于防御资金首选。"
+        },
+        {
+          "rank": 3,
+          "etf_code": "159928.SZ",
+          "main_force_score": 80,
+          "reason": "消费ETF涨1.06%，成交量345万手，与酒ETF联动，内需消费逻辑受资金追捧。下午有望持续。"
+        }
+      ],
+      "priority_rule": "下午开新仓，只认主力前3名。主力没进的ETF下午绝不开仓，宁可错过也不跟杂鱼"
+    },
+    "new_positions_afternoon": {
+      "allow_new": true,
+      "max_ratio": 0.2,
+      "opportunities": [
+        {
+          "etf_code": "512690.SH",
+          "main_force_rank": 1,
+          "buy_condition": "下午开盘后酒ETF继续放量上涨，且涨幅超过2%时买入；或回调至0.425附近不破0.420则低吸",
+          "buy_timing": "13:00开盘追入或13:30前低吸",
+          "order_type": "market",
+          "buy_price": "0.429",
+          "position_ratio": 0.2,
+          "stop_loss": "0.408",
+          "overnight_risk": "低。酒ETF属于消费龙头，今天逆势走强，过夜风险较小。但需防大盘持续走弱拖累。",
+          "reason": "酒ETF是上午主力资金最集中的方向，涨幅2.14%且量能配合，下午有望延续。大盘弱势下消费防御属性得到强化，值得小仓位跟随主力。止损设-5%控制风险。"
+        }
+      ],
+      "if_no_opportunity": ""
+    },
+    "tail_market_preview": {
+      "prediction": "横盘震荡",
+      "tail_risk": "科技股尾盘可能再次杀跌，拖累指数；防御板块若冲高回落，则市场情绪进一步转弱。",
+      "overnight_advice": "建议总仓位控制在20%以内，以消费银行等防御品种为主，科技股空仓或极轻仓。",
+      "preparation": "下午2:30后若大盘未出现明显反弹，则尾盘可考虑进一步减仓弱势品种。"
+    },
+    "risk_alerts": [
+      "追高尖顶风险：科技股下午可能有技术性反弹，但追高容易被套，不参与。",
+      "扛单不止损风险：持有的半导体设备已跌破成本，下午若继续下跌必须果断止损，不能幻想反弹。",
+      "下午绝对不能做的一件事：科技股反弹时抄底。主力出货未完，反弹是逃命机会不是买点。"
+    ],
+    "key_reminder": "跟随主力，卖出科技，买入消费。下午若酒ETF回调至均线，是上车机会。",
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "action": "下午清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0,
+        "reason": "半导体设备ETF上午放量暴跌3.65%，科技板块整体弱势，主力出货明显。该品种持续承压，下午反弹力度有限，持仓亏损已达2.65%但若继续下跌风险更大，T+1下今日卖出可避免隔夜不确定性。清仓后资金可转向防御品种。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "action": "下午减仓",
+        "order_type": "limit",
+        "sell_ratio": 0.5,
+        "sell_price": 1.755,
+        "reason": "有色金属ETF上午跌1.80%，走势偏弱，且板块资金流出。但亏损幅度尚可，减仓一半降低风险。挂限价单等待反弹至略高于均价线位置（1.755）卖出，避免在低点恐慌抛售。"
+      },
+      {
+        "etf_code": "518880.SH",
+        "action": "下午减仓",
+        "order_type": "limit",
+        "sell_ratio": 0.5,
+        "sell_price": 8.42,
+        "reason": "黄金ETF上午跌1.20%，跟随市场下跌，避险属性减弱。叠加全球风险影响，黄金短期承压。减仓一半，挂限价单等反弹至8.420（略高于现价）卖出，保留部分仓位观察。"
+      },
+      {
+        "etf_code": "512170.SH",
+        "action": "下午持有不动",
+        "order_type": "market",
+        "sell_ratio": 0,
+        "sell_price": 0,
+        "reason": "医疗ETF上午微跌0.62%，走势相对抗跌，且医药板块有研报支撑（创新药等）。当前持仓成本0.323，现价0.321，亏损不大。下午可能随消费医药板块有回升机会，暂时持有，若下午放量跌破0.320则考虑止损。"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "512690.SH",
+        "action": "13:00开盘追入或13:30前低吸",
+        "order_type": "market",
+        "buy_price": "0.429",
+        "position_ratio": 0.2,
+        "stop_loss": "0.408",
+        "reason": "酒ETF是上午主力资金最集中的方向，涨幅2.14%且量能配合，下午有望延续。大盘弱势下消费防御属性得到强化，值得小仓位跟随主力。止损设-5%控制风险。"
+      }
+    ]
+  },
+  "execution_result": {
+    "executed": false,
+    "reason": "非交易时段，所有指令已跳过",
+    "cancelled_pending": 0
+  }
+}

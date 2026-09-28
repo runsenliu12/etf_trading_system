@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-07-24T14:31:23.646829",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "test": false,
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "缩量下跌",
+      "my_performance": "今日无操作，持有黄金ETF浮亏2.05%，未及时止损，被动等待。正确之处在于没有盲目抄底，错误在于未跟随主力方向，持有弱势品种过夜风险较大。",
+      "today_pnl_summary": "今日浮动亏损约19558元（黄金ETF浮亏2.05%）",
+      "lessons_learned": "弱势行情中，持仓必须紧跟主力资金流向，不能在下跌趋势中持有逆势品种过夜，应尽早换成强势板块。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "横盘（平淡收场）",
+      "tail_volume": "缩量",
+      "main_force_intention": "观望等待，部分资金抢筹半导体设备等强势品种",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "无假拉尾盘迹象",
+      "tomorrow_open_impact": "尾盘横盘缩量，明天大概率延续弱势，但半导体设备等强势板块可能高开。"
+    },
+    "today_bought_locked": [],
+    "main_force_tracking": {
+      "top_etf": "159516",
+      "top_etf_name": "半导体设备ETF",
+      "main_force_evidence": "全天逆势放量大涨4.17%，成交量达6197万手，远超其他ETF，量价配合完美，主力资金持续流入。板块内个股联动强势，且英特尔财报利好提振半导体情绪。",
+      "ranked_etfs": [
+        {
+          "rank": "1",
+          "etf_code": "159516",
+          "main_force_score": 95,
+          "reason": "全天涨幅最大、量能最大、资金净流入明确，强势突破均线，主力做多意愿强烈。"
+        },
+        {
+          "rank": "2",
+          "etf_code": "159599",
+          "main_force_score": 80,
+          "reason": "芯片ETF涨幅1.88%，量能配合，跟随半导体设备但强度稍弱，主力资金流入明显。"
+        },
+        {
+          "rank": "3",
+          "etf_code": "512480",
+          "main_force_score": 75,
+          "reason": "半导体ETF涨幅1.63%，成交量较大，板块逻辑一致，主力资金持续流入但涨幅不及设备ETF。"
+        }
+      ],
+      "overnight_advice": "过夜仓位应优先配置主力排名前3的半导体设备ETF、芯片ETF、半导体ETF，尤其半导体设备ETF为主力首选。"
+    },
+    "sellable_positions": [
+      {
+        "etf_code": "518880",
+        "can_sell": true,
+        "current_pnl_pct": -2.05,
+        "today_trend": "全天弱势下行，尾盘继续走低，跌破均价线，放量下跌，走势走弱。",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "sell_deadline": "14:45",
+        "reason": "黄金ETF今日跌幅2.09%，全天缩量下跌，尾盘无反弹，且黄金现货价格下跌，无主力资金支撑。亏损已超2%且走势走弱，应果断止损避免隔夜风险，资金转向半导体设备等强势品种。"
+      }
+    ],
+    "overnight_position_plan": {
+      "target_ratio": 35,
+      "current_ratio": 10,
+      "need_reduce": false,
+      "reduce_amount": 0,
+      "hold_etfs": [
+        {
+          "etf_code": "159516",
+          "main_force_rank": 1,
+          "hold_ratio": 0.35,
+          "reason": "半导体设备ETF全天主力资金大幅流入，涨幅4.17%领涨全场，量能放大，尾盘维持高位，抢筹迹象明显。叠加英特尔财报利好，明天有高开预期。",
+          "overnight_risk": "中",
+          "tomorrow_expectation": "预判高开1-2%，若高开则持有，若低开则观察，跌破止损价离场。",
+          "tomorrow_action_plan": "高开超过2%则减半仓锁定利润；平开或小高开持有；低开1%以内持仓观察，低开超2%则止损。"
+        }
+      ],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "不空仓，因为半导体设备ETF有明确主力资金流入，跟随主力布局，但整体弱势，仓位控制在3.5成以内。",
+        "tomorrow_watch": "关注半导体设备ETF开盘情况，若高开高走则加仓，若低开走弱则止损。"
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "159516",
+      "main_force_rank": 1,
+      "entry_price": 0.749,
+      "order_type": "market",
+      "position_ratio": 0.35,
+      "entry_deadline": "14:48",
+      "reason": "半导体设备ETF全天主力资金持续流入，涨幅4.17%，尾盘维持高位强势，量能充足，主力抢筹意图明确。结合英特尔盘后利好，明天有望延续强势。尾盘市价买入，抢占先手。",
+      "overnight_risk": "中"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "低开（整体市场弱势，但半导体设备可能高开）",
+      "confidence": 70,
+      "key_factors": [
+        "亚太股市今日暴跌（日韩-3%、-5%），情绪传导至A股",
+        "美股科技股大跌，但英特尔盘后大涨，半导体板块有局部利好",
+        "今日A股整体弱势，尾盘无反弹，明天可能惯性下探"
+      ],
+      "if_gap_up": "若半导体设备ETF高开超2%，则先卖出半仓锁定利润，剩余仓位持；若高开1-2%，则持有观察",
+      "if_gap_down": "若半导体设备ETF低开超2%，则开盘止损，控制亏损在5%以内；若低开1%以内，则持有等待反弹",
+      "watch_list": [
+        "159516.SZ 半导体设备ETF：最强品种，决定科技方向",
+        "512480.SH 半导体ETF：板块联动参考",
+        "159599.SZ 芯片ETF东财：芯片细分方向"
+      ],
+      "black_swan_risk": "今晚美联储意外加息或地缘冲突升级可能导致全球风险资产暴跌，A股低开超2%。"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大风险是明天大盘低开导致半导体设备补跌，可能亏损5%以上",
+      "如果明天跳空低开2%以上，最大亏损约6.5万（黄金持仓止损+新仓位）",
+      "尾盘绝对不能因为恐慌而清仓所有持仓，应保持跟随主力的仓位"
+    ],
+    "key_reminder": "跟紧主力，尾盘抢筹半导体设备，止损设好，明天高开就赢，低开就跑。",
+    "sell_orders": [
+      {
+        "etf_code": "518880",
+        "action": "尾盘立即清仓",
+        "order_type": "market",
+        "sell_ratio": 1.0,
+        "sell_price": 0,
+        "reason": "黄金ETF今日跌幅2.09%，全天缩量下跌，尾盘无反弹，且黄金现货价格下跌，无主力资金支撑。亏损已超2%且走势走弱，应果断止损避免隔夜风险，资金转向半导体设备等强势品种。"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159516",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 0.749,
+        "position_ratio": 0.35,
+        "stop_loss": 0,
+        "reason": "半导体设备ETF全天主力资金持续流入，涨幅4.17%，尾盘维持高位强势，量能充足，主力抢筹意图明确。结合英特尔盘后利好，明天有望延续强势。尾盘市价买入，抢占先手。"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-07-22T12:50:34.120173",
+  "moment": "moment_3",
+  "moment_name": "午盘转折决策",
+  "decision": {
+    "morning_verdict": {
+      "market_type": "结构性分化，科技周期强势，消费跨境弱势",
+      "volume_quality": "放量健康，半导体、有色等成交量显著放大",
+      "main_force_action": "主力在科技（半导体、芯片、AI）和周期（有色、化工）板块持续吸筹，放量推升；同时从消费、传媒、跨境品种中出货，呈现明显的板块轮动特征",
+      "retail_behavior": "散户追涨半导体等强势板块，同时割肉消费和传媒，从成交量变化看，散户情绪偏向乐观但分化严重",
+      "trap_type": "无全局性陷阱，但弱势品种可能存在诱多反弹陷阱，强势品种目前是真强势，但下午追高有风险"
+    },
+    "noon_news_impact": {
+      "has_major_news": "false",
+      "news_summary": "午间无重大新闻，市场消息面平静",
+      "impact_direction": "中性",
+      "afternoon_impact": "无明显影响，下午大概率延续上午的结构性行情",
+      "hk_market_reference": "恒生科技ETF跌2.79%，恒生ETF跌0.80%，显示港股弱势，可能压制A股科技类品种的涨幅空间，但A股科技强势独立于港股"
+    },
+    "afternoon_prediction": {
+      "direction": "延续上午趋势，科技周期走强，消费跨境继续走弱",
+      "confidence": 75,
+      "key_reasons": [
+        "半导体ETF放量5.59%，主力资金持续流入，趋势力量强",
+        "有色ETF放量4.85%，资源品涨价逻辑支撑",
+        "消费、传媒、跨境品种缩量下跌，无资金承接",
+        "午间无利空消息，港股弱势已被市场消化"
+      ],
+      "volume_expectation": "下午放量，但可能比上午略小，因为追高意愿减弱",
+      "danger_time": "尾盘14:30-14:50，警惕强势股获利回吐导致急跌",
+      "v_reversal_probability": 20,
+      "judgment_basis": "上午强势板块量价配合健康，下午反转概率低，除非突发利空"
+    },
+    "holdings_decision": [],
+    "new_positions_afternoon": {
+      "allow_new": true,
+      "max_ratio": 10,
+      "opportunities": [
+        {
+          "etf_code": "512480.SH",
+          "buy_condition": "下午开盘后1小时内，价格回踩1.20附近且不跌穿1.195，同时量能维持活跃（每分钟成交量>上午均量）",
+          "buy_timing": "13:00-14:00之间，最佳时间13:30左右",
+          "order_type": "limit",
+          "buy_price": 1.2,
+          "position_ratio": 10,
+          "stop_loss": 1.178,
+          "overnight_risk": "偏高，若下午尾盘跳水可能被套，但趋势强势，过夜风险可控",
+          "reason": "半导体ETF上午放量突破，领涨市场，做多情绪高涨，下午回调至均线附近是上车机会，止损设在1.178（下方支撑）"
+        }
+      ],
+      "if_no_opportunity": "如果价格不回踩直接拉升至1.215以上，则不追高，等待尾盘再看；如果上午涨势大幅缩量或出现跳水，则放弃开仓"
+    },
+    "reverse_repo_advice": {
+      "suggest": true,
+      "reason": "方向不明朗或没有确定性机会时，逆回购可以锁定资金，避免冲动交易，尤其下午风险增大"
+    },
+    "tail_market_preview": {
+      "prediction": "小幅拉升或高位震荡，但尾盘可能有一波获利盘涌出，导致回落",
+      "tail_risk": "强势板块尾盘跳水，弱势板块继续阴跌",
+      "overnight_advice": "轻仓或空仓，若开仓则控制在10%以内，止盈止损严格执行",
+      "preparation": "提前设定好卖出条件单，关注强势股尾盘量价背离迹象"
+    },
+    "risk_alerts": [
+      "最危险陷阱：追高已大涨5%以上的半导体ETF，下午如果缩量拉高，容易高位站岗",
+      "若下午2:30后突然放量跳水，应果断止损，不要扛单",
+      "下午绝对不能做的一件事：逆势抄底弱势品种（如中概互联、恒生科技），它们已经破位"
+    ],
+    "key_reminder": "只做最强的半导体，不贪心，不追高，等回调，控制仓位，严格止损。",
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "512480.SH",
+        "action": "13:00-14:00之间，最佳时间13:30左右",
+        "order_type": "limit",
+        "buy_price": 1.2,
+        "position_ratio": 10,
+        "stop_loss": 1.178,
+        "reason": "半导体ETF上午放量突破，领涨市场，做多情绪高涨，下午回调至均线附近是上车机会，止损设在1.178（下方支撑）"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

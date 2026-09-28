@@ -1,0 +1,973 @@
+{
+  "scrape_time": "2026-07-22T08:14:12.398797",
+  "industry_reports": [
+    {
+      "title": "传媒互联网行业周报：Kimi K3重磅发布，WAIC 2026开幕",
+      "industry": "游戏Ⅱ",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "李典",
+      "org": "国元证券",
+      "publish_date": "2026-07-22",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827240637"
+    },
+    {
+      "title": "医药行业研究：口服环肽：成药性验证元年，百亿美元赛道启幕",
+      "industry": "化学制药",
+      "rating": "买入",
+      "rating_change": "维持",
+      "researcher": "甘坛焕",
+      "org": "国金证券",
+      "publish_date": "2026-07-22",
+      "sRating": "买入",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239784"
+    },
+    {
+      "title": "人工智能对以色列劳动力市场的影响",
+      "industry": "专业服务",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "埃切·奥兹杰·埃梅克西兹",
+      "org": "国际货币基金组织",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239686"
+    },
+    {
+      "title": "企业AI增长实战营：AI赋能企业增长真实案例精选",
+      "industry": "数字媒体",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "",
+      "org": "创业黑马",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239645"
+    },
+    {
+      "title": "2025中国定制客运发展报告",
+      "industry": "铁路公路",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "",
+      "org": "交通运输部公路科学研究院",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239644"
+    },
+    {
+      "title": "TMT推动办公楼与商务园区去化多元买家支撑投资市场活跃度",
+      "industry": "房地产服务",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "张倩倩,强赵宏,周予涵",
+      "org": "世邦魏理仕",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239607"
+    },
+    {
+      "title": "2026自有品牌报告：今日自有品牌统计指南-自有品牌美国零售版图中的一盏明灯",
+      "industry": "一般零售",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "",
+      "org": "自有品牌制造商协会",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239606"
+    },
+    {
+      "title": "新兴技术研究：农业科技风险投资首秀(英译中)",
+      "industry": "农业综合Ⅱ",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "亚历克·弗雷德里克",
+      "org": "PitchBook Data, Inc.",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239605"
+    },
+    {
+      "title": "关注2026年新能源汽车下乡活动",
+      "industry": "汽车零部件",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "",
+      "org": "中国汽车流通协会乘用车市场信息联席分会",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239602"
+    },
+    {
+      "title": "2026世界前瞻：重磅药物。更宏大的问题。",
+      "industry": "化学制药",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "梅兰妮·塞纳尔",
+      "org": "Evaluate",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827239603"
+    },
+    {
+      "title": "非银金融行业点评报告：公募持仓观察：保险板块减持幅度较大，券商及互金持仓边际改善——26Q2非银板块公募持仓分析",
+      "industry": "多元金融",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "孙婷,罗宇康",
+      "org": "东吴证券",
+      "publish_date": "2026-07-22",
+      "sRating": "增持",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607221827227010"
+    },
+    {
+      "title": "保险资负管理新时代，有效匹配方能行稳致远",
+      "industry": "保险Ⅱ",
+      "rating": "",
+      "rating_change": "-",
+      "researcher": "孙婷",
+      "org": "东吴证券",
+      "publish_date": "2026-07-22",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827226494"
+    },
+    {
+      "title": "公用环保行业202607第3期：1-6月规上工业发电量4.75万亿千瓦时（+3.5%），2026H1垃圾焚烧发电项目中标梳理",
+      "industry": "电力",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "黄秀杰,刘汉轩,崔佳诚",
+      "org": "国信证券",
+      "publish_date": "2026-07-21",
+      "sRating": "优于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827223940"
+    },
+    {
+      "title": "交通运输行业快评报告：6月快递行业月度数据跟踪报告",
+      "industry": "物流",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "潘云娇",
+      "org": "万联证券",
+      "publish_date": "2026-07-21",
+      "sRating": "强于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827223691"
+    },
+    {
+      "title": "整车主线周报：本周多家车企公布业绩预告，电池消费税落地",
+      "industry": "汽车零部件",
+      "rating": "",
+      "rating_change": "-",
+      "researcher": "黄细里",
+      "org": "东吴证券",
+      "publish_date": "2026-07-21",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827222366"
+    },
+    {
+      "title": "传媒行业深度报告：AI视频生成能力跃升，AI短剧前景广阔",
+      "industry": "数字媒体",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "李典",
+      "org": "国元证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827219324"
+    },
+    {
+      "title": "从工业牙齿到算力硬科技：2026年中国金刚石散热材料产业研究，全球市场5千万美元跃升至152.3亿美元，国产替代窗口全面打开",
+      "industry": "金属新材料",
+      "rating": "",
+      "rating_change": "-",
+      "researcher": "陈夏琳,于利蓉",
+      "org": "头豹研究院",
+      "publish_date": "2026-07-21",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827218914"
+    },
+    {
+      "title": "建筑装饰行业周报：继续推荐鸿路钢构与四川路桥",
+      "industry": "基础建设",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "王彬鹏,戴铭余,郦悦轩",
+      "org": "华源证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好(Overweight)",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827218303"
+    },
+    {
+      "title": "基础化工行业周报：本周磷酸、MTBE、丁二烯、新加坡燃油价格涨幅居前",
+      "industry": "化学制品",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "刘海荣,费晨洪,李家豪,刘隆基,李金凤",
+      "org": "中邮证券",
+      "publish_date": "2026-07-21",
+      "sRating": "强于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827215416"
+    },
+    {
+      "title": "农林牧渔行业周报：猪价涨后回落，二季度产能大幅去化",
+      "industry": "养殖业",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "王琦",
+      "org": "中邮证券",
+      "publish_date": "2026-07-21",
+      "sRating": "强于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827215413"
+    },
+    {
+      "title": "有色金属行业周报：美联储降息预期增强，工业金属震荡走强",
+      "industry": "工业金属",
+      "rating": "持有",
+      "rating_change": "-",
+      "researcher": "闫晓伟",
+      "org": "大同证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827215139"
+    },
+    {
+      "title": "人形机器人周报：1X发布NEO机器人新一代灵巧手，小米发布机器人基座模型",
+      "industry": "专用设备",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "龚斯闻,冯健然",
+      "org": "国元证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827214402"
+    },
+    {
+      "title": "机械：6月非挖内销表现整体有所承压，出口整体保持较高增速",
+      "industry": "工程机械",
+      "rating": "持有",
+      "rating_change": "维持",
+      "researcher": "崔文娟,张凤琳",
+      "org": "太平洋",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827213772"
+    },
+    {
+      "title": "机械：6月挖机海关出口同比保持较高增速，海外市场景气度延续",
+      "industry": "工程机械",
+      "rating": "持有",
+      "rating_change": "维持",
+      "researcher": "崔文娟,张凤琳",
+      "org": "太平洋",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827213769"
+    },
+    {
+      "title": "钢铁行业周报：产量见顶回落，需求表现偏弱",
+      "industry": "普钢",
+      "rating": "持有",
+      "rating_change": "-",
+      "researcher": "张坤飞",
+      "org": "大同证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827213132"
+    },
+    {
+      "title": "2026年港口行业分析（2026年7月）",
+      "industry": "航运港口",
+      "rating": "",
+      "rating_change": "下调",
+      "researcher": "李坤",
+      "org": "联合资信评估",
+      "publish_date": "2026-07-21",
+      "sRating": "",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827212801"
+    },
+    {
+      "title": "化工行业周报：国际原油、环氧丙烷、丙烯酸价格上涨",
+      "industry": "化学制品",
+      "rating": "增持",
+      "rating_change": "-",
+      "researcher": "余嫄嫄,赵泰",
+      "org": "中银证券",
+      "publish_date": "2026-07-21",
+      "sRating": "强于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827211397"
+    },
+    {
+      "title": "医药生物行业周报：医药生物行业双周报2026年第14期总第163期创新药出海与海外融资环境持续改善",
+      "industry": "中药Ⅱ",
+      "rating": "持有",
+      "rating_change": "维持",
+      "researcher": "胡晨曦,魏钰琪",
+      "org": "长城国瑞证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827211312"
+    },
+    {
+      "title": "煤炭2026年二季度煤炭债复盘：兑现超额，坚守AAA",
+      "industry": "煤炭开采",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "胡博,程俊杰",
+      "org": "山西证券",
+      "publish_date": "2026-07-21",
+      "sRating": "领先大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827211278"
+    },
+    {
+      "title": "煤炭进口数据拆解：26年6月：进口煤量价齐升，填补国内缺口",
+      "industry": "煤炭开采",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "胡博,程俊杰",
+      "org": "山西证券",
+      "publish_date": "2026-07-21",
+      "sRating": "领先大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827211266"
+    },
+    {
+      "title": "人形机器人行业专题研究：人形机器人量产元年：资本与产业双轮验证，拐点投资机会显现",
+      "industry": "专用设备",
+      "rating": "持有",
+      "rating_change": "下调",
+      "researcher": "吴起涤,宋金治",
+      "org": "源达信息",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827210691"
+    },
+    {
+      "title": "航运船舶市场系列（21）：美伊冲突再起，难扰油运基本面向好趋势",
+      "industry": "航运港口",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "孙延,曾智星,王惠武,张付哲",
+      "org": "华源证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好(Overweight)",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827208119"
+    },
+    {
+      "title": "CXO行业系列专题报告（5）：新分子蓬勃发展，多肽、ADC、寡核苷酸CRDMO大放异彩",
+      "industry": "生物制品",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "彭思宇,陈曦炳",
+      "org": "国信证券",
+      "publish_date": "2026-07-21",
+      "sRating": "优于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827207664"
+    },
+    {
+      "title": "社会服务行业投资策略：资金再平衡窗口，关注优质龙头低位修复及避暑游景区",
+      "industry": "酒店餐饮",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "曾光,杨玉莹",
+      "org": "国信证券",
+      "publish_date": "2026-07-21",
+      "sRating": "优于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827207585"
+    },
+    {
+      "title": "主粮、猫砂及疫苗市场规模与企业空间测算：宠物子赛道有多大，能孕育多大的企业",
+      "industry": "农业综合Ⅱ",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "娄倩",
+      "org": "华鑫证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827207319"
+    },
+    {
+      "title": "光储行业跟踪：7月光伏组件排产或提升，硅料价格持续下探",
+      "industry": "电池",
+      "rating": "增持",
+      "rating_change": "-",
+      "researcher": "朱攀",
+      "org": "爱建证券",
+      "publish_date": "2026-07-21",
+      "sRating": "强于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827204192"
+    },
+    {
+      "title": "社会服务行业双周报：26H1社零缓增长，消费政策再迎利好",
+      "industry": "酒店餐饮",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "李小民,纠泰民",
+      "org": "中银证券",
+      "publish_date": "2026-07-21",
+      "sRating": "强于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827203424"
+    },
+    {
+      "title": "有色金属行业周报：黄金长期逻辑未变，短期筑底机会渐近",
+      "industry": "工业金属",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "袁威津",
+      "org": "上海证券",
+      "publish_date": "2026-07-21",
+      "sRating": "增持",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827198080"
+    },
+    {
+      "title": "汽车与零部件行业周报：享界G9获批L3级自动驾驶牌照，小鹏2026年量产首款飞行汽车",
+      "industry": "汽车零部件",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "仇百良",
+      "org": "上海证券",
+      "publish_date": "2026-07-21",
+      "sRating": "增持",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827198078"
+    },
+    {
+      "title": "食品饮料行业：茅台提价或推动白酒估值重估",
+      "industry": "白酒Ⅱ",
+      "rating": "持有",
+      "rating_change": "维持",
+      "researcher": "孟斯硕,王洁婷",
+      "org": "东兴证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827197655"
+    },
+    {
+      "title": "煤炭行业周报：三伏天开启，动力煤价全面反弹",
+      "industry": "煤炭开采",
+      "rating": "持有",
+      "rating_change": "-",
+      "researcher": "景剑文,温慧",
+      "org": "大同证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827196901"
+    },
+    {
+      "title": "半导体行业周报：ASML上调2026营收指引，芯原股份AI订单占比超90%",
+      "industry": "半导体",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "庄宇,张璐,何鹏程,石俊烨",
+      "org": "华鑫证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827187424"
+    },
+    {
+      "title": "AI算力行业周报：华为昇腾950超节点真机亮相WAIC，曙光8000全国产十万卡AI超集群真机首秀",
+      "industry": "软件开发",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "庄宇,张璐,何鹏程,石俊烨",
+      "org": "华鑫证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827186889"
+    },
+    {
+      "title": "医药生物行业2026年7月投资策略：继续推荐关注创新药及创新产业链",
+      "industry": "生物制品",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "陈曦炳,彭思宇,陈益凌,马千里,张超,凌珑,肖婧舒",
+      "org": "国信证券",
+      "publish_date": "2026-07-21",
+      "sRating": "优于大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827181465"
+    },
+    {
+      "title": "煤炭行业周报：业绩预告Q2盈利改善明显，动力煤止跌探涨",
+      "industry": "煤炭开采",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "胡博,程俊杰",
+      "org": "山西证券",
+      "publish_date": "2026-07-21",
+      "sRating": "领先大市",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827180989"
+    },
+    {
+      "title": "银行：众邦银行接管落地，银行板块尾部风险有望边际缓解",
+      "industry": "银行Ⅱ",
+      "rating": "持有",
+      "rating_change": "维持",
+      "researcher": "夏芈卬",
+      "org": "太平洋",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827180777"
+    },
+    {
+      "title": "电子行业周报：WAIC 2026国产新品密集亮相，台积电大幅上调全年资本开支",
+      "industry": "半导体",
+      "rating": "中性",
+      "rating_change": "-",
+      "researcher": "方霁",
+      "org": "东海证券",
+      "publish_date": "2026-07-21",
+      "sRating": "标配",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827180706"
+    },
+    {
+      "title": "半导体与半导体生产设备行业周报：26年5月全球半导体销售额同比翻倍，苹果AI在华应用加速落地",
+      "industry": "半导体",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "彭琦",
+      "org": "国元证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827180566"
+    },
+    {
+      "title": "基础化工行业周报：（磷酸）五氧化二磷85%、丁二烯等涨幅居前，建议关注进口替代、纯内需、高股息等方向",
+      "industry": "化学制品",
+      "rating": "增持",
+      "rating_change": "维持",
+      "researcher": "卢昊,高铭谦",
+      "org": "华鑫证券",
+      "publish_date": "2026-07-21",
+      "sRating": "推荐",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827179978"
+    },
+    {
+      "title": "轻工制造：全球杯壶龙头复盘，聚焦核心客群、精准持续营销，加速品牌破圈",
+      "industry": "造纸",
+      "rating": "持有",
+      "rating_change": "维持",
+      "researcher": "姜文镪,李晨",
+      "org": "信达证券",
+      "publish_date": "2026-07-21",
+      "sRating": "看好",
+      "report_url": "https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202607211827179099"
+    }
+  ],
+  "market_news": {
+    "sina": [
+      {
+        "title": "观点",
+        "content": "【中信建投：医疗器械板块拐点来临 2026年业绩改善个股存在修复机会】中信建投证券研报指出，建议关注低估值且第二季度高增长个股的加仓机会。医疗器械板块拐点来临，短期来看，建议把握2026年业绩改善个股的业绩和估值修复机会，多家细分赛道龙头将于2026年迎来加速增长，同时建议关注手术机器人、脑机接口等新科技方向，相关技术突破和商业化落地有望持续催化板块热度。长期来看，医疗器械板块投资机会来自创新、出海和并购整合，板块的创新和国际化能力得到认可，估值正在重构。",
+        "time": "2026-07-22 08:13:35",
+        "subjects": [
+          "观点"
+        ]
+      },
+      {
+        "title": "公司",
+        "content": "【中信证券：全球AI或正在分化为两套并行的生态体系】中信证券研报称，全球AI或正在分化为两套并行的生态体系。美国AI由私人资本驱动，闭源旗舰模型加企业软件订阅，商业模式的核心是替代高成本人力；中国AI以政策与产业为双轮，开源轻量模型加低成本推理服务，落点是制造业升级与数字消费的增量。我们认为，这一分化并非阶段性的技术差距，而是由经济结构、政策治理、资本偏好与要素禀赋四重因素共同决定的路径分化，短期或难以收敛。分环节看，中美AI的差距沿产业链自上而下递减，上游芯片最大、应用层最小。我们认为，美国的确定性在头部模型公司已被验证的企业端收入与算力供给链的现金流，变数在商业兑现与融资耐心的赛跑；中国的确定性在推理算力的国产替代、开源生态的全球渗透与制造业场景的落地，变数在算力利用率与商业化定价能否走通。从宏观视角展望未来，美国或率先迎来AI驱动的服务业生产率上行，中国则沿两条路径演进：制造业智能化纵深，与性价比智能补齐生产性服务业短板。",
+        "time": "2026-07-22 08:13:30",
+        "subjects": [
+          "公司",
+          "观点",
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "泰铢兑美元汇率跌至2025年4月以来最低水平。美元兑泰铢上涨0.1%，报1美元兑33.72泰铢；盘中此前曾触及33.73泰铢。",
+        "time": "2026-07-22 08:12:37",
+        "subjects": [
+          "市场"
+        ]
+      },
+      {
+        "title": "国际",
+        "content": "当地时间22日凌晨3时，伊朗首都德黑兰防空系统密集拦截不明飞行物。（新华社）",
+        "time": "2026-07-22 08:11:59",
+        "subjects": [
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "韩国综合股价指数（KOSPI）上涨6%，至7153.42。",
+        "time": "2026-07-22 08:11:40",
+        "subjects": [
+          "市场",
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "日本5年期国债收益率上升2个基点，至1.960%。",
+        "time": "2026-07-22 08:10:48",
+        "subjects": [
+          "市场",
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "【日元疲软与伊朗战事抬高进口成本 日本6月贸易逆差意外扩大】受日元走软推高进口额以及伊朗战事导致油价上涨影响，日本6月份贸易逆差意外扩大。日本财务省周三公布的数据显示，未经季节性调整的贸易逆差从5月修正后的3918亿日元扩大至4069亿日元（25亿美元）。此前分析师预期逆差为1200亿日元。6月进口额同比增长25.4%，出口额增长19.3%。",
+        "time": "2026-07-22 08:10:29",
+        "subjects": [
+          "市场",
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "现货黄金突破4090美元/盎司，日内涨0.32%。",
+        "time": "2026-07-22 08:10:24",
+        "subjects": [
+          "市场",
+          "焦点"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "MSCI亚太指数上涨1%至269.25点。",
+        "time": "2026-07-22 08:10:00",
+        "subjects": [
+          "市场"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "【中信证券：下半年红利资产有望进入估值修复区间】中信证券研报称，2026年上半年受到地缘形势扰动、流动性收紧等多重因素冲击，大类资产呈现出显著的高分化、高波动特征。展望2026年下半年，红利资产有望进入估值修复区间；预计黄金短期震荡磨底而长期存在结构支撑；主动权益基金中的风格中性组合有望受益；量化基金超额收益或迎来改善；绝对收益型“固收+”基金在分化行情中的适应性更强；宏观配置策略受流动性扰动影响有望减弱；主观CTA策略预计更具优势。",
+        "time": "2026-07-22 08:09:54",
+        "subjects": [
+          "市场",
+          "观点"
+        ]
+      },
+      {
+        "title": "国际",
+        "content": "伊朗半官方的法尔斯通讯社援引东阿塞拜疆官员的话称，大不里士附近一处军事地点遭到美国空袭。",
+        "time": "2026-07-22 08:08:48",
+        "subjects": [
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "澳大利亚S&P/ASX 200指数早盘上涨0.3%，报8,818点。",
+        "time": "2026-07-22 08:07:39",
+        "subjects": [
+          "市场"
+        ]
+      },
+      {
+        "title": "宏观",
+        "content": "【工业和信息化部组织开展国家级零碳工厂建设工作】近日，为贯彻落实党中央、国务院决策部署，落实《关于开展零碳工厂建设工作的指导意见》（工信部联节〔2026〕13号）有关要求，工业和信息化部办公厅印发《关于组织开展国家级零碳工厂建设工作的通知》（工信厅节函〔2026〕334号，以下简称《通知》），组织开展国家级零碳工厂（含零碳算力设施，下同）建设工作。《通知》对国家级零碳工厂建设工作提出具体安排，包括基本要求、申报条件、组织实施以及附件《国家级零碳工厂建设评估指标体系及指标说明（试行）》等内容。一是明确申报要求。选择具备一定建设基础、建设目标明确、实施路径清晰，并承诺在规定期限内完成建设目标的制造型企业、算力设施，择优纳入国家级零碳工厂建设名单。设置单位能耗碳排放、非化石能源消费占比、非化石能源电力消费物理认定量占比三个核心指标，申报单位应满足核心指标的基本要求，并在建设期内（不晚于2030年）承诺达到核心指标的目标要求。二是明确建设过程。零碳工厂建设工作“重技术、重建设、重实效”，而非一次性评价认定。国家级零碳工厂建设名单内的单位，应对照建设方案确定的年度目标和重点任务开展自我评估，并定期报送。各省级工业和信息化主管部门应加强对名单内单位的指导和监督，建立常态化跟踪机制。工业和信息化部将不定期对建设单位开展抽查核验，并按照“成熟一批，验收一批”的原则组织验收，通过验收评估的，正式成为国家级零碳工厂。三是明确评估指标体系。指标体系包括核心指标和引导指标两部分。核心指标是对零碳工厂建设具有基础性、决定性和约束性的关键因素。同时，设置过程脱碳、协同降碳、智能控碳、碳抵销和信息披露4类8项引导指标，系统引导企业在节能降碳改造、节能装备应用、数字化能碳管理等方面持续提升。下一步，工业和信息化部将按照《通知》要求，做好国家级零碳工厂建设培育工作，推动构建涵盖能源供应、技术研发、标准制定、金融支持等的零碳工厂建设产业生态，增强产业低碳竞争优势。",
+        "time": "2026-07-22 08:07:21",
+        "subjects": [
+          "宏观"
+        ]
+      },
+      {
+        "title": "公司",
+        "content": "【摩科瑞与SuperX就AI基础设施开发开展合作】当地时间7月21日，摩科瑞能源集团旗下亚太平台摩科瑞亚洲与人工智能基础设施解决方案提供商SuperX AI Technology Limited宣布建立战略合作伙伴关系。作为此次合作的一部分，摩科瑞亚洲通过可转换票据及认股权证认购协议对SuperX进行了战略投资。双方将聚焦全球人工智能数据中心发展、电力资源优化配置和能源管理创新，探索能源、技术和资本协同发展的新模式。SuperX董事长兼CEO表示，合作将加速印尼、日本、泰国等地区海外项目的落地实施。",
+        "time": "2026-07-22 08:07:17",
+        "subjects": [
+          "公司",
+          "国际"
+        ]
+      },
+      {
+        "title": "观点",
+        "content": "【中信证券：继续全面看好国产算力产业链】中信证券研报称，WAIC 2026维持高关注度，算力芯片领域天数智芯、东方算芯等发布新产品，加速对海外先进产品的性能追赶；超节点是大会核心聚焦，成为指引未来算力发展向系统级层面升维的重要方向；互联等AI Infra技术加速落地，国产底座进一步升维，行业从单卡算力竞争转向芯片、高速互联、整机架构与行业应用全链条生态协同竞争。继续全面看好国产算力产业链。",
+        "time": "2026-07-22 08:07:13",
+        "subjects": [
+          "观点"
+        ]
+      },
+      {
+        "title": "焦点",
+        "content": "韩国交易所启动SIDECAR机制，暂停KOSPI程序化买盘。",
+        "time": "2026-07-22 08:07:01",
+        "subjects": [
+          "焦点",
+          "国际"
+        ]
+      },
+      {
+        "title": "市场",
+        "content": "SK海力士股价上涨8.1%，报198.3万韩元。",
+        "time": "2026-07-22 08:06:08",
+        "subjects": [
+          "市场"
+        ]
+      },
+      {
+        "title": "国际",
+        "content": "法庭文件显示，美国司法部提议马杜罗一案于2027年6月开庭审理。",
+        "time": "2026-07-22 08:05:44",
+        "subjects": [
+          "国际"
+        ]
+      },
+      {
+        "title": "其他",
+        "content": "【日经225指数涨幅扩大至1%】日经225指数涨幅扩大至1%，现报66931.11点。",
+        "time": "2026-07-22 08:05:26",
+        "subjects": [
+          "其他"
+        ]
+      },
+      {
+        "title": "公司",
+        "content": "【中际旭创寻求募资至多550亿港元 料成为香港近年来最大规模上市交易】据报道，中际旭创已开始接受投资者对其香港上市的认购，拟募集资金至多550亿港元，这将成为香港七年来规模最大的上市交易。根据该公司周三发布的上市文件，这家对数据中心建设至关重要的光收发器制造商将发行5450万股，最高发行价每股1010港元，较周二在深圳的收盘价1136.55元人民币折让23%。中际旭创预计将于7月30日在香港挂牌。该公司计划将募集的资金用于研发、扩大产能、优化供应链、收购、投资和营运资金。2026年第一季度，该公司的营收达195亿元人民币。基石投资者已同意认购价值34.5亿美元的中际旭创股票，其中包括资产管理公司贝莱德、高瓴和摩根资产管理以及新加坡国有机构淡马锡。基石投资者承诺持有股票至少六个月以换取本次交易中确保认购份额。",
+        "time": "2026-07-22 08:04:43",
+        "subjects": [
+          "公司",
+          "市场"
+        ]
+      }
+    ],
+    "cls": []
+  },
+  "global_indices": {
+    "common": [
+      {
+        "name": "道琼斯",
+        "code": "DJI",
+        "price": "52224.64",
+        "change_pct": "0.74",
+        "state": "close"
+      },
+      {
+        "name": "纳斯达克",
+        "code": "IXIC",
+        "price": "25837.21",
+        "change_pct": "1.29",
+        "state": "close"
+      },
+      {
+        "name": "标普500",
+        "code": "INX",
+        "price": "7509.20",
+        "change_pct": "0.89",
+        "state": "close"
+      },
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "price": "3864.37",
+        "change_pct": "1.79",
+        "state": "close"
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "price": "14264.29",
+        "change_pct": "4.81",
+        "state": "close"
+      },
+      {
+        "name": "恒生指数",
+        "code": "HSI",
+        "price": "25132.290",
+        "change_pct": "-0.04",
+        "state": "close"
+      },
+      {
+        "name": "富时100",
+        "code": "UKX",
+        "price": "10585.91",
+        "change_pct": "0.58",
+        "state": "close"
+      },
+      {
+        "name": "日经225指数",
+        "code": "N225",
+        "price": "67300.32",
+        "change_pct": "1.61",
+        "state": "open"
+      },
+      {
+        "name": "德国DAX30",
+        "code": "DAX30",
+        "price": "25011.35",
+        "change_pct": "0.66",
+        "state": "close"
+      }
+    ],
+    "america": [
+      {
+        "name": "道琼斯",
+        "code": "DJI",
+        "price": "52224.64",
+        "change_pct": "0.74",
+        "state": "close"
+      },
+      {
+        "name": "纳斯达克",
+        "code": "IXIC",
+        "price": "25837.21",
+        "change_pct": "1.29",
+        "state": "close"
+      },
+      {
+        "name": "标普500",
+        "code": "INX",
+        "price": "7509.20",
+        "change_pct": "0.89",
+        "state": "close"
+      },
+      {
+        "name": "加拿大S&P/TSX",
+        "code": "gzGSPTSE",
+        "price": "35369.08",
+        "change_pct": "1.17",
+        "state": "close"
+      },
+      {
+        "name": "墨西哥BOLSA",
+        "code": "MXX",
+        "price": "66713.83",
+        "change_pct": "0.89",
+        "state": "close"
+      }
+    ],
+    "europe": [
+      {
+        "name": "富时100",
+        "code": "UKX",
+        "price": "10585.91",
+        "change_pct": "0.58",
+        "state": "close"
+      },
+      {
+        "name": "德国DAX30",
+        "code": "DAX30",
+        "price": "25011.35",
+        "change_pct": "0.66",
+        "state": "close"
+      },
+      {
+        "name": "法国CAC40",
+        "code": "FCHI",
+        "price": "8363.14",
+        "change_pct": "0.28",
+        "state": "close"
+      },
+      {
+        "name": "富时Eurofirst300",
+        "code": "E3X ",
+        "price": "2572.31",
+        "change_pct": "0.64",
+        "state": "close"
+      },
+      {
+        "name": "富时意大利MIB",
+        "code": "FTSEMIB  ",
+        "price": "52285.09",
+        "change_pct": "0.81",
+        "state": "close"
+      },
+      {
+        "name": "西班牙IBEX",
+        "code": "IBEX",
+        "price": "19379.81",
+        "change_pct": "0.90",
+        "state": "close"
+      },
+      {
+        "name": "荷兰AEX",
+        "code": "AEX",
+        "price": "1096.74",
+        "change_pct": "0.57",
+        "state": "close"
+      },
+      {
+        "name": "葡萄牙PSI",
+        "code": "PSI20",
+        "price": "9171.67",
+        "change_pct": "1.11",
+        "state": "close"
+      }
+    ],
+    "asia": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "price": "3864.37",
+        "change_pct": "1.79",
+        "state": "close"
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "price": "14264.29",
+        "change_pct": "4.81",
+        "state": "close"
+      },
+      {
+        "name": "富时中国A50指数",
+        "code": "XIN9",
+        "price": "15337.44",
+        "change_pct": "2.41",
+        "state": "close"
+      },
+      {
+        "name": "恒生指数",
+        "code": "HSI",
+        "price": "25132.290",
+        "change_pct": "-0.04",
+        "state": "close"
+      },
+      {
+        "name": "日经225指数",
+        "code": "N225",
+        "price": "67300.32",
+        "change_pct": "1.61",
+        "state": "open"
+      },
+      {
+        "name": "韩国首尔综合",
+        "code": "KS11",
+        "price": "7142.74",
+        "change_pct": "5.85",
+        "state": "open"
+      },
+      {
+        "name": "台湾加权指数",
+        "code": "TWII",
+        "price": "44232.87",
+        "change_pct": "4.20",
+        "state": "close"
+      },
+      {
+        "name": "印度SENSEX",
+        "code": "ENSEX",
+        "price": "77470.11",
+        "change_pct": "-0.31",
+        "state": "close"
+      },
+      {
+        "name": "新加坡海峡时报",
+        "code": "FTSTI",
+        "price": "5526.73",
+        "change_pct": "0.51",
+        "state": "close"
+      },
+      {
+        "name": "富时马来西亚KLCI",
+        "code": "FBMKLCI",
+        "price": "1720.37",
+        "change_pct": "-0.11",
+        "state": "close"
+      }
+    ],
+    "other": [
+      {
+        "name": "澳大利亚标普200",
+        "code": "S51",
+        "price": "8803.40",
+        "change_pct": "0.11",
+        "state": "open"
+      }
+    ]
+  }
+}

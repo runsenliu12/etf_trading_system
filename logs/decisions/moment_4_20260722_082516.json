@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-07-22T08:25:16.872572",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "放量上涨",
+      "my_performance": "今日空仓，未参与行情，错过收益。但严格遵守纪律，等待确定性机会。",
+      "today_pnl_summary": "今日无盈亏，空仓踏空。",
+      "lessons_learned": "趋势来临时要敢于上车，空仓踏空也是一种亏损。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "真翘尾（温和放量回升）",
+      "tail_volume": "尾盘放量",
+      "main_force_intention": "抢筹布局明天",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "",
+      "tomorrow_open_impact": "今天尾盘放量翘尾，说明资金积极抢筹，明天大概率高开。"
+    },
+    "today_bought_locked": [],
+    "sellable_positions": [],
+    "overnight_position_plan": {
+      "target_ratio": 10,
+      "current_ratio": 0,
+      "need_reduce": false,
+      "reduce_amount": 0,
+      "hold_etfs": [],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "今天放量上涨，市场情绪强，尾盘资金抢筹，应顺势小仓位参与，博明天溢价。",
+        "tomorrow_watch": "关注开盘是否高开，若高开低于2%可持有，若放量低开则止损。"
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "588000.SH",
+      "entry_price": 2.016,
+      "order_type": "market",
+      "position_ratio": 10,
+      "entry_deadline": "14:50",
+      "reason": "科创50ETF今日涨幅11.07%，放量突破，尾盘资金持续流入，强者恒强，博明天高开溢价。",
+      "overnight_risk": "中"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "高开",
+      "confidence": 70,
+      "key_factors": [
+        "今日放量上涨，尾盘资金抢筹",
+        "外盘美股上涨",
+        "科技股领涨带动情绪"
+      ],
+      "if_gap_up": "高开超过2%则卖出一半，若高开1%以内则持有观察，若高开后放量继续上攻则持有。",
+      "if_gap_down": "低开超过2%则立即止损，低开1%以内则观察10分钟，若不能收复均价线则止损。",
+      "watch_list": [
+        "588000.SH：观察开盘强度",
+        "159915.SZ：创业板ETF联动",
+        "512480.SH：半导体ETF走势"
+      ],
+      "black_swan_risk": "今晚海外市场突发利空或政策收紧信号"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大的风险是明天低开闷杀。",
+      "如果明天跳空低开2%以上，最大亏损约2%。",
+      "尾盘绝对不能追涨已经涨停的ETF。"
+    ],
+    "key_reminder": "尾盘翘尾是真金，小仓位跟紧主力走。",
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "588000.SH",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 2.016,
+        "position_ratio": 10,
+        "stop_loss": 0,
+        "reason": "科创50ETF今日涨幅11.07%，放量突破，尾盘资金持续流入，强者恒强，博明天高开溢价。"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

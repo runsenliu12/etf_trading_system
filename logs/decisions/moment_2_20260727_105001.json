@@ -1,0 +1,815 @@
+{
+  "timestamp": "2026-07-27T10:50:01.142456",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "test": false,
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": false,
+      "market_real_type": "真强势",
+      "what_was_right": [
+        "大盘震荡偏多判断准确",
+        "消费板块如旅游、传媒确实走强"
+      ],
+      "what_was_wrong": [
+        "科技股遭弃判断错误，半导体设备、医疗等板块大幅领涨",
+        "有色金属主力排名第一判断不准确，实际主力更多涌入科技和医疗"
+      ],
+      "need_correction": "立即纠错：卖出黄金ETF，买入龙头板块半导体设备ETF和医疗ETF，跟上主力资金流向"
+    },
+    "current_market_score": {
+      "score": 85,
+      "trend": "比开盘变好",
+      "volume_health": "放量健康",
+      "main_force_action": "持续买入科技（半导体设备、医疗）和港股互联网，资金集中度较高",
+      "north_bound_impact": "北向资金预计净流入，助推成长股"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": true,
+        "current_price": 8.509,
+        "current_pnl_pct": -0.56,
+        "today_high": 8.527,
+        "today_low": 8.503,
+        "vs_avg_line": "在均价线附近",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "立即",
+        "reason": "黄金高开低走，避险逻辑减弱，市场风险偏好回升，应调仓至更强势的科技板块。持有浮亏约0.56%，换仓机会成本更高。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "159516.SZ",
+      "top_etf_name": "半导体设备ETF",
+      "main_force_evidence": "开盘后持续拉升，量能巨大（38217629手），涨幅2.70%居首，板块联动强（半导体、芯片均涨），国产替代逻辑受资金追捧。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "159516.SZ",
+          "main_force_score": 90,
+          "reason": "放量突破，涨幅最大，主力资金集中买入，半导体设备景气度高位"
+        },
+        {
+          "rank": 2,
+          "etf_code": "512170.SH",
+          "main_force_score": 85,
+          "reason": "医疗ETF放量2.22%，板块全线走强，创新药、医疗均有业绩支撑"
+        },
+        {
+          "rank": 3,
+          "etf_code": "159792.SZ",
+          "main_force_score": 80,
+          "reason": "港股通互联网ETF涨2.44%，外盘科技情绪修复，中概股回暖"
+        }
+      ],
+      "priority_rule": "只加仓主力排名前3的ETF，现在跟随主力买入半导体设备、医疗和港股互联网"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "main_force_rank": 1,
+        "current_price": 0.762,
+        "change_pct": 2.7,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "半导体设备板块强势，带动科技股全面反弹",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.762,
+        "position_ratio": 0.35,
+        "stop_loss": 0.724,
+        "take_profit": 0.838,
+        "overnight_risk": "中",
+        "reason": "主力资金最强流入，竞价后持续上涨，量价配合良好。国产替代长期逻辑不变，技术面突破前高概率大，止损设在-5%，目标+10%。"
+      },
+      {
+        "etf_code": "512170.SH",
+        "main_force_rank": 2,
+        "current_price": 0.322,
+        "change_pct": 2.22,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "医药板块整体反弹，医疗ETF量价齐升",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.322,
+        "position_ratio": 0.25,
+        "stop_loss": 0.306,
+        "take_profit": 0.354,
+        "overnight_risk": "中",
+        "reason": "主力资金排名第二，医疗板块受益于中报景气及估值修复，放量突破短期平台，上行空间打开。止损-5%，目标+10%。"
+      }
+    ],
+    "t1_locked_positions": [
+      {
+        "etf_code": "512400.SH",
+        "bought_today": true,
+        "buy_price": 1.76,
+        "current_price": 1.756,
+        "pnl_pct": -0.23,
+        "assessment": "还需观察",
+        "tomorrow_plan": "若高开上冲至1.780以上则持有等待止盈；若低开跌破1.733（今日低点）则止损",
+        "tomorrow_stop_loss": 1.733
+      }
+    ],
+    "afternoon_strategy": {
+      "prediction": "延续上午强势，科技板块大概率维持高位震荡，尾盘或有资金回流",
+      "suggested_position": 80,
+      "if_rally": "若下午继续拉升，持有现有多单，不追高，设移动止盈（半导体设备ETF上移至0.78）",
+      "if_drop": "若下午跳水，关注半导体设备ETF能否守住0.75（第一支撑），医疗ETF守住0.318，若跌破则考虑明日减仓",
+      "key_time": "14:00-14:30，监控量能是否异常放大或萎缩"
+    },
+    "risk_alerts": [
+      "当前持仓最大风险在科技股尾盘获利回吐，外盘科技股仍弱势，需警惕明日低开",
+      "若下午市场突然变盘，最大亏损约-3%（跌5%止损）",
+      "上午未在开盘买入强势科技股，踏空部分收益，现已纠正"
+    ],
+    "key_reminder": "真强势必须果断加仓，不要因早盘踏空而犹豫，下午仍有空间，但需警惕尾盘波动。"
+  },
+  "execution_result": {
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "volume": 0,
+        "price": 8.511000000000001,
+        "order_id": "1082138513,1082138526,1082138543,1082138549,1082138556,1082138566,1082138577,1082138594,1082138605,1082138616,1082138626,1082138644,1082138670,1082138683,1082138692,1082138702,1082138716,1082138747,1082138762,1082138779,1082138790,1082138797,1082138806,1082138977,1082139604,1082139615,1082139624,1082139634,1082139646,1082139657,1082139668,1082139676,1082139684,1082139696,1082139707,1082139718,1082139728,1082139740,1082139752,1082139761,1082139775,1082139783,1082139795,1082139804,1082139813,1082139821,1082139830,1082139840,1082139847,1082139858,1082139871,1082139884,1082139897,1082139904,1082139910,1082139921,1082139933,1082139939,1082139949,1082139957,1082139964,1082139973,1082140004,1082140016,1082140027,1082140037,1082140050,1082140069,1082140089,1082140100,1082140109,1082140117,1082140125,1082140155,1082140166,1082140174,1082140181,1082140189,1082140224,1082140250,1082140263,1082140270,1082140278,1082140291,1082140316,1082140324,1082140332,1082140363,1082140375,1082140383,1082140404,1082140412,1082140419,1082140426,1082140437,1082140467,1082140480,1082140491,1082140498,1082140507",
+        "action": "sell",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082138513",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138526",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138543",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138549",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138556",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138566",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138577",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138594",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138605",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138616",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138626",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138644",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138670",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138683",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138692",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138702",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138716",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138747",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138762",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138779",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138790",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138797",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138806",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082138977",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139604",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139615",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139624",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139634",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139646",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139657",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139668",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139676",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139684",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139696",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139707",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139718",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139728",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139740",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139752",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139761",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139775",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139783",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139795",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139804",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139813",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139821",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139830",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139840",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139847",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139858",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139871",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139884",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139897",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139904",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139910",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139921",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139933",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139939",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139949",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139957",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139964",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082139973",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140004",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140016",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140027",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140037",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140050",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140069",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140089",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140100",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140109",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140117",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140125",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140155",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140166",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140174",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140181",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140189",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140224",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140250",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140263",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140270",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140278",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140291",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140316",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140324",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140332",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140363",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140375",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140383",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140404",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140412",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140419",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140426",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140437",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140467",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140480",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140491",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140498",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140507",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "volume": 0,
+        "price": 0.749,
+        "order_id": "1082140514,1082140535,1082140544",
+        "action": "buy",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082140514",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140535",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140544",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      },
+      {
+        "etf_code": "512170.SH",
+        "volume": 0,
+        "price": 0.322,
+        "order_id": "1082140553,1082140561,1082140571",
+        "action": "buy",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082140553",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140561",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082140571",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

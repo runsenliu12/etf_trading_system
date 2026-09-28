@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-07-22T14:30:41.745815",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "缩量下跌（权重护盘，小盘股杀跌，结构分化）",
+      "my_performance": "今日空仓，未参与任何交易，保持了冷静和纪律。",
+      "today_pnl_summary": "今日无盈亏，本金安全。",
+      "lessons_learned": "在弱势震荡市中，空仓就是胜利。不要因为个别板块大涨而冲动追入，耐心等待更确定的机会。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "横盘（尾盘整体平淡，没有明显的翘尾或跳水）",
+      "tail_volume": "缩量（尾盘成交清淡，市场观望情绪浓厚）",
+      "main_force_intention": "观望等待（主力在尾盘没有明显动作，等待隔夜消息面明朗）",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "无",
+      "tomorrow_open_impact": "今日尾盘平淡，对明天开盘影响中性。明天开盘主要受隔夜外盘及消息面影响。"
+    },
+    "today_bought_locked": [],
+    "sellable_positions": [],
+    "overnight_position_plan": {
+      "target_ratio": 0,
+      "current_ratio": 0,
+      "need_reduce": false,
+      "reduce_amount": 0,
+      "hold_etfs": [],
+      "if_empty": {
+        "should_empty": true,
+        "reason": "今日市场分化严重，小盘股大幅杀跌，科技、新能源等板块跌幅较大，市场情绪偏冷，不确定性高。空仓可以规避隔夜风险，等待明天市场给出更明确的信号。",
+        "tomorrow_watch": "明天重点关注：1. 大盘是否企稳，尤其是创业板和科创板能否止跌。2. 周期资源股（有色、化工）是否延续强势，但要注意追高风险。3. 政策面是否有新的催化。等市场放量企稳或出现明确的超跌反弹信号再进场。"
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": false,
+      "etf_code": "",
+      "entry_price": 0,
+      "order_type": "",
+      "position_ratio": 0,
+      "entry_deadline": "",
+      "reason": "市场整体偏弱，没有形成明显的合力方向。虽然有色、银行等板块上涨，但已处于高位不宜追涨。科技股虽大跌但未出现止跌信号。尾盘没有确定性足够高的机会，选择空仓过夜。",
+      "overnight_risk": "无"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "平开或低开",
+      "confidence": 60,
+      "key_factors": [
+        "隔夜美股科技股走势（纳指期货），可能影响A股科技板块",
+        "人民币汇率波动",
+        "是否有新的政策利好或利空消息",
+        "今日强势板块（有色、银行）的隔夜期货表现"
+      ],
+      "if_gap_up": "若明天高开，不要追涨。观察开盘后成交量是否能持续放大，若冲高回落则观望。",
+      "if_gap_down": "若明天低开，尤其是创业板、科创板跌幅超过2%，可考虑轻仓低吸，但需等企稳信号，不急于抄底。",
+      "watch_list": [
+        "科创50ETF(588000.SH)：观察能否在1.92附近止跌反弹，若放量企稳可考虑短线机会",
+        "有色金属ETF(512400.SH)：注意回调风险，若高位放量滞涨则回避",
+        "银行ETF(512800.SH)：若明天继续放量上攻，可考虑跟随，但仓位不宜过重"
+      ],
+      "black_swan_risk": "关注中美关系变化、地缘政治风险（如霍尔木兹海峡局势升级）、以及国内经济数据不及预期。"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大的风险是明天跳空低开，尤其是小盘股可能继续杀跌。",
+      "如果明天跳空低开2%以上，空仓无亏损，但若盘中盲目抄底可能被套。",
+      "尾盘绝对不能做的一件事是追涨强势板块（如有色金属），今日已大涨，明日大概率回调。"
+    ],
+    "key_reminder": "尾盘决断不犹豫，空仓过夜心不慌。明天机会多的是，保住本金等信号。",
+    "sell_orders": [],
+    "buy_orders": []
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": false
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "timestamp": "2026-07-29T10:31:34.356015",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "test": false,
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": false,
+      "market_real_type": "真强势",
+      "what_was_right": [],
+      "what_was_wrong": [
+        "集合竞价未做判断，但若预期半导体走强则错误，实际科技冲高回落大跌"
+      ],
+      "need_correction": "立即止损159516.SZ，加仓港股互联网、中概互联、医药ETF"
+    },
+    "current_market_score": {
+      "score": 65,
+      "trend": "比开盘变好",
+      "volume_health": "放量健康",
+      "main_force_action": "主力从科技板块持续流出，大幅流入港股互联网、中概互联、医药等消费防御板块，量价配合良好",
+      "north_bound_impact": "北向资金预计流入港股及消费医药，支撑结构性行情"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "can_sell_today": true,
+        "current_price": 0.689,
+        "current_pnl_pct": -9.36,
+        "today_high": 0.728,
+        "today_low": 0.668,
+        "vs_avg_line": "下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.689,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "半导体设备ETF今日暴跌4.31%，跌破所有均线，主力资金持续流出，且已亏损-9.36%，远超-5%止损线，必须立即止损，防止亏损扩大"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "159792.SZ",
+      "top_etf_name": "港股通互联网ETF",
+      "main_force_evidence": "开盘后持续放量上攻，涨幅达3.87%，成交量1642万手，远超同类ETF，板块联动效应强（港股汽车、科技同步大涨），主力资金集中流入明确",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "159792.SZ",
+          "main_force_score": 90,
+          "reason": "涨幅和成交量均居前，资金流入最明显，港股通互联网板块整体强势"
+        },
+        {
+          "rank": 2,
+          "etf_code": "513050.SH",
+          "main_force_score": 85,
+          "reason": "中概互联ETF涨幅2.82%，成交量1104万手，跟随港股互联网，主力资金持续加仓"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512010.SH",
+          "main_force_score": 80,
+          "reason": "医药ETF涨幅1.64%，成交量690万手，放量稳步上行，创新药政策利好催化"
+        }
+      ],
+      "priority_rule": "上午确认后，只加仓主力排名前3的ETF。主力在哪就跟到哪，不要另辟蹊径"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "159792.SZ",
+        "main_force_rank": 1,
+        "current_price": 0.617,
+        "change_pct": 3.87,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "上方",
+        "sector_trend": "港股通互联网板块整体走强，港股汽车ETF涨5.23%，板块联动强",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.617,
+        "position_ratio": 0.35,
+        "stop_loss": 0.586,
+        "take_profit": 0.679,
+        "overnight_risk": "低",
+        "reason": "主力资金排名第1，放量突破，涨幅领先，板块效应强，趋势确认，立刻上车。外盘平稳，隔夜风险低。止损设-5%"
+      },
+      {
+        "etf_code": "513050.SH",
+        "main_force_rank": 2,
+        "current_price": 1.129,
+        "change_pct": 2.82,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "上方",
+        "sector_trend": "中概互联板块跟随港股互联网走强，资金持续流入",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.129,
+        "position_ratio": 0.25,
+        "stop_loss": 1.073,
+        "take_profit": 1.242,
+        "overnight_risk": "低",
+        "reason": "主力排名第2，成交量配合，趋势确认，与港股互联网同向，分散持仓降低单票风险。止损-5%"
+      },
+      {
+        "etf_code": "512010.SH",
+        "main_force_rank": 3,
+        "current_price": 0.372,
+        "change_pct": 1.64,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "上方",
+        "sector_trend": "医药板块整体上涨，创新药ETF同步走强，政策利好支撑",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.372,
+        "position_ratio": 0.15,
+        "stop_loss": 0.353,
+        "take_profit": 0.409,
+        "overnight_risk": "低",
+        "reason": "主力排名第3，医药防御属性强，放量站上均价线，板块内创新药ETF领涨，主力资金流入明确。止损-5%"
+      }
+    ],
+    "t1_locked_positions": [],
+    "afternoon_strategy": {
+      "prediction": "延续上午",
+      "suggested_position": 90,
+      "if_rally": "如果下午继续拉升，持有现有仓位不动，让利润奔跑",
+      "if_drop": "如果下午跳水，需区分：若为短暂获利回吐（缩量），可加仓港股互联网和医药；若为放量下跌，则说明趋势结束，但已设止损，触及止损则执行",
+      "key_time": "13:30"
+    },
+    "risk_alerts": [
+      "当前最大风险敞口是港股互联网ETF仓位较重（35%），若下午港股回落会导致较大回撤",
+      "如果下午市场突然变盘，最大亏损约为总资产5%（止损触发前）",
+      "今天上午没有第一时间止损半导体设备ETF，导致亏损扩大，需严格执行止损纪律"
+    ],
+    "key_reminder": "趋势确认果断加仓，设好止损让利润奔跑，下午紧盯港股和医药量能变化。"
+  },
+  "execution_result": {
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "volume": 0,
+        "price": 0.686,
+        "order_id": "1082141195",
+        "action": "sell",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082141195",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159792.SZ",
+        "volume": 0,
+        "price": 0.618,
+        "order_id": "1082141221",
+        "action": "buy",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082141221",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      },
+      {
+        "etf_code": "513050.SH",
+        "volume": 0,
+        "price": 1.131,
+        "order_id": "1082141263",
+        "action": "buy",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082141263",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [
+      {
+        "etf_code": "512010.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      }
+    ],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

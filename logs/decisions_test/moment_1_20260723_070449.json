@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-07-23T07:04:49.129581",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "decision": {
+    "market_overview": {
+      "today_judgment": "真强势延续，结构性行情，资源+半导体双主线领涨",
+      "tradable_score": 82,
+      "main_force_intention": "主力今天明显在吸筹拉升资源股（黄金、有色金属、煤炭、化工）和半导体设备。竞价数据显示这些板块放量高开，资金涌入坚决，且外围美股半导体大涨5.21%提供强映射。主力意图明确：做多资源+科技，回避中概/港股互联网。"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "etf_name": "黄金ETF",
+        "holding_days": 1,
+        "can_sell_today": false,
+        "today_open": 8.555,
+        "open_change_pct": 1.09,
+        "current_pnl_pct": 0.04,
+        "action": "持有",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 0.0,
+        "urgency": "不卖",
+        "reason": "黄金ETF高开1.09%，跟随黄金现货和黄金股ETF大涨，趋势稳健。IB危机和地缘政治支撑黄金根本逻辑，且黄金股ETF大涨5.7%表明资金在资源股中轮动，黄金ETF作为防御+进攻兼备品种，继续持有享受趋势。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "159516.SZ",
+      "top_etf_name": "半导体设备ETF",
+      "main_force_evidence": "竞价量能1.06亿手，是全场最大量，且涨幅2.75%列科技板块第一。美股费城半导体指数隔夜大涨5.21%，直接映射国产半导体设备板块。同时行业研报看好AI硬件链和半导体材料，资金共识度极高。",
+      "ranked_etfs": [
+        {
+          "rank": "1",
+          "etf_code": "159516.SZ",
+          "main_force_score": 95,
+          "reason": "量能最大1.06亿手，涨幅2.75%，美股半导体映射最强，资金共识最高"
+        },
+        {
+          "rank": "2",
+          "etf_code": "517520.SH",
+          "main_force_score": 90,
+          "reason": "黄金股ETF涨幅5.7%领涨全市场，量能457万手，日成交额预计超8亿，黄金现货突破4100美元，白银涨4.36%，资源主线明确"
+        },
+        {
+          "rank": "3",
+          "etf_code": "512400.SH",
+          "main_force_score": 85,
+          "reason": "有色金属ETF涨3.39%且放量，原油涨2%、贵金属涨，地缘政治催化，化工ETF亦联动，资源板块整体强势"
+        }
+      ],
+      "priority_rule": "记住：主力在哪里，钱就到哪里。买前3名，回避主力撤离的ETF"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "etf_name": "半导体设备ETF",
+        "sector": "科技/半导体",
+        "main_force_rank": 1,
+        "today_open": 0.746,
+        "open_change_pct": 2.75,
+        "open_volume_quality": "真实放量（持续堆积）",
+        "sector_3days": "半导体板块近3天震荡整理，今日受美股映射放量突破，趋势转强，持续性高",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 0.746,
+        "position_ratio": 0.35,
+        "stop_loss": 0.708,
+        "take_profit": 0.8,
+        "max_hold_days": 5,
+        "confidence": 88,
+        "reason": "主力资金排名第一，1.06亿手竞价量能全场第一，美股半导体+5.21%直接映射，行业研报看好AI硬件链和半导体材料。技术面放量突破0.737-0.744平台，量价配合完美，跟紧主力做多趋势。"
+      },
+      {
+        "etf_code": "517520.SH",
+        "etf_name": "黄金股ETF",
+        "sector": "商品/贵金属",
+        "main_force_rank": 2,
+        "today_open": 1.795,
+        "open_change_pct": 5.7,
+        "open_volume_quality": "真实放量（持续堆积）",
+        "sector_3days": "黄金板块近3天持续走强，今日加速跳空高开，趋势极强",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 1.795,
+        "position_ratio": 0.25,
+        "stop_loss": 1.705,
+        "take_profit": 1.95,
+        "max_hold_days": 5,
+        "confidence": 85,
+        "reason": "主力资金排名第二，黄金股ETF涨5.7%领涨全市场，量能457万手，日成交额预计超8亿。黄金现货突破4100美元，白银涨4.36%，地缘政治和IB危机利好贵金属，资源股主线明确，趋势强劲。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "etf_name": "有色金属ETF",
+        "sector": "周期资源",
+        "main_force_rank": 3,
+        "today_open": 1.723,
+        "open_change_pct": 3.39,
+        "open_volume_quality": "真实放量（持续堆积）",
+        "sector_3days": "有色金属板块近3天震荡上行，今日放量加速，趋势健康",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 1.723,
+        "position_ratio": 0.15,
+        "stop_loss": 1.637,
+        "take_profit": 1.85,
+        "max_hold_days": 5,
+        "confidence": 80,
+        "reason": "主力资金排名第三，有色金属ETF涨3.39%且放量，原油涨2%、贵金属涨，化工ETF联动。资源股整体强势，地缘政治和涨价逻辑支撑，跟随主力做多周期资源。"
+      }
+    ],
+    "empty_position_decision": {
+      "should_empty": false,
+      "reason": "市场整体中性偏强，资源+半导体双主线明确，主力资金流入明显，放量高开是机会不是陷阱。空仓会踏空确定性最强的资源股和科技股行情，与主力思维相悖。",
+      "what_to_wait": "不空仓，今天就是入场时机"
+    },
+    "opening_30min_plan": {
+      "if_rally": "如果9:30-10:00大盘持续拉升，直接追入半导体设备ETF(159516)或黄金股ETF(517520)，仓位可加至40%，止损设-3%",
+      "if_drop": "如果大盘跳水，判断：若缩量急跌则视为恐慌洗盘，可加仓半导体设备ETF(159516)；若放量杀跌则观望，但资源股有基本面支撑，不轻易止损",
+      "if_sideways": "如果横盘震荡，观察159516是否守住0.746开盘价，守住则加仓，破位则等回调至0.735再补",
+      "key_watch": [
+        "半导体设备ETF(159516)开盘后15分钟量能是否持续放大",
+        "黄金股ETF(517520)能否守住1.795开盘价",
+        "港股通互联网ETF(159792)是否继续拖累市场情绪"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "资源股（黄金+有色金属+煤炭+化工），受美股贵金属、原油大涨及地缘政治催化，竞价放量高开，主力资金集中涌入",
+      "weakest_today": "中概互联/港股科技类，中概互联ETF跌4.42%，港股通互联网ETF跌4.42%，受中概股ADR下跌拖累，资金撤离明显",
+      "most_watch": "半导体设备ETF(159516)，1.06亿手竞价量能全场第一，美股半导体映射最强，是今天科技股的核心方向",
+      "to_avoid": "中概互联、港股互联网、传媒、游戏、机器人——这些板块竞价下跌且放量，主力资金明显流出，回避"
+    },
+    "risk_warnings": [
+      "高开诱多：只看涨幅不看量能，黄金股ETF涨5.7%但若开盘后量能萎缩，需警惕冲高回落",
+      "如果全部判断错误，最大可能亏损15%（三个新开仓同时-5%止损）",
+      "今天绝对不能做的一件事：追涨通信ETF或游戏ETF，这些跌了4%以上，是主力出货区域，不是抄底机会"
+    ],
+    "key_reminder": "资源为王，黄金有色煤炭领涨就是信号；半导体设备放量突破，美股映射必须上车。跟紧主力，别犹豫。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "volume": 4217100,
+        "price": 0.747,
+        "order_id": "1090519105",
+        "action": "buy",
+        "order_type": "market"
+      },
+      {
+        "etf_code": "517520.SH",
+        "volume": 1213600,
+        "price": 1.854,
+        "order_id": "1090519106",
+        "action": "buy",
+        "order_type": "market"
+      },
+      {
+        "etf_code": "512400.SH",
+        "volume": 763600,
+        "price": 1.768,
+        "order_id": "1090519107",
+        "action": "buy",
+        "order_type": "market"
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

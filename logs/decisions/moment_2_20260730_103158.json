@@ -1,0 +1,301 @@
+{
+  "timestamp": "2026-07-30T10:31:58.509302",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "test": false,
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": true,
+      "market_real_type": "真强势/真弱势分化",
+      "what_was_right": [
+        "9:25判断半导体设备ETF(159516)存在风险正确",
+        "提前识别科技板块弱势"
+      ],
+      "what_was_wrong": [
+        "9:25判断后未及时执行卖出159516，导致亏损扩大至-12%"
+      ],
+      "need_correction": "立即止损159516，清仓所有科技/弱势品种，加仓主力资金流入的消费ETF、酒ETF、银行ETF"
+    },
+    "current_market_score": {
+      "score": 65,
+      "trend": "比开盘变差（科技大跌，消费走强）",
+      "volume_health": "放量健康（消费放量上涨，科技放量下跌）",
+      "main_force_action": "主力从科技板块持续流出，集中流入消费（酒、消费ETF）、银行、黄金股等防御/内需板块",
+      "north_bound_impact": "北向资金预计流入消费，助长结构性行情"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "can_sell_today": true,
+        "current_price": 0.669,
+        "current_pnl_pct": -11.99,
+        "today_high": 0.7,
+        "today_low": 0.669,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "半导体设备ETF今日暴跌5.24%，跌破均价线，主力资金明显出逃。亏损已超-5%止损线，必须立即止损，避免进一步下跌。"
+      },
+      {
+        "etf_code": "512170.SH",
+        "can_sell_today": true,
+        "current_price": 0.325,
+        "current_pnl_pct": 0.57,
+        "today_high": 0.329,
+        "today_low": 0.324,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "医疗ETF冲高回落，现价低于均价线，主力资金未流入该板块。微盈时及时了结，腾出资金加仓强势消费品种。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "can_sell_today": true,
+        "current_price": 1.772,
+        "current_pnl_pct": 0.67,
+        "today_high": 1.801,
+        "today_low": 1.764,
+        "vs_avg_line": "在均价线下方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "有色ETF冲高回落，从高点1.801回落至1.772，量能未有效放大，主力资金不在此方向。微盈落袋，切换至消费主线。"
+      },
+      {
+        "etf_code": "513050.SH",
+        "can_sell_today": true,
+        "current_price": 1.132,
+        "current_pnl_pct": 0.07,
+        "today_high": 1.149,
+        "today_low": 1.12,
+        "vs_avg_line": "在均价线附近",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "中概互联冲高回落，隔夜中概股表现一般，今日港股科技亦弱势。持仓基本不亏，及时离场，避免跟随科技板块补跌。"
+      },
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": true,
+        "current_price": 8.462,
+        "current_pnl_pct": -1.77,
+        "today_high": 8.484,
+        "today_low": 8.457,
+        "vs_avg_line": "在均价线上方",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "黄金ETF虽在均价线上方，但主力资金明显更青睐黄金股ETF（涨幅1.91%），且黄金非今日核心主线。亏损幅度尚可接受，清仓换入消费，紧跟主力步伐。"
+      },
+      {
+        "etf_code": "159792.SZ",
+        "can_sell_today": true,
+        "current_price": 0.618,
+        "current_pnl_pct": -0.02,
+        "today_high": 0.629,
+        "today_low": 0.611,
+        "vs_avg_line": "在均价线附近",
+        "action": "现在卖出",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 1.0,
+        "urgency": "立即",
+        "reason": "港股通互联网ETF冲高回落，科技板块整体弱势，无法独善其身。微亏离场，集中资金进攻消费主线。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "512690.SH",
+      "top_etf_name": "酒ETF",
+      "main_force_evidence": "酒ETF今日放量上涨3.67%，成交1336万手，远超近5日均量。盘中持续在均价线上方运行，回踩幅度极小，板块效应强（消费ETF、旅游ETF联动上涨）。北向资金预计净买入消费板块，主力资金持续流入明确。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "512690.SH",
+          "main_force_score": 95,
+          "reason": "涨幅第一（3.67%），量能放大至1336万手，价格始终在均价线上方，筹码交换充分，主力主动做多迹象明显。"
+        },
+        {
+          "rank": 2,
+          "etf_code": "159928.SZ",
+          "main_force_score": 90,
+          "reason": "消费ETF涨幅3.09%，量能415万手，与酒ETF联动，板块内个股普涨，主力资金介入深度高。"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512800.SH",
+          "main_force_score": 75,
+          "reason": "银行ETF涨幅1.34%，量能405万手，为金融板块领涨，有一定护盘作用，但弹性略低于消费，主力强度稍弱。"
+        }
+      ],
+      "priority_rule": "上午确认后，只加仓主力排名前3的ETF。主力在哪就跟到哪，不要另辟蹊径"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "512690.SH",
+        "main_force_rank": 1,
+        "current_price": 0.452,
+        "change_pct": 3.67,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "消费板块全面走强，酒ETF领涨，旅游、农业跟涨，板块效应良好",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.452,
+        "position_ratio": 0.35,
+        "stop_loss": 0.429,
+        "take_profit": 0.497,
+        "overnight_risk": "低",
+        "reason": "酒ETF主力排名第1，量价配合完美，板块联动强。消费是今日绝对主线，与海外风险脱钩，内需独立逻辑清晰。趋势确认后果断重仓，止损-5%，止盈+10%起。"
+      },
+      {
+        "etf_code": "159928.SZ",
+        "main_force_rank": 2,
+        "current_price": 0.7,
+        "change_pct": 3.09,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "消费ETF与酒ETF同步上涨，成分股中白酒、食品饮料领涨，板块资金流入明显",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.7,
+        "position_ratio": 0.25,
+        "stop_loss": 0.665,
+        "take_profit": 0.77,
+        "overnight_risk": "低",
+        "reason": "消费ETF主力排名第2，涨幅3.09%，放量突破近期平台。消费板块有业绩支撑，且受益于内需刺激政策。跟随主力建仓，止损-5%，止盈+10%。"
+      },
+      {
+        "etf_code": "512800.SH",
+        "main_force_rank": 3,
+        "current_price": 0.83,
+        "change_pct": 1.34,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "银行板块整体上涨，银行ETF量能放大，有资金护盘迹象",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 0.83,
+        "position_ratio": 0.15,
+        "stop_loss": 0.789,
+        "take_profit": 0.913,
+        "overnight_risk": "低",
+        "reason": "银行ETF主力排名第3，涨幅1.34%，在金融板块中表现稳健。银行股估值低、分红高，是防御性配置的优选。适量跟仓，止损-5%，止盈+10%。"
+      }
+    ],
+    "t1_locked_positions": [],
+    "afternoon_strategy": {
+      "prediction": "延续上午分化，消费强势，科技弱势震荡",
+      "suggested_position": 75,
+      "if_rally": "若下午消费继续拉升，持有现有仓位不动，让利润奔跑；若出现回调至均价线，可少量加仓酒ETF或消费ETF（加仓不超过10%仓位）。",
+      "if_drop": "若下午市场跳水（科技加速下跌拖累消费），观察消费ETF能否守住开盘价。若跌破开盘价且放量，则减仓一半消费仓位；若缩量回调，视为洗盘，持有并考虑加仓。",
+      "key_time": "13:00-13:30（下午开盘半小时，确认上午趋势是否延续）和14:30（尾盘定方向）"
+    },
+    "risk_alerts": [
+      "当前持仓最大的风险敞口是科技板块系统性下跌可能拖累消费情绪，但消费具有独立逻辑，风险相对可控。",
+      "如果下午消费板块突然放量下跌5%，最大亏损约为买入资金的5%（约15万元），占账户总资产1.5%，在可接受范围内。",
+      "今天上午犯的错误：未在9:25及时执行159516的卖出指令，导致亏损扩大至12%。今后必须严格执行止损纪律，-5%无条件止损。"
+    ],
+    "key_reminder": "紧跟主力，弃弱留强，消费龙头不破均线不离场，止损-5%铁律不破。"
+  },
+  "execution_result": {
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "volume": 0,
+        "price": 0.671,
+        "order_id": "1090528368",
+        "action": "sell",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1090528368",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      },
+      {
+        "etf_code": "512170.SH",
+        "volume": 0,
+        "price": 0.325,
+        "order_id": "1090528381",
+        "action": "sell",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1090528381",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      },
+      {
+        "etf_code": "512400.SH",
+        "volume": 0,
+        "price": 1.773,
+        "order_id": "1090528399",
+        "action": "sell",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1090528399",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "buy_orders": [],
+    "pending_orders": [],
+    "skipped": [
+      {
+        "etf_code": "513050.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "518880.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "159792.SZ",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512690.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "159928.SZ",
+        "reason": "当日有效交易笔数已达上限(3)"
+      },
+      {
+        "etf_code": "512800.SH",
+        "reason": "当日有效交易笔数已达上限(3)"
+      }
+    ],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

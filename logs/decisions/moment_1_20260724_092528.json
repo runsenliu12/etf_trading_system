@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-07-24T09:25:28.133180",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "test": false,
+  "decision": {
+    "market_overview": {
+      "today_judgment": "弱势震荡，防御性板块相对抗跌，科技股承压，注意高开低走风险",
+      "tradable_score": 55,
+      "main_force_intention": "主力资金从科技成长股流向银行、煤炭等防御性板块，黄金遭抛售。竞价显示银行ETF放量高开，煤炭ETF平开放量，表明主力在调仓换股，并非全面撤退。"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "etf_name": "黄金ETF",
+        "holding_days": 1,
+        "can_sell_today": true,
+        "today_open": 8.4,
+        "open_change_pct": -1.87,
+        "current_pnl_pct": -1.83,
+        "action": "开盘卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "必须立即卖",
+        "reason": "隔夜COMEX黄金大跌2.40%，今日黄金ETF低开-1.87%且竞价量能不足，主力资金流出黄金板块。黄金ETF已跌破成本，趋势向下，应果断止损离场，避免更大亏损。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "512800.SH",
+      "top_etf_name": "银行ETF",
+      "main_force_evidence": "银行ETF集合竞价高开0.25%，量能86743手，属于放量高开。板块内银行股多数高开，行业研报看好银行中期策略。外盘美债收益率上行利好银行净息差，主力资金明显流入防御性银行板块。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "512800.SH",
+          "main_force_score": 85,
+          "reason": "竞价放量高开，板块联动较好，银行研报持续看好，主力资金流入明确。"
+        },
+        {
+          "rank": 2,
+          "etf_code": "515220.SH",
+          "main_force_score": 75,
+          "reason": "竞价平开放量0.08%，量能52442手，煤炭行业研报看好供需拐点，外盘能源板块上涨，主力资金小幅流入。"
+        },
+        {
+          "rank": 3,
+          "etf_code": "516910.SH",
+          "main_force_score": 70,
+          "reason": "竞价高开2.56%，但量能仅960手，可能虚假。但物流行业有红海事件催化，外盘工业板块上涨，仍需关注。"
+        }
+      ],
+      "priority_rule": "主力在哪里，钱就到哪里。买前3名，回避主力撤离的ETF"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "512800.SH",
+        "etf_name": "银行ETF",
+        "sector": "金融",
+        "main_force_rank": 1,
+        "today_open": 0.805,
+        "open_change_pct": 0.25,
+        "open_volume_quality": "真实放量",
+        "sector_3days": "银行板块近3天整体震荡偏强，今日竞价延续强势，有持续性。",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 0.805,
+        "position_ratio": 0.35,
+        "stop_loss": 0.79,
+        "take_profit": 0.83,
+        "max_hold_days": 10,
+        "confidence": 80,
+        "reason": "主力资金排名第1，竞价放量高开，银行行业研报看好，外盘美债收益率上行利好银行。防御属性强，适合今日弱势市场。预计银行ETF将延续升势，止损设在开盘价下方2%左右。"
+      },
+      {
+        "etf_code": "515220.SH",
+        "etf_name": "煤炭ETF",
+        "sector": "周期资源",
+        "main_force_rank": 2,
+        "today_open": 1.239,
+        "open_change_pct": 0.08,
+        "open_volume_quality": "平放量",
+        "sector_3days": "煤炭板块近3天窄幅震荡，今日平开放量，有企稳迹象。",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 1.239,
+        "position_ratio": 0.25,
+        "stop_loss": 1.21,
+        "take_profit": 1.28,
+        "max_hold_days": 10,
+        "confidence": 70,
+        "reason": "主力资金排名第2，煤炭行业有供需拐点预期，外盘能源板块上涨。今日竞价平开放量，资金温和流入，可适当配置。止损设在2.3%左右。"
+      }
+    ],
+    "empty_position_decision": {
+      "should_empty": false,
+      "reason": "市场虽然弱势，但银行、煤炭等防御板块有主力资金流入，不应空仓。根据交易风格，空仓是最大风险，应保持至少10%仓位跟随主力。",
+      "what_to_wait": "不适用"
+    },
+    "opening_30min_plan": {
+      "if_rally": "如果9:30-10:00大盘持续拉升，银行ETF和煤炭ETF已持仓，无需追入。若银行ETF涨幅超过2%，可加仓至40%。",
+      "if_drop": "如果9:30-10:00大盘跳水，观察银行ETF能否站稳0.800以上，若跌破0.795则减仓至20%。煤炭ETF若跌破1.220则全部止损。",
+      "if_sideways": "如果9:30-10:00横盘震荡，持仓不动。关注银行ETF能否在0.805附近企稳放量，若缩量则止盈一半。",
+      "key_watch": [
+        "银行ETF前30分钟成交量能否持续放大",
+        "煤炭ETF能否站稳1.239开盘价",
+        "资金是否从科技股继续流出至防御板块"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "银行板块，竞价高开放量，主力资金流入明显，防御属性强。",
+      "weakest_today": "科技板块（半导体、人工智能等），竞价普遍低开2%以上，外盘科技股大跌拖累。",
+      "most_watch": "银行ETF，作为今日核心持仓，关注其能否带领指数企稳。",
+      "to_avoid": "科技类ETF（半导体、芯片、人工智能等），外盘利空未消化，主力资金流出，短期回避。"
+    },
+    "risk_warnings": [
+      "今天最危险的陷阱是科技股低开后诱多反弹，主力可能借反弹出货，切勿追高。",
+      "如果全仓买入银行和煤炭，最大可能亏损为-5%（触发止损），需严格执行纪律。",
+      "今天绝对不能做的一件事：抄底科技股，尤其是大幅低开的半导体、人工智能ETF。"
+    ],
+    "key_reminder": "弱市抱团防御，银行煤炭是避风港；科技股跌停潮，抄底就是送人头。"
+  },
+  "execution_result": {
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "volume": 0,
+        "price": 8.4,
+        "order_id": "1082131553",
+        "action": "sell",
+        "order_type": "market",
+        "status": "全部成交",
+        "unfilled": true
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "512800.SH",
+        "volume": 0,
+        "price": 0.805,
+        "order_id": "1082131559",
+        "action": "buy",
+        "order_type": "market",
+        "status": "全部成交",
+        "unfilled": true
+      },
+      {
+        "etf_code": "515220.SH",
+        "volume": 0,
+        "price": 1.239,
+        "order_id": "1082131564",
+        "action": "buy",
+        "order_type": "market",
+        "status": "全部成交",
+        "unfilled": true
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

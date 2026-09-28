@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-07-22T10:30:42.211284",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": "false",
+      "market_real_type": "真强势",
+      "what_was_right": [
+        "有色金属板块确实强势，有色金属ETF涨幅4.15%符合预期",
+        "黄金ETF上涨1.24%，但并非最强"
+      ],
+      "what_was_wrong": [
+        "判断科技类受挫、整体弱势，但科技板块实际大涨，半导体ETF涨4.63%",
+        "判断主力以避险防御为主，但实际主力在科技板块放量进攻"
+      ],
+      "why_wrong": "9:25过度关注黄金和有色，低估了科技板块的洗盘后拉升动能。早盘科技低开但放量回升，主力借利空收集筹码后快速拉升，量价配合健康，板块联动明显，是真强势启动。而黄金虽有避险属性但资金关注度被科技分流，涨幅有限。"
+    },
+    "current_market_score": {
+      "score": 65,
+      "trend": "比开盘变好",
+      "volume_health": "放量健康",
+      "main_force_action": "主力在持续买入科技和有色金属板块。半导体ETF开盘后量能持续放大，价格稳步上扬，每次回调缩量，拉升放量，是典型的主力增仓行为。有色金属ETF也放量上涨，但科技更强。",
+      "north_bound_impact": "北向资金今日可能小幅流出（港股大跌），但内资主导科技行情，北向对A股影响有限。"
+    },
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "512480.SH",
+        "current_price": 1.196,
+        "change_pct": 4.55,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "半导体板块集体走强，芯片ETF、科技ETF同步大涨，板块效应明显。",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.196,
+        "position_ratio": 0.2,
+        "stop_loss": 1.14,
+        "take_profit": 1.31,
+        "overnight_risk": "中",
+        "reason": "半导体ETF放量大涨4.55%，量价健康，板块联动强势。开盘低开后稳步拉升，主力资金持续流入，是真强势启动。虽然已涨较多，但强者恒强，趋势确定后追入是顺势而为。止损设在今日最低1.142下方1.140，亏损可控。"
+      }
+    ],
+    "t1_locked_positions": [],
+    "afternoon_strategy": {
+      "prediction": "延续上午强势",
+      "suggested_position": 70,
+      "if_rally": "下午若继续拉升，持有不动，可在尾盘前小幅加仓（如再加5%），但不超过总仓位70%。",
+      "if_drop": "下午若跳水，观察是否跌破均价线（约1.18），若跌破且无法收回，则今日买入的单子被套，但明天按止损处理；若在均价线上方整理，则持有。",
+      "key_time": "14:30-14:45，观察量能是否持续，若缩量则警惕次日低开。"
+    },
+    "risk_alerts": [
+      "当前最大风险是科技板块下午冲高回落，但止损设在1.14，亏损约4.7%。",
+      "若下午市场情绪突变，如地缘事件或港股拖累，可能引发回调，最大亏损可控。",
+      "上午判断科技类受挫是明显错误，已及时纠正，但不应再追高其他弱势板块。"
+    ],
+    "key_reminder": "真强势已现，果断上车；止损设好，不惧回调。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "512480.SH",
+        "volume": 1506300,
+        "price": 1.195,
+        "order_id": "1090527470",
+        "action": "buy",
+        "order_type": "market"
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

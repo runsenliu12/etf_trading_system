@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-07-23T07:05:45.839543",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": "true",
+      "market_real_type": "真强势",
+      "what_was_right": [
+        "资源股（黄金、有色金属、煤炭）领涨逻辑正确，黄金股ETF+5.7%、有色金属ETF+3.39%、煤炭ETF+2.77%",
+        "半导体设备ETF受美股映射涨幅2.75%，板块效应存在",
+        "回避中概/港股互联网正确，相关ETF跌幅超4%"
+      ],
+      "what_was_wrong": [
+        "半导体设备ETF冲高回落明显（最高0.788→现价0.747），主力可能边拉边出，需要重新评估强度",
+        "对黄金股ETF的持续性估计不足，开盘涨幅5.7%后继续冲高至1.883，超预期强势"
+      ],
+      "need_correction": "确认资源股为核心主线，加仓黄金股ETF(517520)至35%、有色金属ETF(512400)至25%；煤炭ETF(515220)新开15%仓位；半导体设备ETF(159516)暂不追加，等待下午确认是否洗盘结束。"
+    },
+    "current_market_score": {
+      "score": 80,
+      "trend": "比开盘变差",
+      "volume_health": "放量健康",
+      "main_force_action": "主力持续买入资源股（黄金、有色、煤炭），边拉边出部分科技股（半导体设备）。盘面显示黄金股ETF、有色金属ETF、煤炭ETF量价配合良好，而半导体设备ETF量能巨大但价格回落，资金分歧加大。",
+      "north_bound_impact": "北向资金预计流入资源股，流出中概/科技，与主力方向一致"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "can_sell_today": true,
+        "current_price": 8.56,
+        "current_pnl_pct": 0.04,
+        "today_high": 8.614,
+        "today_low": 8.546,
+        "vs_avg_line": "在均价线上方",
+        "action": "继续持有",
+        "order_type": "market",
+        "sell_price": 0.0,
+        "sell_ratio": 0.0,
+        "urgency": "不卖",
+        "reason": "黄金ETF今日涨1.09%，走势稳健，跟随黄金现货上涨趋势，且与黄金股ETF有联动但弹性较小，适合作为底仓防御。盘中高点8.614，现价8.560在均价线上方，量能正常，无卖出信号。"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "517520.SH",
+      "top_etf_name": "黄金股ETF",
+      "main_force_evidence": "黄金股ETF涨幅5.70%领涨全市场，盘中最高1.883，量能457万手，成交额超8亿，黄金现货突破4100美元，地缘政治及IB危机支撑，主力资金持续流入。板块联动：有色金属ETF、煤炭ETF、化工ETF均大涨，资源股整体强势。",
+      "ranked_etfs": [
+        {
+          "rank": "1",
+          "etf_code": "517520.SH",
+          "main_force_score": 92,
+          "reason": "涨幅最大5.7%，量价健康，黄金现货创新高，资源股龙头，主力资金集中买入"
+        },
+        {
+          "rank": "2",
+          "etf_code": "512400.SH",
+          "main_force_score": 88,
+          "reason": "有色金属ETF涨3.39%，量能709万手，盘中最高1.794，现价1.768，回踩幅度小，趋势稳健，主力持续加仓"
+        },
+        {
+          "rank": "3",
+          "etf_code": "515220.SH",
+          "main_force_score": 85,
+          "reason": "煤炭ETF涨2.77%，量能942万手，盘中最高1.224，资源板块联动，煤炭涨价预期，主力资金流入明显"
+        }
+      ],
+      "priority_rule": "上午确认后，只加仓主力排名前3的ETF。主力在哪就跟到哪，不要另辟蹊径"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "517520.SH",
+        "main_force_rank": 1,
+        "current_price": 1.854,
+        "change_pct": 5.7,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "黄金板块强势，黄金现货创新高，白银涨4.36%，资源股整体上涨",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.854,
+        "position_ratio": 0.35,
+        "stop_loss": 1.761,
+        "take_profit": 2.039,
+        "overnight_risk": "中",
+        "reason": "主力排名第一，黄金股ETF涨幅5.7%领涨全市场，量能持续放大，黄金现货突破4100美元创历史新高，地缘政治和IB危机推动避险需求。技术面跳空高开，盘中最高1.883，现价1.854虽从高点回落但仍在均价线上方，趋势极强。跟紧主力，设好止损利润奔跑。"
+      },
+      {
+        "etf_code": "512400.SH",
+        "main_force_rank": 2,
+        "current_price": 1.768,
+        "change_pct": 3.39,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "有色金属板块整体上涨，原油涨2%，贵金属涨，化工联动，资源股主线明确",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.768,
+        "position_ratio": 0.25,
+        "stop_loss": 1.68,
+        "take_profit": 1.945,
+        "overnight_risk": "中",
+        "reason": "主力排名第二，有色金属ETF涨3.39%且量能709万手，盘中最高1.794，现价1.768回踩幅度小，趋势健康。资源股整体强势，地缘政治和涨价逻辑支撑，跟随主力做多周期资源。"
+      },
+      {
+        "etf_code": "515220.SH",
+        "main_force_rank": 3,
+        "current_price": 1.224,
+        "change_pct": 2.77,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "煤炭板块走强，资源股联动，能源涨价预期",
+        "action": "现在买入",
+        "order_type": "market",
+        "buy_price": 1.224,
+        "position_ratio": 0.15,
+        "stop_loss": 1.163,
+        "take_profit": 1.346,
+        "overnight_risk": "中",
+        "reason": "主力排名第三，煤炭ETF涨2.77%且量能942万手，盘中最高1.224，资源板块联动性强。煤炭受益于能源价格涨和地缘政治，主力资金流入明显，跟随资源主线做多。"
+      }
+    ],
+    "t1_locked_positions": [
+      {
+        "etf_code": "517520.SH",
+        "bought_today": true,
+        "buy_price": 1.854,
+        "current_price": 1.854,
+        "pnl_pct": 0.0,
+        "assessment": "买入了，需观察下午走势",
+        "tomorrow_plan": "高开持有，低开超5%止损，否则持有至止盈",
+        "tomorrow_stop_loss": 1.761
+      },
+      {
+        "etf_code": "512400.SH",
+        "bought_today": true,
+        "buy_price": 1.768,
+        "current_price": 1.768,
+        "pnl_pct": 0.0,
+        "assessment": "买入了，需观察下午走势",
+        "tomorrow_plan": "高开持有，低开超5%止损，否则持有至止盈",
+        "tomorrow_stop_loss": 1.68
+      },
+      {
+        "etf_code": "515220.SH",
+        "bought_today": true,
+        "buy_price": 1.224,
+        "current_price": 1.224,
+        "pnl_pct": 0.0,
+        "assessment": "买入了，需观察下午走势",
+        "tomorrow_plan": "高开持有，低开超5%止损，否则持有至止盈",
+        "tomorrow_stop_loss": 1.163
+      }
+    ],
+    "afternoon_strategy": {
+      "prediction": "延续上午走势，资源股继续强势，但需警惕尾盘获利回吐",
+      "suggested_position": 85,
+      "if_rally": "如果下午拉升，维持现有仓位，不追加；若黄金股ETF突破1.883新高，可小幅加仓至40%",
+      "if_drop": "如果下午跳水，判断：若资源股缩量回调，视为恐慌洗盘，可加仓有色金属ETF；若放量杀跌且跌破止损价，立即止损。设置止损单保护利润。",
+      "key_time": "14:00-14:30，观察资源股是否出现放量滞涨，若出现则减仓1/3"
+    },
+    "risk_alerts": [
+      "当前持仓最大风险敞口在黄金股ETF，涨幅已大，若下午冲高回落可能触发止损（-5%），但盈亏比合理",
+      "如果下午市场突然变盘，三个新开仓同时止损，最大亏损约15%（35%*5%+25%*5%+15%*5%=3.75%总资产，实际略高），但概率较低",
+      "今天上午已经犯的一个错误是：未在开盘时立即买入（因模拟未执行），但10:40追入价格略高，不过趋势仍在，不算重大错误"
+    ],
+    "key_reminder": "资源主线明确，果断加仓，止损设好，下午冲高不追，回踩可加，尾盘防回落。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "517520.SH",
+        "volume": 1444200,
+        "price": 1.854,
+        "order_id": "1090519108",
+        "action": "buy",
+        "order_type": "market"
+      },
+      {
+        "etf_code": "512400.SH",
+        "volume": 1081700,
+        "price": 1.768,
+        "order_id": "1090519109",
+        "action": "buy",
+        "order_type": "market"
+      },
+      {
+        "etf_code": "515220.SH",
+        "volume": 937500,
+        "price": 1.224,
+        "order_id": "1090519110",
+        "action": "buy",
+        "order_type": "market"
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

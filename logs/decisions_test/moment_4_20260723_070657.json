@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-07-23T07:06:57.343463",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "结构分化",
+      "my_performance": "今日无操作，仅持有黄金ETF，错失有色金属、煤炭等强势板块的上涨机会。进攻性不足，需反思。",
+      "today_pnl_summary": "今日盈亏：黄金ETF微盈0.04%，基本持平。整体无亏损，但踏空强势板块，机会成本较大。",
+      "lessons_learned": "结构分化行情下，必须紧跟主力资金流向，不能因缩量弱势而放弃进攻。有色金属、煤炭的强势是明确的信号，应果断上车。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "真翘尾（温和放量回升）",
+      "tail_volume": "尾盘放量",
+      "main_force_intention": "主力尾盘在有色金属、煤炭、黄金股等周期资源板块持续加仓，意在布局明天，看好周期股后续表现。",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "无假拉尾盘迹象，强势板块尾盘量价配合良好，非突然拉升。",
+      "tomorrow_open_impact": "今天尾盘强势的周期资源板块（有色金属、煤炭、黄金股）将支撑明天高开，但科技板块（游戏、通信）的弱势可能拖累指数，整体高开概率较大，但高度有限。"
+    },
+    "today_bought_locked": [],
+    "main_force_tracking": {
+      "top_etf": "512400.SH",
+      "top_etf_name": "有色金属ETF",
+      "main_force_evidence": "全天涨幅3.39%，成交量7097369手，量价配合优秀，始终运行在均价线上方，尾盘放量翘尾，主力资金全天持续净流入，表现强势。",
+      "ranked_etfs": [
+        {
+          "rank": "1",
+          "etf_code": "512400.SH",
+          "main_force_score": 95,
+          "reason": "有色金属ETF全天领涨周期资源，涨幅3.39%，成交量放大，量价关系健康，尾盘主力资金继续加仓，是全天最强品种。"
+        },
+        {
+          "rank": "2",
+          "etf_code": "517520.SH",
+          "main_force_score": 90,
+          "reason": "黄金股ETF涨幅5.70%，振幅极大，从开盘1.795到最高1.883，主力资金活跃，尾盘维持高位，资金持续流入。"
+        },
+        {
+          "rank": "3",
+          "etf_code": "515220.SH",
+          "main_force_score": 85,
+          "reason": "煤炭ETF涨幅2.77%，成交量9429618手，量价配合良好，尾盘强势，主力资金持续流入，周期资源板块联动性强。"
+        }
+      ],
+      "overnight_advice": "过夜仓位应优先配置有色金属、黄金股、煤炭ETF，它们有主力资金持续流入，过夜安心。"
+    },
+    "sellable_positions": [
+      {
+        "etf_code": "518880.SH",
+        "can_sell": true,
+        "current_pnl_pct": "0.04%",
+        "today_trend": "全天震荡上行，涨幅1.09%，量能一般，表现弱于有色金属和黄金股，属于防御性品种。",
+        "action": "持有过夜",
+        "order_type": "market",
+        "sell_price": "0.000",
+        "sell_ratio": "0.00",
+        "sell_deadline": "14:55",
+        "reason": "黄金ETF今天走势稳健，尾盘没有跳水，且主力资金仍在流入黄金股ETF，可持有过夜。但仓位已满，且有色金属、煤炭更强势，不再加仓黄金。"
+      }
+    ],
+    "overnight_position_plan": {
+      "target_ratio": "40%",
+      "current_ratio": "10%",
+      "need_reduce": false,
+      "reduce_amount": "0.00",
+      "hold_etfs": [
+        {
+          "etf_code": "518880.SH",
+          "main_force_rank": "4",
+          "hold_ratio": "10%",
+          "reason": "黄金ETF今日涨幅1.09%，走势稳健，尾盘没有异常，且黄金股ETF强势，黄金ETF作为防御品种可持有过夜。",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "明天预期高开。黄金股ETF强势，带动黄金ETF上涨。",
+          "tomorrow_action_plan": "高开1%以内持有，高开2%以上减半仓锁定利润。低开1%以内且缩量持有，低开2%以上放量则止损。"
+        }
+      ],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "市场结构分化，但不是全面暴跌，强势板块有明确机会，空仓将错失明天溢价，不符合进攻型交易员风格。",
+        "tomorrow_watch": "重点关注有色金属、煤炭、黄金股ETF的开盘表现，若放量高开，则继续持有或加仓。"
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "512400.SH",
+      "main_force_rank": "1",
+      "entry_price": 1.768,
+      "order_type": "market",
+      "position_ratio": 0.3,
+      "entry_deadline": "14:50",
+      "reason": "有色金属ETF全天主力资金持续流入，涨幅3.39%，量价配合优秀，尾盘强势，明天有继续上涨预期，尾盘是布局明天的好时机。",
+      "overnight_risk": "低"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "高开",
+      "confidence": 75,
+      "key_factors": [
+        "今天尾盘周期资源板块强势翘尾，资金抢筹迹象明显，支撑明天高开。",
+        "隔夜美股半导体、能源、工业板块大涨，利好A股相关板块，带动市场情绪。",
+        "今天深证成指和创业板指下跌，但上证指数微涨，结构分化，明天可能延续周期股强、科技股弱的格局。"
+      ],
+      "if_gap_up": "高开（有色金属ETF）：持有，不急于卖出，看能否放量上攻。若高开2%以上，可减半仓锁定利润。",
+      "if_gap_down": "低开（有色金属ETF）：低开1%以内且缩量，等待反弹；低开2%以上且放量，止损离场。",
+      "watch_list": [
+        "512400.SH: 有色金属ETF，今天最强品种，明天关注能否延续强势。",
+        "517520.SH: 黄金股ETF，涨幅最大，关注其波动性。",
+        "515220.SH: 煤炭ETF，联动性强，关注周期资源板块整体表现。"
+      ],
+      "black_swan_risk": "今晚关注国际大宗商品价格（铜、铝、原油）是否出现大幅波动，以及美联储官员讲话是否影响市场情绪。"
+    },
+    "final_checklist": {
+      "sellable_processed": false,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜的最大风险是明天周期资源板块出现获利回吐，导致低开。",
+      "如果明天跳空低开2%以上，有色ETF30%仓位，亏损约0.6%总资产，在可接受范围内。",
+      "尾盘绝对不能追高今天已经大幅下跌的弱势板块，如游戏ETF、通信ETF，可能会继续下跌。"
+    ],
+    "key_reminder": "跟紧主力，周期资源是明天主线，尾盘果断上车，别犹豫！",
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "action": "持有过夜",
+        "order_type": "market",
+        "sell_ratio": "0.00",
+        "sell_price": "0.000",
+        "reason": "黄金ETF今天走势稳健，尾盘没有跳水，且主力资金仍在流入黄金股ETF，可持有过夜。但仓位已满，且有色金属、煤炭更强势，不再加仓黄金。"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "512400.SH",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 1.768,
+        "position_ratio": 0.3,
+        "stop_loss": 0,
+        "reason": "有色金属ETF全天主力资金持续流入，涨幅3.39%，量价配合优秀，尾盘强势，明天有继续上涨预期，尾盘是布局明天的好时机。"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "512400.SH",
+        "volume": 937800,
+        "price": 1.768,
+        "order_id": "1090519112",
+        "action": "buy",
+        "order_type": "market"
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

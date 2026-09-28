@@ -1,0 +1,216 @@
+{
+  "timestamp": "2026-07-27T14:31:25.944807",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "test": false,
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "放量上涨",
+      "my_performance": "今日没有实际成交，早盘买入指令未成交，错失入场时机。但尾盘果断加仓弥补。",
+      "today_pnl_summary": "持仓盈亏：黄金-1.32%、有色金属+0.45%、医疗-0.67%，整体小幅亏损约0.5%，主要因黄金成本高。",
+      "lessons_learned": "竞价放量时买入要坚决，限价单容易踏空；尾盘才是确认趋势后的最佳布局窗口。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "真翘尾",
+      "tail_volume": "尾盘放量",
+      "main_force_intention": "主力尾盘抢筹布局明天，全天放量上涨，板块普涨，资金持续流入半导体设备、港股互联网等主线。",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "",
+      "tomorrow_open_impact": "尾盘温和放量回升，市场情绪乐观，明天大概率高开，尤其主线品种溢价明显。"
+    },
+    "today_bought_locked": [],
+    "main_force_tracking": {
+      "top_etf": "159516.SZ",
+      "top_etf_name": "半导体设备ETF",
+      "main_force_evidence": "全天成交5766万手，量能异常放大，涨幅2.02%领涨科技板块。长鑫科技上市催化国产替代，资金全天持续流入，尾盘未回落，主力锁定筹码。",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "159516.SZ",
+          "main_force_score": 95,
+          "reason": "量价配合极佳，放量突破前高，板块逻辑硬，主力资金全天净流入明显。"
+        },
+        {
+          "rank": 2,
+          "etf_code": "159792.SZ",
+          "main_force_score": 90,
+          "reason": "港股互联网ETF涨幅3.31%，量能3124万手，受美伊停火风险偏好修复，小米大涨7%带动，资金尾盘抢筹。"
+        },
+        {
+          "rank": 3,
+          "etf_code": "159869.SZ",
+          "main_force_score": 85,
+          "reason": "游戏ETF涨幅2.92%，量能522万手，AI内容催化，全天强势，尾盘放量翘尾。"
+        }
+      ],
+      "overnight_advice": "过夜仓位优先配给主力排名前3的ETF。主力在买的过夜才安心，主力撤离的绝不持过夜。"
+    },
+    "sellable_positions": [
+      {
+        "etf_code": "518880.SH",
+        "can_sell": true,
+        "current_pnl_pct": -1.32,
+        "today_trend": "黄金ETF全天涨幅1.38%，尾盘小幅回落但仍在均价线上方，量能平稳。",
+        "action": "持有过夜",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 0,
+        "sell_deadline": "",
+        "reason": "黄金因美元走弱+避险需求支撑，走势健康，亏损幅度小，可持有过夜等待明天反弹。"
+      }
+    ],
+    "overnight_position_plan": {
+      "target_ratio": 45,
+      "current_ratio": 15,
+      "need_reduce": false,
+      "reduce_amount": 0,
+      "hold_etfs": [
+        {
+          "etf_code": "159516.SZ",
+          "main_force_rank": 1,
+          "hold_ratio": 30,
+          "reason": "半导体设备ETF主力资金流入最集中，放量突破，明天高开概率大。",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "高开2%以上，可持有或部分止盈；低开1%以内则观察，跌破0.75止损。",
+          "tomorrow_action_plan": "高开超2%卖一半，剩余移动止盈；低开缩量持有，低开放量止损。"
+        },
+        {
+          "etf_code": "512400.SH",
+          "main_force_rank": 5,
+          "hold_ratio": 5.7,
+          "reason": "有色金属ETF持有中无法卖出，成本附近，随板块上涨，可观察。",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "平开或小涨，跟随商品价格波动。",
+          "tomorrow_action_plan": "维持持有，若明天涨幅超2%考虑减仓。"
+        },
+        {
+          "etf_code": "512170.SH",
+          "main_force_rank": 10,
+          "hold_ratio": 3.3,
+          "reason": "医疗ETF微亏，板块今日涨1.9%，创新药有催化，可持有。",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "平开或小涨，关注创新药催化。",
+          "tomorrow_action_plan": "若低开放量下跌则止损，否则持有。"
+        },
+        {
+          "etf_code": "518880.SH",
+          "main_force_rank": 8,
+          "hold_ratio": 6,
+          "reason": "黄金ETF作为防御配置，今晚无重大利空，持有。",
+          "overnight_risk": "低",
+          "tomorrow_expectation": "平开或小涨，跟随金价。",
+          "tomorrow_action_plan": "若明天涨幅超1%可持有，否则减半。"
+        }
+      ],
+      "if_empty": {
+        "should_empty": false,
+        "reason": "",
+        "tomorrow_watch": ""
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": true,
+      "etf_code": "159516.SZ",
+      "main_force_rank": 1,
+      "entry_price": 0.757,
+      "order_type": "market",
+      "position_ratio": 0.3,
+      "entry_deadline": "14:50",
+      "reason": "半导体设备ETF全天放量领涨，主力资金持续流入，尾盘未回落，明天看涨预期强烈。",
+      "overnight_risk": "低"
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "高开",
+      "confidence": 80,
+      "key_factors": [
+        "美股期货反弹，纳指期货+1.2%",
+        "美伊停火缓和地缘风险",
+        "港股科网股大涨，小米+7%",
+        "A股半导体设备放量突破，情绪高涨",
+        "大盘放量上涨，做多动能充足"
+      ],
+      "if_gap_up": "高开2%以上：半导体设备ETF卖一半锁定利润，剩余移动止盈；高开1%以内：持有观察，等待冲高再减。",
+      "if_gap_down": "低开2%以上：所有仓位立即止损，清仓观望；低开1%以内：缩量则持有，放量则减半。",
+      "watch_list": [
+        "159516.SZ 半导体设备ETF（主线）",
+        "159792.SZ 港股通互联网ETF（情绪指标）",
+        "512480.SH 半导体ETF（板块联动）",
+        "511380.SH 可转债ETF（资金流向反馈）"
+      ],
+      "black_swan_risk": "今晚美国科技股财报超预期疲软，或中东地缘再起冲突，但概率较低。"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大的风险是明天低开2%以上，可能亏损较大，但概率低",
+      "如果明天跳空低开2%以上，最大亏损约3%（黄金+有色+医疗+半导体设备合计）",
+      "尾盘绝对不能做的一件事：追涨已经直线拉升的ETF，避免假拉尾盘"
+    ],
+    "key_reminder": "尾盘放量翘尾，明天高开概率大；勇敢加仓主线，让利润奔跑。",
+    "sell_orders": [
+      {
+        "etf_code": "518880.SH",
+        "action": "持有过夜",
+        "order_type": "market",
+        "sell_ratio": 0,
+        "sell_price": 0,
+        "reason": "黄金因美元走弱+避险需求支撑，走势健康，亏损幅度小，可持有过夜等待明天反弹。"
+      }
+    ],
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "action": "尾盘买入",
+        "order_type": "market",
+        "buy_price": 0.757,
+        "position_ratio": 0.3,
+        "stop_loss": 0,
+        "reason": "半导体设备ETF全天放量领涨，主力资金持续流入，尾盘未回落，明天看涨预期强烈。"
+      }
+    ]
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "volume": 0,
+        "price": 0.76,
+        "order_id": "1082155369,1082155393,1082155408",
+        "action": "buy",
+        "order_type": "market",
+        "status": "未成交",
+        "executed": false,
+        "sub_orders": [
+          {
+            "order_id": "1082155369",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082155393",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          },
+          {
+            "order_id": "1082155408",
+            "filled": false,
+            "traded_volume": 0,
+            "status": "废单(柜台未记录)"
+          }
+        ]
+      }
+    ],
+    "pending_orders": [],
+    "skipped": [],
+    "errors": [],
+    "executed": true,
+    "has_pending": false
+  }
+}

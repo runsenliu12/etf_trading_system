@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-07-21T14:40:42.047446",
+  "moment": "moment_4",
+  "moment_name": "尾盘最终决策",
+  "decision": {
+    "today_final_verdict": {
+      "market_type": "放量上涨",
+      "my_performance": "今日空仓，未参与行情，但成功规避了追高风险。",
+      "today_pnl_summary": "盈亏为0，未操作。",
+      "lessons_learned": "市场放量上涨时，应适度参与，但需警惕尾盘异动。"
+    },
+    "tail_market_analysis": {
+      "tail_trend": "横盘（平淡收场）",
+      "tail_volume": "缩量",
+      "main_force_intention": "观望等待，尾盘无明显抢筹或出货迹象。",
+      "is_fake_rally": false,
+      "fake_rally_evidence": "",
+      "tomorrow_open_impact": "尾盘平稳，预计明天平开或小幅高开，但需警惕高开低走。"
+    },
+    "today_bought_locked": [],
+    "sellable_positions": [],
+    "overnight_position_plan": {
+      "target_ratio": 0,
+      "current_ratio": 0,
+      "need_reduce": false,
+      "reduce_amount": 0,
+      "hold_etfs": [],
+      "if_empty": {
+        "should_empty": true,
+        "reason": "今日空仓，且尾盘无明确买入信号，保持空仓过夜，避免隔夜风险。",
+        "tomorrow_watch": "关注明天开盘量能及科技板块持续性，若放量高开可轻仓参与。"
+      }
+    },
+    "tail_new_position": {
+      "has_opportunity": false,
+      "etf_code": "",
+      "entry_price": 0,
+      "position_ratio": 0,
+      "entry_deadline": "",
+      "reason": "尾盘缩量横盘，无主力抢筹迹象，不追高。",
+      "overnight_risk": ""
+    },
+    "tomorrow_preview": {
+      "opening_prediction": "平开或小幅高开",
+      "confidence": 60,
+      "key_factors": [
+        "今日放量上涨，市场情绪偏暖",
+        "尾盘平稳，无异常",
+        "外盘美股上涨，利好A股情绪"
+      ],
+      "if_gap_up": "若高开超过1%，等待回踩确认后再考虑入场；若高开小于1%，观察15分钟，若放量上攻可轻仓跟进。",
+      "if_gap_down": "若低开超过1%，保持空仓，等待企稳；若低开小于1%，观察是否快速回补缺口。",
+      "watch_list": [
+        "科创50ETF(588000.SH)：今日领涨，关注持续性",
+        "半导体ETF(512480.SH)：涨停，观察明天溢价",
+        "通信ETF(515880.SH)：放量上涨，关注板块联动"
+      ],
+      "black_swan_risk": "今晚无重大数据公布，但需关注突发国际事件或政策消息。"
+    },
+    "final_checklist": {
+      "sellable_processed": true,
+      "overnight_ratio_ok": true,
+      "no_impulsive_trades": true,
+      "ready_for_tomorrow": true
+    },
+    "risk_alerts": [
+      "过夜最大的风险是明天低开闷杀，今日空仓已规避。",
+      "如果明天跳空低开2%以上，最大亏损为0。",
+      "尾盘绝对不能做的一件事是追高买入，尤其是无量拉尾盘的ETF。"
+    ],
+    "key_reminder": "尾盘缩量横盘，主力观望，空仓过夜，明天再战。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "errors": [],
+    "executed": false
+  }
+}

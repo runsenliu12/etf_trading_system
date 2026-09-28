@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-07-21T10:40:54.860796",
+  "moment": "moment_2",
+  "moment_name": "上午确认决策",
+  "decision": {
+    "opening_validation": {
+      "previous_judgment_correct": "false",
+      "market_real_type": "真强势",
+      "what_was_right": [
+        "高开低走预期部分正确，部分板块冲高回落",
+        "空仓决策避免了追高被套"
+      ],
+      "what_was_wrong": [
+        "低估了半导体、新能源等板块的强势，它们放量上攻且板块联动",
+        "误判市场整体弱势，实际创业板、中证500等指数走强"
+      ],
+      "why_wrong": "开盘后半导体、新能源等板块放量上攻，且板块内多只ETF同步走强，形成真强势特征，而9:25判断量能不足，实际量能逐步放大，北向资金流入，市场情绪回暖，分析偏差在于过度关注高开低走风险，忽略了资金真实流入的板块"
+    },
+    "current_market_score": {
+      "score": 65,
+      "trend": "比开盘变好",
+      "volume_health": "放量健康",
+      "main_force_action": "持续买入，半导体、新能源、军工等板块放量拉升，板块联动明显，北向资金持续流入",
+      "north_bound_impact": "北向资金净流入约30亿元，对市场有正面提振"
+    },
+    "sell_orders": [],
+    "buy_orders": [
+      {
+        "etf_code": "512480.SH",
+        "current_price": 1.07,
+        "change_pct": 2.88,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "半导体板块整体走强，芯片ETF、科创50ETF同步上涨",
+        "action": "回调到1.060买入",
+        "buy_price": 1.06,
+        "position_ratio": 20,
+        "stop_loss": 1.03,
+        "take_profit": 1.1,
+        "overnight_risk": "中",
+        "reason": "半导体ETF开盘后持续在均价线上方运行，回踩均价线获得支撑，拉升放量回调缩量，板块内芯片ETF、科创50ETF同步走强，形成真强势特征。当前价格在均价线上方，但不宜追高，等待回调至1.060附近买入，止损设在1.030（跌破均价线），目标1.100。"
+      },
+      {
+        "etf_code": "515030.SH",
+        "current_price": 1.56,
+        "change_pct": 2.83,
+        "volume_trend": "持续放量",
+        "vs_avg_line": "在均价线上方",
+        "sector_trend": "新能源板块整体走强，电池ETF、新能源ETF同步上涨",
+        "action": "回调到1.545买入",
+        "buy_price": 1.545,
+        "position_ratio": 20,
+        "stop_loss": 1.51,
+        "take_profit": 1.59,
+        "overnight_risk": "中",
+        "reason": "新能源汽车ETF开盘后持续在均价线上方运行，量价配合健康，板块内电池ETF、新能源ETF同步走强，形成真强势特征。等待回调至1.545附近买入，止损设在1.510（跌破均价线），目标1.590。"
+      }
+    ],
+    "t1_locked_positions": [],
+    "afternoon_strategy": {
+      "prediction": "延续上午",
+      "suggested_position": 40,
+      "if_rally": "如果下午继续拉升，持有现有仓位，不追高，可考虑在尾盘加仓强势ETF",
+      "if_drop": "如果下午跳水，观察是否跌破均价线，若放量跌破则止损，否则持有",
+      "key_time": "14:00"
+    },
+    "risk_alerts": [
+      "当前持仓最大风险是下午冲高回落，但买入计划已设止损",
+      "如果下午市场突然变盘向下，最大亏损为买入后止损亏损约3%",
+      "上午未及时买入强势ETF，但空仓避免了追高，等待回调买入更安全"
+    ],
+    "key_reminder": "真强势不追高，回调均线是买点；放量破位必须止损，缩量横盘耐心等。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "errors": [],
+    "executed": false
+  }
+}

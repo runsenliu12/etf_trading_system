@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-07-29T09:26:01.150995",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "test": false,
+  "decision": {
+    "market_overview": {
+      "today_judgment": "震荡分化，跨境ETF强势但A股内需医药有独立逻辑",
+      "tradable_score": 65,
+      "main_force_intention": "主力在跨境ETF和医药板块吸筹，半导体等科技板块出货"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "159516.SZ",
+        "etf_name": "半导体设备ETF",
+        "holding_days": 3,
+        "can_sell_today": true,
+        "today_open": 0.71,
+        "open_change_pct": -1.39,
+        "current_pnl_pct": -6.6,
+        "action": "开盘卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1.0,
+        "urgency": "必须立即卖",
+        "reason": "亏损超过-5%止损线，竞价放量低开确认主力出货，半导体板块弱势无支撑"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "159792.SZ",
+      "top_etf_name": "港股通互联网ETF",
+      "main_force_evidence": "竞价高开2.02%且成交量31.4万手，为全场涨幅第一、量能最大，显示资金集中流入港股互联网板块",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "159792.SZ",
+          "main_force_score": 92,
+          "reason": "涨幅最大+2.02%，量能31万手，主力净流入明显"
+        },
+        {
+          "rank": 2,
+          "etf_code": "513120.SH",
+          "main_force_score": 88,
+          "reason": "涨幅+1.64%，量能41.8万手，跟随中概股上涨"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512010.SH",
+          "main_force_score": 75,
+          "reason": "涨幅+0.55%，量能18.5万手，医药板块有研报支撑，资金流入稳健"
+        }
+      ],
+      "priority_rule": "主力在哪里，钱就到哪里。买前3名，回避主力撤离的ETF"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "512010.SH",
+        "etf_name": "医药ETF",
+        "sector": "医药",
+        "main_force_rank": 3,
+        "today_open": 0.368,
+        "open_change_pct": 0.55,
+        "open_volume_quality": "真实放量（竞价量18.5万手，为近期较大水平）",
+        "sector_3days": "医药板块近3天小幅震荡，今日竞价放量高开，有拐头迹象",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 0,
+        "position_ratio": 0.2,
+        "stop_loss": 0.358,
+        "take_profit": 0.385,
+        "max_hold_days": 5,
+        "confidence": 70,
+        "reason": "主力资金排名第3（医药板块），竞价放量高开0.55%显示资金流入，行业研报正面（创新药）。技术面突破短期均线压制，预期延续反弹。仓位20%符合进攻型原则。"
+      }
+    ],
+    "empty_position_decision": {
+      "should_empty": false,
+      "reason": "非全球风险日，市场有结构性机会（跨境+医药），无需空仓",
+      "what_to_wait": ""
+    },
+    "opening_30min_plan": {
+      "if_rally": "若开盘后30分钟内大盘持续拉升，追入领涨板块医药ETF（512010）加仓至30%或港股通互联网ETF（159792）仓位10%，止损分别设-3%",
+      "if_drop": "若大盘跳水，区分恐慌洗盘（缩量急跌）还是出货（放量杀跌）。若缩量则持有现有仓位，若放量则止损512400和518880",
+      "if_sideways": "若横盘，关注医药ETF能否站稳0.368以上，突破0.372加仓；跌破0.365减仓",
+      "key_watch": [
+        "医药ETF开盘后15分钟量价",
+        "港股通互联网ETF是否回落",
+        "上证指数分时图能否站稳3820"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "跨境（港股互联网、中概互联）和医药，受隔夜中概股上涨及医药研报催化",
+      "weakest_today": "半导体、黄金、房地产，竞价低开且量能不佳",
+      "most_watch": "医药板块，有独立逻辑且资金持续流入，可做防御配置",
+      "to_avoid": "有色金属、黄金，受地缘冲突和美元走强压制，竞价弱势"
+    },
+    "risk_warnings": [
+      "跨境ETF高开过多可能回落，追涨需谨慎",
+      "如果板块轮动失败，今日最大亏损可能扩大至-5%（持有的有色金属和黄金可能继续下跌）",
+      "今天绝对不能追涨半导体或黄金相关ETF"
+    ],
+    "key_reminder": "顺势而为，医药有主力；破位止损，不恋战"
+  },
+  "execution_result": {
+    "executed": false,
+    "reason": "非交易时段，所有指令已跳过",
+    "cancelled_pending": 0
+  }
+}

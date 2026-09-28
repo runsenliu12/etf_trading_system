@@ -1,0 +1,181 @@
+{
+  "timestamp": "2026-07-28T09:27:30.243826",
+  "moment": "moment_1",
+  "moment_name": "集合竞价决策",
+  "test": false,
+  "decision": {
+    "market_overview": {
+      "today_judgment": "大盘低开但跨境互联网逆势走强，结构性机会，整体偏弱但非系统性风险",
+      "tradable_score": 50,
+      "main_force_intention": "主力资金从科技、资源板块撤离，转向跨境互联网和防御性板块，中概互联和港股通互联网竞价放量上涨，显示吸筹意图"
+    },
+    "sell_orders": [
+      {
+        "etf_code": "512170.SH",
+        "etf_name": "医疗ETF",
+        "holding_days": 1,
+        "can_sell_today": true,
+        "today_open": 0.32,
+        "open_change_pct": -0.93,
+        "current_pnl_pct": -0.98,
+        "action": "开盘卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "必须立即卖",
+        "reason": "医疗板块竞价低开放量，无主力资金流入，亏损接近-1%，且整体市场弱势，避免进一步下跌，优先止损"
+      },
+      {
+        "etf_code": "512400.SH",
+        "etf_name": "有色金属ETF",
+        "holding_days": 1,
+        "can_sell_today": true,
+        "today_open": 1.743,
+        "open_change_pct": -1.86,
+        "current_pnl_pct": -0.97,
+        "action": "开盘卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "必须立即卖",
+        "reason": "有色金属板块今日领跌，低开-1.86%且放量，主力资金流出明显，持有亏损将扩大，果断止损"
+      },
+      {
+        "etf_code": "518880.SH",
+        "etf_name": "黄金ETF",
+        "holding_days": 1,
+        "can_sell_today": true,
+        "today_open": 8.391,
+        "open_change_pct": -1.31,
+        "current_pnl_pct": -2.59,
+        "action": "开盘卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "必须立即卖",
+        "reason": "黄金ETF连续走弱，今日低开-1.31%且无支撑，亏损已近-3%，美元走强压制金价，主力撤离，必须止损"
+      },
+      {
+        "etf_code": "159516.SZ",
+        "etf_name": "半导体设备ETF",
+        "holding_days": 1,
+        "can_sell_today": true,
+        "today_open": 0.749,
+        "open_change_pct": -2.47,
+        "current_pnl_pct": -1.47,
+        "action": "开盘卖出",
+        "order_type": "market",
+        "sell_price": 0,
+        "sell_ratio": 1,
+        "urgency": "必须立即卖",
+        "reason": "半导体设备低开-2.47%且成交巨量（85万手），科技板块集体暴跌，主力出货迹象显著，持仓亏损-1.47%且趋势加速恶化，立刻止损"
+      }
+    ],
+    "main_force_tracking": {
+      "top_etf": "513050.SH",
+      "top_etf_name": "中概互联ETF",
+      "main_force_evidence": "今日竞价涨幅+1.01%领涨全市场，成交16.3万手，量能显著放大，与港股通互联网ETF联动走强，显示主力资金集中流入跨境互联网板块",
+      "ranked_etfs": [
+        {
+          "rank": 1,
+          "etf_code": "513050.SH",
+          "main_force_score": 80,
+          "reason": "竞价涨幅第一且放量，逆势独立行情，中概股隔夜反弹预期，主力吸筹明显"
+        },
+        {
+          "rank": 2,
+          "etf_code": "159792.SZ",
+          "etf_name": "港股通互联网ETF",
+          "main_force_score": 75,
+          "reason": "涨幅+0.67%，量21.5万手，与中概互联同步上行，板块联动强，主力资金跟随"
+        },
+        {
+          "rank": 3,
+          "etf_code": "512800.SH",
+          "etf_name": "银行ETF",
+          "main_force_score": 60,
+          "reason": "涨幅+0.25%，量5.2万手，防御属性，但量能一般，主力流入力度有限"
+        }
+      ],
+      "priority_rule": "记住：主力在哪里，钱就到哪里。买前3名，回避主力撤离的ETF"
+    },
+    "buy_orders": [
+      {
+        "etf_code": "513050.SH",
+        "etf_name": "中概互联ETF",
+        "sector": "跨境互联网",
+        "main_force_rank": 1,
+        "today_open": 1.101,
+        "open_change_pct": 1.01,
+        "open_volume_quality": "真实放量",
+        "sector_3days": "近3日跨境ETF表现震荡，但今日逆势放量上涨，可能开启反弹趋势",
+        "action": "开盘买入",
+        "order_type": "market",
+        "buy_price": 0,
+        "position_ratio": 0.3,
+        "stop_loss": 1.046,
+        "take_profit": 1.156,
+        "max_hold_days": 5,
+        "confidence": 70,
+        "reason": "主力资金排名第一，竞价放量领涨，中概股隔夜反弹预期，板块联动强，逆势走强显示独立逻辑，跟紧主力进场"
+      }
+    ],
+    "empty_position_decision": {
+      "should_empty": false,
+      "reason": "虽然大盘低开弱势，但跨境互联网板块有主力资金逆势流入，存在结构性机会，不应完全空仓，应跟紧主力方向",
+      "what_to_wait": "如果中概互联开盘后冲高回落或放量下跌，则停止买入并观望，等待市场企稳或新的主力方向"
+    },
+    "opening_30min_plan": {
+      "if_rally": "如果9:30-10:00大盘企稳反弹，跨境互联网继续走强，可追加中概互联ETF仓位至35%，止损同步上移",
+      "if_drop": "如果大盘跳水，但中概互联ETF仍能维持红盘或抗跌，则持有；若也跟跌，跌破开盘价1.101则减仓至10%",
+      "if_sideways": "如果横盘震荡，中概互联ETF在1.100-1.110区间缩量整理，则继续持有，等待突破",
+      "key_watch": [
+        "中概互联ETF量能是否持续",
+        "港股通互联网ETF是否同步走强",
+        "大盘是否出现恐慌性抛售"
+      ]
+    },
+    "sector_focus": {
+      "strongest_today": "跨境互联网：中概互联和港股通互联网竞价放量上涨，海外中概股反弹预期推动，防御属性叠加资金流入",
+      "weakest_today": "科技（半导体、通信、AI）：集体低开大跌，主力资金大幅流出，板块情绪恐慌",
+      "most_watch": "跨境互联网：逆势走强，若全天维持红盘则可能成为短期主线",
+      "to_avoid": "科技板块（半导体、通信、AI）、资源板块（有色、黄金、煤炭）：主力撤离，跌势未止"
+    },
+    "risk_warnings": [
+      "跨境互联网可能一日游，若午后回落，需及时止损",
+      "若全部判断错误，最大亏损约-8%（止损中概互联-5%加原持仓止损亏损）",
+      "今天绝对不能买入科技或资源板块的反弹，避免接飞刀"
+    ],
+    "key_reminder": "逆势上涨是信号，跟上主力错不了；止损不拖，利润奔跑。"
+  },
+  "execution_result": {
+    "sell_orders": [],
+    "buy_orders": [],
+    "pending_orders": [
+      {
+        "etf_code": "512170.SH",
+        "volume": 3270000,
+        "price": 0.319,
+        "order_id": "1098911821,1098911822",
+        "action": "sell",
+        "order_type": "limit",
+        "status": "挂单中",
+        "executed": false
+      },
+      {
+        "etf_code": "512400.SH",
+        "volume": 12068700,
+        "price": 1.74,
+        "order_id": "1098911823,1098911826,1098911827,1098911828,1098911831,1098911834,1098911835,1098911836,1098911837,1098911841,1098911842,1098911843,1098911847,1098911849,1098911850,1098911851,1098911854,1098911855,1098911856,1098911859,1098911861",
+        "action": "sell",
+        "order_type": "limit",
+        "status": "挂单中",
+        "executed": false
+      }
+    ],
+    "skipped": [],
+    "errors": [],
+    "executed": false,
+    "has_pending": true
+  }
+}
